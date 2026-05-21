@@ -1,0 +1,92 @@
+'use client';
+
+import { useState } from 'react';
+
+export default function ActivityCalendars({ salem, swampscott, label }) {
+  const [active, setActive] = useState('salem');
+  const current = active === 'salem' ? salem : swampscott;
+  const accent = active === 'salem' ? 'var(--navy)' : 'var(--navy)';
+
+  return (
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
+        <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.72rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.18em', color: '#666' }}>{label}</p>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginBottom: '32px', flexWrap: 'wrap' }}>
+        {['salem', 'swampscott'].map((loc) => (
+          <button
+            key={loc}
+            type="button"
+            onClick={() => setActive(loc)}
+            style={{
+              fontFamily: "'Raleway', sans-serif",
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.12em',
+              padding: '12px 28px',
+              borderRadius: '4px',
+              border: `2px solid ${accent}`,
+              background: active === loc ? accent : 'transparent',
+              color: active === loc ? '#fff' : accent,
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            {loc === 'salem' ? 'Salem Calendar' : 'Swampscott Calendar'}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'start' }}>
+        <div style={{ background: '#fff', border: '1px solid #ececec', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+          {current.pdf ? (
+            <div style={{ aspectRatio: '8.5 / 11', background: '#f5f5f5' }}>
+              <iframe
+                title={`${current.locationName} activity calendar`}
+                src={`${current.pdf}#view=FitH`}
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: 'block' }}
+              />
+            </div>
+          ) : (
+            <div style={{ aspectRatio: '8.5 / 11', background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px', textAlign: 'center' }}>
+              <div>
+                <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.72rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.18em', color: '#999', marginBottom: '8px' }}>{current.locationName}</div>
+                <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', color: 'var(--navy)', marginBottom: '12px' }}>Current Calendar Coming Soon</h4>
+                <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.6 }}>The monthly activity calendar will appear here. In the meantime, see this month’s highlights to the right — or contact us for the current PDF.</p>
+              </div>
+            </div>
+          )}
+          <div style={{ padding: '16px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '0.85rem', color: '#666' }}>{current.monthLabel}</span>
+            {current.pdf && (
+              <a
+                href={current.pdf}
+                download
+                className="btn btn-navy"
+                style={{ fontSize: '0.75rem', padding: '8px 18px' }}
+              >
+                Download PDF
+              </a>
+            )}
+          </div>
+        </div>
+
+        <div>
+          <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--navy)', marginBottom: '6px' }}>Featured This Month</h3>
+          <p style={{ fontSize: '0.88rem', color: '#666', marginBottom: '20px' }}>{current.locationName} · {current.monthLabel}</p>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            {current.highlights.map((h) => (
+              <li key={h.title} style={{ background: '#fff', border: '1px solid #ececec', borderRadius: '8px', padding: '14px 18px', marginBottom: '10px' }}>
+                <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', color: 'var(--navy)', marginBottom: '4px' }}>{h.title}</h4>
+                <p style={{ fontSize: '0.88rem', color: '#555', margin: 0 }}>{h.desc}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
