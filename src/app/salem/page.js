@@ -19,7 +19,7 @@ const overview = (
         <p>Our social model of care empowers residents to maintain their independence while ensuring that expert support is always available. Residents keep their own physicians and specialists, and our Registered Nurse Resident Care Director leads individualized service plans for every resident.</p>
       </div>
       <div className="image-block">
-        <img src="https://jbh.bertramhouse.org/images/Main-Banners/jbh-house-main.png" alt="John Bertram House of Salem — historic Federalist home" />
+        <img src="https://www.bertramhouse.org/images/jbh-house.png" alt="John Bertram House of Salem — historic Federalist home" />
       </div>
     </div>
 

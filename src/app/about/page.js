@@ -53,6 +53,11 @@ export default function AboutPage() {
           <FadeIn style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'start' }}>
             <div>
               <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.3rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--navy)', marginBottom: '20px' }}>Captain John Bertram</h3>
+              <img
+                src="/images/captain-john-bertram.png"
+                alt="Portrait of Captain John Bertram, founder of the John Bertram Homes legacy"
+                style={{ width: '220px', maxWidth: '45%', height: 'auto', float: 'left', marginRight: '24px', marginBottom: '12px', borderRadius: '6px', border: '1px solid #ececec' }}
+              />
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>Born on the Isle of Jersey in the Channel Islands, Captain John Bertram arrived in America in 1807 as a young boy of ten aboard the ship <em>Alert</em>. His family settled in Salem, Massachusetts, where he began his remarkable journey from cabin boy earning $5 a month to one of Salem&apos;s most celebrated sea captains and philanthropists.</p>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>As a captain, he accumulated considerable wealth through trading voyages to South Africa, Zanzibar, Madagascar, and Brazil, and later invested in North American railways. His philanthropic spirit led him to found Salem Hospital and establish programs for women and children.</p>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>In 1887, he created the <strong>Salem Home for Aged Men</strong> — providing shelter, meals, and community to older men without family, especially retired sailors. His legacy continues to inspire the John Bertram Homes community today.</p>
@@ -84,6 +89,18 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="section">
+        <div className="container">
+          <FadeIn style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.1)' }}>
+            <img
+              src="/images/swampscott/1stdining6.jpg"
+              alt="Residents sharing lunch and conversation in the dining room at John Bertram Homes"
+              style={{ width: '100%', height: '380px', objectFit: 'cover', display: 'block' }}
+            />
+          </FadeIn>
+        </div>
+      </section>
+
       <section className="section section-light">
         <div className="container">
           <FadeIn className="section-header">
@@ -96,7 +113,7 @@ export default function AboutPage() {
           <FadeIn className="properties-grid">
             <div className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="https://jbh.bertramhouse.org/images/Main-Banners/jbh-house-main.png" alt="John Bertram House of Salem" />
+                <img src="https://www.bertramhouse.org/images/jbh-house.png" alt="John Bertram House of Salem" />
                 <span className="property-badge">Est. 1990 — MA&apos;s First</span>
               </div>
               <div className="property-card-body">

@@ -8,8 +8,9 @@ import JsonLd, { ORGANIZATION, SALEM_BUSINESS, SWAMPSCOTT_BUSINESS } from '@/com
 
 const heroImages = [
   '/images/swampscott/exterior1.jpg',
-  '/images/swampscott/1stdining1.jpg',
+  '/images/swampscott/1stdining6.jpg',
   '/images/swampscott/library1.jpg',
+  '/images/swampscott/1stdining5.jpg',
   '/images/swampscott/sunroom1.jpg',
   '/images/swampscott/exterior8.jpg',
   'https://www.bertramhouse.org/images/jbh-house.png',
@@ -278,10 +279,10 @@ export default function Home() {
         <div className="container">
           <div style={{ textAlign: 'center', padding: '20px 0' }}>
             <p className="eyebrow" style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', color: 'var(--navy)', marginBottom: '12px' }}>For Families</p>
-            <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px', color: '#222' }}>Stay Close to Your Loved One</h2>
-            <p style={{ color: '#666', maxWidth: '560px', margin: '0 auto 28px' }}>Log in to the Family Portal to see new photos, manage care preferences, and stay connected with your parent or family member at John Bertram Homes.</p>
+            <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '16px', color: '#222' }}>Come See Us in Person</h2>
+            <p style={{ color: '#666', maxWidth: '560px', margin: '0 auto 28px' }}>The best way to get to know John Bertram Homes is to visit. Schedule a personal tour at either community, or reach out with any questions about care for your loved one.</p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/login" className="btn btn-gold">Family Login</Link>
+              <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
               <Link href="/contact" className="btn btn-navy">Contact Us</Link>
             </div>
           </div>

@@ -3,6 +3,9 @@ import FadeIn from '@/components/FadeIn';
 
 export const metadata = { title: 'Careers' };
 
+const INDEED_URL = 'https://www.indeed.com/cmp/Bertram-House-of-Swampscott';
+const LINKEDIN_URL = 'https://www.linkedin.com/jobs/search/?keywords=John%20Bertram%20House';
+
 const positions = [
   { title: 'Care Manager', desc: 'Provide direct personal care and support to residents throughout the day.' },
   { title: 'Kitchen Service Staff', desc: 'Help prepare and serve chef-crafted meals in our welcoming dining rooms.' },
@@ -29,7 +32,10 @@ export default function CareersPage() {
             <div className="content-block">
               <h2>Join Our Caring Community</h2>
               <p>At John Bertram House of Swampscott and Salem, our team is dedicated to creating a welcoming and supportive home for seniors on the North Shore. If you are passionate about helping others and want to be part of a caring community, we would love to hear from you.</p>
-              <a href="https://www.indeed.com/cmp/Bertram-House-of-Swampscott" target="_blank" rel="noopener" className="btn btn-navy">View Current Open Positions</a>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                <a href={INDEED_URL} target="_blank" rel="noopener" className="btn btn-navy">Apply with Indeed</a>
+                <a href={LINKEDIN_URL} target="_blank" rel="noopener" className="btn btn-outline">Apply with LinkedIn</a>
+              </div>
             </div>
             <div>
               <img src="/images/swampscott/lobby1.jpg" alt="Common area at John Bertram House of Swampscott" style={{ width: '100%', borderRadius: '8px' }} />
@@ -93,8 +99,9 @@ export default function CareersPage() {
               </div>
             ))}
           </div>
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <a href="https://www.indeed.com/cmp/Bertram-House-of-Swampscott" target="_blank" rel="noopener" className="btn btn-navy">View All Positions on Indeed</a>
+          <div style={{ textAlign: 'center', marginTop: '40px', display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href={INDEED_URL} target="_blank" rel="noopener" className="btn btn-navy">Apply with Indeed</a>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener" className="btn btn-outline">Apply with LinkedIn</a>
           </div>
         </div>
       </FadeIn>

@@ -83,6 +83,7 @@ export default function ContactForm() {
           <option value="tour">Schedule a Personal Tour</option>
           <option value="info">Be Sent Information</option>
           <option value="call">Receive a Phone Call</option>
+          <option value="volunteer">Volunteer</option>
           <option value="other">Other</option>
         </select>
       </div>

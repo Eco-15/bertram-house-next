@@ -32,7 +32,7 @@ const impactAreas = [
 const waysToSupport = [
   { title: 'Make a Gift', desc: 'A one-time or recurring gift supports daily life at both communities.', btn: 'Donate Now', href: '/donate' },
   { title: 'Volunteer', desc: 'Share your time, talents, and companionship with residents on the North Shore.', btn: 'Volunteer Opportunities', href: '/volunteers' },
-  { title: 'Honor or Remember', desc: 'Make a tribute gift in honor or memory of someone meaningful in your life.', btn: 'Tribute Gifts', href: '/donate' },
+  { title: 'Honor or Remember', desc: 'Make a tribute gift in honor or memory of someone meaningful in your life.', btn: 'Make a Tribute', href: '/make-a-tribute' },
   { title: 'Planned Giving', desc: 'Create a lasting legacy by including John Bertram Homes in your estate planning.', btn: 'Ways to Give', href: '/ways-to-give' },
 ];
 

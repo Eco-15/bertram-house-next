@@ -17,7 +17,7 @@ const navLinks = [
       { href: '/testimonials', label: 'Testimonials' },
     ],
   },
-  { href: '/life', label: 'Life at JBH' },
+  { href: '/life', label: 'Photo Tour' },
   {
     href: '/residences',
     label: 'Residences',
@@ -58,9 +58,9 @@ export default function Header() {
         <div className="header-inner">
           <Link href="/" className="logo">
             <img
-              src="https://bhs.bertramhouse.org/wp-content/uploads/2025/05/JBH-logo-original.png"
+              src="/images/jbh-logo.png"
               alt="John Bertram Homes"
-              style={{ height: '72px' }}
+              style={{ height: '80px', width: 'auto' }}
             />
           </Link>
           <nav aria-label="Primary navigation">
@@ -84,12 +84,12 @@ export default function Header() {
             </ul>
           </nav>
           <div className="header-right">
-            <Link href="/login" className="header-tour">
+            <Link href="/contact" className="header-tour">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '8px' }} aria-hidden="true">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
               </svg>
-              Family Login
+              Schedule a Tour
             </Link>
             <button
               className="hamburger"

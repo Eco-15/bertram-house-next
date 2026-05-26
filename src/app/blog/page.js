@@ -3,10 +3,15 @@ import FadeIn from '@/components/FadeIn';
 
 export const metadata = { title: 'Blog' };
 
+// NOTE: Temporary, evergreen placeholder posts for demo purposes.
+// Replace with the client's content from the attached blog doc when provided.
 const posts = [
-  { date: 'March 15, 2026', title: 'Community Garden Update', img: '/images/swampscott/exterior5.jpg', alt: 'Grounds and gardens at John Bertram Homes', desc: "Our residents have been hard at work planting spring flowers and vegetables in the community garden. See what's blooming this season." },
-  { date: 'February 28, 2026', title: 'Holiday Celebrations at JBH', img: '/images/swampscott/1stdining1.jpg', alt: 'Holiday celebrations at John Bertram Homes', desc: 'From festive decorations to special meals, our communities came together to celebrate the holiday season with joy and togetherness.' },
-  { date: 'January 20, 2026', title: 'Meet Our Team', img: '/images/swampscott/lobby1.jpg', alt: 'Meet our dedicated team members', desc: 'Get to know the compassionate professionals who make John Bertram Homes a special place for our residents and their families.' },
+  { date: 'May 2026', title: '5 Questions to Ask When Touring an Assisted Living Community', img: '/images/swampscott/lobby1.jpg', alt: 'Welcoming foyer and living room at John Bertram House of Swampscott', desc: 'Touring senior living can feel overwhelming. Here are the five questions that reveal the most about the quality of care — and how John Bertram Homes answers each one.' },
+  { date: 'May 2026', title: 'What Makes Memory Care Different', img: '/images/swampscott/3rdfloormusic1.jpg', alt: 'Music and activity space in the Swampscott Reminiscence neighborhood', desc: 'Our dedicated Reminiscence neighborhood in Swampscott is designed around structure, familiarity, and dignity. Here’s how memory care differs from assisted living.' },
+  { date: 'April 2026', title: 'A Day in the Life at John Bertram Homes', img: '/images/swampscott/1stdining6.jpg', alt: 'Residents sharing a meal together in the dining room', desc: 'From morning coffee in the sunroom to evening entertainment, see how a typical day unfolds across our Salem and Swampscott communities.' },
+  { date: 'April 2026', title: 'Why Non-Profit Senior Living Matters', img: '/images/swampscott/exterior1.jpg', alt: 'Exterior of John Bertram House of Swampscott', desc: 'As a 501(c)(3) serving the North Shore since 1887, our mission — not margins — drives every decision. Here’s why that matters for families.' },
+  { date: 'March 2026', title: 'Activities That Bring Residents Together', img: '/images/swampscott/3rdfloortvroom1.jpg', alt: 'Residents gathering in a common area', desc: 'Music, exercise, outings, and games aren’t filler — they’re how friendships form. A look at the programs that shape community life.' },
+  { date: 'March 2026', title: 'Welcoming Spring on the North Shore', img: '/images/swampscott/exterior5.jpg', alt: 'Gardens and grounds at John Bertram Homes', desc: 'Warmer days mean garden walks, patio gatherings, and seasonal menus. Here’s what residents look forward to as spring arrives in Salem and Swampscott.' },
 ];
 
 export default function BlogPage() {
@@ -17,17 +22,6 @@ export default function BlogPage() {
           <span className="eyebrow">News &amp; Stories</span>
           <h1>Blog</h1>
           <p>Stories, updates, and news from the John Bertram Homes community.</p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container" style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
-          <FadeIn className="callout-box">
-            <h3>Coming Soon</h3>
-            <p>We&apos;re working on bringing you stories, updates, and news from our communities. Check back soon for articles about daily life, resident spotlights, community events, and more.</p>
-            <p>In the meantime, visit our Testimonials page to hear from residents and families.</p>
-            <Link href="/testimonials" className="btn btn-navy" style={{ marginTop: '16px' }}>Read Testimonials</Link>
-          </FadeIn>
         </div>
       </section>
 
@@ -46,6 +40,10 @@ export default function BlogPage() {
                 </div>
               </FadeIn>
             ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '48px' }}>
+            <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
           </div>
         </div>
       </section>

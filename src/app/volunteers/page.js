@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 
 export const metadata = { title: 'Volunteer Opportunities' };
@@ -95,7 +94,7 @@ export default function VolunteersPage() {
             <h3>Become a Volunteer</h3>
             <p>Ready to make a difference? Contact our Activities Coordinator Athena to learn more about volunteer opportunities.</p>
             <p><a href="mailto:swampscottavc@bertramhouse.org">swampscottavc@bertramhouse.org</a></p>
-            <Link href="/contact" className="btn btn-navy">Contact Us</Link>
+            <a href="mailto:swampscottavc@bertramhouse.org" className="btn btn-navy">Contact Us</a>
           </div>
         </div>
       </FadeIn>

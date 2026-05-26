@@ -23,7 +23,6 @@ const seniorLeaders = [
     name: 'Kelly Domeniconi',
     title: 'Director of Sales',
     img: '/images/staff/KellyDomeniconi.jpg',
-    email: 'johnbertramhousedos@bertramhouse.org',
     contactAbout: 'Tours, availability, move-in process',
     bio: 'Kelly works with families exploring assisted living and memory care. She is often the first point of contact for tours, availability questions, and walking through what to expect.',
   },
@@ -31,7 +30,6 @@ const seniorLeaders = [
     name: 'Kathy Christopher',
     title: 'Finance Director',
     img: '/images/staff/KathyChristopher.jpg',
-    email: 'kchristopher@bertramhouse.org',
     contactAbout: 'Finance, billing, administrative questions',
     bio: 'Kathy oversees the financial stewardship of John Bertram Homes and supports both communities’ administrative operations.',
   },
@@ -53,9 +51,9 @@ const trustCards = [
 ];
 
 const salemTeam = [
-  { group: 'Executive Leadership', members: [{ name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg', email: 'ssterling@bertramhouse.org' }] },
+  { group: 'Executive Leadership', members: [{ name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' }] },
   { group: 'Assisted Living Coordination', members: [{ name: 'Suzanne Carr', title: 'Assisted Living Coordinator', initials: 'SC' }] },
-  { group: 'Wellness', members: [{ name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg', email: 'mthompson@bertramhouse.org' }] },
+  { group: 'Wellness', members: [{ name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg' }] },
   { group: 'Activities', members: [{ name: 'Tracy', title: 'Activities Coordinator', initials: 'T' }] },
   { group: 'Dining', members: [{ name: 'Duncan', title: 'Dining Service Coordinator', initials: 'D' }] },
   { group: 'Maintenance', members: [{ name: 'John', title: 'Maintenance', initials: 'J' }] },
@@ -63,11 +61,11 @@ const salemTeam = [
 
 const swampscottTeam = [
   { group: 'Executive Leadership', members: [{ name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' }] },
-  { group: 'Assisted Living Coordination', members: [{ name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg', email: 'swampscottalc@bertramhouse.org' }] },
-  { group: 'Activities', members: [{ name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg', email: 'SwampscottRC@bertramhouse.org' }] },
-  { group: 'Memory Care · Reminiscence', members: [{ name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg', email: 'SwampscottRC@bertramhouse.org' }] },
+  { group: 'Assisted Living Coordination', members: [{ name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' }] },
+  { group: 'Activities', members: [{ name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' }] },
+  { group: 'Memory Care · Reminiscence', members: [{ name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' }] },
   { group: 'Dining', members: [{ name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' }] },
-  { group: 'Maintenance', members: [{ name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg', email: 'SwampscottMC@bertramhouse.org' }] },
+  { group: 'Maintenance', members: [{ name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg' }] },
 ];
 
 const board = [
@@ -101,7 +99,6 @@ function TeamCard({ m }) {
       </div>
       <h4>{m.name}</h4>
       <p className="leader-title">{m.title}</p>
-      {m.email && <a className="leader-email" href={`mailto:${m.email}`}>{m.email}</a>}
     </div>
   );
 }
@@ -173,7 +170,6 @@ export default function LeadershipPage() {
                 <div className="leader-avatar"><img src={m.img} alt={m.name} /></div>
                 <h4>{m.name}</h4>
                 <p className="leader-title">{m.title}</p>
-                {m.email && <a className="leader-email" href={`mailto:${m.email}`}>{m.email}</a>}
                 <p style={{ fontSize: '0.85rem', color: '#666', marginTop: '12px', lineHeight: 1.6 }}>{m.bio}</p>
                 <p style={{ fontSize: '0.72rem', color: 'var(--navy)', marginTop: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Contact about: <span style={{ color: '#555', textTransform: 'none', fontWeight: 400, letterSpacing: 0 }}>{m.contactAbout}</span></p>
               </FadeIn>

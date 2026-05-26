@@ -28,15 +28,15 @@ const options = [
   {
     title: 'In-Kind Donations',
     desc: 'Donate goods, supplies, or services that directly benefit our residents.',
-    cta: 'Contact Us',
-    href: '/contact',
+    cta: 'Learn More',
+    href: '/in-kind-donations',
     icon: (<svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" strokeLinecap="round" strokeLinejoin="round"/><polyline points="3.27 6.96 12 12.01 20.73 6.96" strokeLinecap="round" strokeLinejoin="round"/><line x1="12" y1="22.08" x2="12" y2="12" strokeLinecap="round"/></svg>),
   },
   {
-    title: 'Memorial Gifts',
-    desc: 'Honor a loved one with a meaningful contribution in their memory.',
+    title: 'Memorial & Tribute Gifts',
+    desc: 'Honor or remember a loved one with a meaningful contribution in their name.',
     cta: 'Make a Tribute',
-    href: '/contact',
+    href: '/make-a-tribute',
     icon: (<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" strokeLinecap="round" strokeLinejoin="round"/></svg>),
   },
 ];
