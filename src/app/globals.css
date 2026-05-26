@@ -1165,14 +1165,18 @@ form select { cursor: pointer; }
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 12px;
+  margin: 0 auto 16px;
+  max-width: 640px;
+  line-height: 1.18;
+  text-wrap: balance;
 }
 
 .page-hero p {
   color: #555;
-  max-width: 540px;
+  max-width: 560px;
   margin: 0 auto;
   font-size: 1.05rem;
+  text-wrap: pretty;
 }
 
 /* ── BREADCRUMB ── */
