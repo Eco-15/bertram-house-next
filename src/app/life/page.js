@@ -10,18 +10,22 @@ export const metadata = {
 };
 
 const photos = [
-  { src: '/images/swampscott/1stdining6.jpg', alt: 'Residents enjoying lunch together in the Swampscott dining room', caption: 'Dining Together' },
-  { src: '/images/swampscott/1stdining5.jpg', alt: 'A caregiver sharing the menu with a resident at lunch', caption: 'Personal, Attentive Service' },
-  { src: '/images/swampscott/1stdining1.jpg', alt: 'Swampscott dining room set for service with linens and flowers', caption: 'Our Dining Room' },
-  { src: '/images/swampscott/sunroom1.jpg', alt: 'Bright sunroom gathering space at John Bertram House of Swampscott', caption: 'Bright Common Spaces' },
-  { src: '/images/swampscott/library1.jpg', alt: 'Library and reading area with a fireplace', caption: 'Library & Reading' },
-  { src: '/images/swampscott/3rdfloormusic1.jpg', alt: 'Music and activity room at John Bertram House of Swampscott', caption: 'Music & Activities' },
-  { src: '/images/swampscott/3rdfloortvroom1.jpg', alt: 'Common area and TV room', caption: 'Common Areas' },
-  { src: '/images/swampscott/lobby1.jpg', alt: 'Foyer and living room at John Bertram House of Swampscott', caption: 'Foyer & Living Room' },
-  { src: '/images/swampscott/exterior8.jpg', alt: 'Outdoor courtyard at John Bertram House of Swampscott', caption: 'Outdoor Courtyard' },
-  { src: '/images/swampscott/exterior2.jpg', alt: 'Deck and outdoor walkway at John Bertram House of Swampscott', caption: 'Outdoor Living' },
-  { src: '/images/swampscott/exterior1.jpg', alt: 'Exterior of John Bertram House of Swampscott', caption: 'Our Swampscott Community' },
-  { src: 'https://www.bertramhouse.org/images/jbh-house.png', alt: 'The historic John Bertram House of Salem on Salem Common', caption: 'Our Historic Salem Home' },
+  // Salem
+  { src: '/images/salem/exterior5.jpg', alt: 'Historic brick exterior of John Bertram House of Salem with American flag on Salem Common', caption: 'Salem — On the Common' },
+  { src: '/images/salem/exterior1.jpg', alt: 'Front entrance of John Bertram House of Salem', caption: 'Salem — Front Entrance' },
+  { src: '/images/salem/dining1.jpg', alt: 'Elegant Salem dining room with floral wallpaper, chandelier, and fireplace', caption: 'Salem — Dining Room' },
+  { src: '/images/salem/scrabble1.jpg', alt: 'Two residents playing Scrabble at John Bertram House of Salem', caption: 'Salem — Game Time' },
+  { src: '/images/salem/library1.jpg', alt: 'Cozy library and reading room with fireplace at John Bertram House of Salem', caption: 'Salem — Library' },
+  { src: '/images/salem/sunarea1.jpg', alt: 'Bright sun room at John Bertram House of Salem', caption: 'Salem — Sun Room' },
+  { src: '/images/salem/livingarea1.jpg', alt: 'Comfortable living area at John Bertram House of Salem', caption: 'Salem — Living Area' },
+  // Swampscott
+  { src: '/images/swampscott/1stdining6.jpg', alt: 'Residents enjoying lunch together in the Swampscott dining room', caption: 'Swampscott — Dining Together' },
+  { src: '/images/swampscott/1stdining5.jpg', alt: 'A caregiver sharing the menu with a resident at lunch', caption: 'Swampscott — Attentive Service' },
+  { src: '/images/swampscott/sunroom1.jpg', alt: 'Bright sunroom gathering space at John Bertram House of Swampscott', caption: 'Swampscott — Sunroom' },
+  { src: '/images/swampscott/library1.jpg', alt: 'Library and reading area with a fireplace', caption: 'Swampscott — Library' },
+  { src: '/images/swampscott/3rdfloormusic1.jpg', alt: 'Music and activity room at John Bertram House of Swampscott', caption: 'Swampscott — Music & Activities' },
+  { src: '/images/swampscott/exterior8.jpg', alt: 'Outdoor courtyard at John Bertram House of Swampscott', caption: 'Swampscott — Outdoor Courtyard' },
+  { src: '/images/swampscott/exterior1.jpg', alt: 'Exterior of John Bertram House of Swampscott', caption: 'Swampscott — Our Community' },
 ];
 
 export default function LifePage() {

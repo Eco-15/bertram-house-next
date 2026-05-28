@@ -868,7 +868,7 @@ form select { cursor: pointer; }
 }
 
 .facility-hero-salem {
-  background: #ececec url('https://www.bertramhouse.org/images/jbh-house.png') center/cover no-repeat;
+  background: #ececec url('/images/salem/exterior5.jpg') center/cover no-repeat;
   border-bottom: 1px solid #ececec;
 }
 

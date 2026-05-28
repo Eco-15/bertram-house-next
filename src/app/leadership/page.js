@@ -52,10 +52,10 @@ const trustCards = [
 
 const salemTeam = [
   { group: 'Executive Leadership', members: [{ name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' }] },
-  { group: 'Assisted Living Coordination', members: [{ name: 'Suzanne Carr', title: 'Assisted Living Coordinator', initials: 'SC' }] },
+  { group: 'Assisted Living Coordination', members: [{ name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1.jpg' }] },
   { group: 'Wellness', members: [{ name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg' }] },
-  { group: 'Activities', members: [{ name: 'Tracy', title: 'Activities Coordinator', initials: 'T' }] },
-  { group: 'Dining', members: [{ name: 'Duncan', title: 'Dining Service Coordinator', initials: 'D' }] },
+  { group: 'Activities', members: [{ name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1.jpg' }] },
+  { group: 'Dining', members: [{ name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1.jpg' }] },
   { group: 'Maintenance', members: [{ name: 'John', title: 'Maintenance', initials: 'J' }] },
 ];
 

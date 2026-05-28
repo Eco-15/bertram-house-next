@@ -13,7 +13,7 @@ const heroImages = [
   '/images/swampscott/1stdining5.jpg',
   '/images/swampscott/sunroom1.jpg',
   '/images/swampscott/exterior8.jpg',
-  'https://www.bertramhouse.org/images/jbh-house.png',
+  '/images/salem/exterior1.jpg',
 ];
 
 const testimonials = [
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="properties-grid">
             <FadeIn tag="article" className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="https://www.bertramhouse.org/images/jbh-house.png" alt="John Bertram House of Salem — historic Federalist home" />
+                <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem — historic Federalist home" />
                 <span className="property-badge">Established 1887 – On the Salem Common</span>
               </div>
               <div className="property-card-body">
@@ -188,7 +188,7 @@ export default function Home() {
               <Link href="/about" className="btn btn-navy">Read Our History</Link>
             </FadeIn>
             <FadeIn className="image-block">
-              <img src="https://www.bertramhouse.org/images/jbh-house.png" alt="John Bertram House of Salem" style={{ height: '380px', objectFit: 'cover', width: '100%' }} />
+              <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem" style={{ height: '380px', objectFit: 'cover', width: '100%' }} />
             </FadeIn>
           </div>
         </div>

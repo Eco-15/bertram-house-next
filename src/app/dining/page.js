@@ -119,7 +119,7 @@ export default function DiningPage() {
           <div className="properties-grid">
             <FadeIn className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="https://bhs.bertramhouse.org/wp-content/uploads/2025/05/DiningRoom2-1-e1748009775812.jpg" alt="Salem dining room with linens and fresh flowers overlooking Salem Common" />
+                <img src="/images/salem/dining2.jpg" alt="Salem dining room with linens and fresh flowers overlooking Salem Common" />
               </div>
               <div className="property-card-body">
                 <h3>Salem Dining</h3>

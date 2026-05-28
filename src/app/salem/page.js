@@ -19,7 +19,7 @@ const overview = (
         <p>Our social model of care empowers residents to maintain their independence while ensuring that expert support is always available. Residents keep their own physicians and specialists, and our Registered Nurse Resident Care Director leads individualized service plans for every resident.</p>
       </div>
       <div className="image-block">
-        <img src="https://www.bertramhouse.org/images/jbh-house.png" alt="John Bertram House of Salem — historic Federalist home" />
+        <img src="/images/salem/exterior1.jpg" alt="Front entrance of John Bertram House of Salem, a historic brick Federalist home" />
       </div>
     </div>
 
@@ -120,7 +120,7 @@ const dining = (
         <p>Our <strong>Hydration for Better Health Program</strong> ensures Poland Spring water, cider, and fresh juices are constantly available throughout the day — because good hydration is foundational to wellbeing.</p>
       </div>
       <div className="image-block">
-        <img src="https://bhs.bertramhouse.org/wp-content/uploads/2025/05/DiningRoom2-1-e1748009775812.jpg" alt="Elegant dining room" />
+        <img src="/images/salem/dining1.jpg" alt="Elegant dining room with floral wallpaper, chandelier, and fireplace at John Bertram House of Salem" />
       </div>
     </div>
 
@@ -150,7 +150,7 @@ const activities = (
         <p>From morning exercise to evening entertainment, every day offers opportunities for connection, creativity, growth, and joy.</p>
       </div>
       <div>
-        <img src="https://jbh.bertramhouse.org/images/Main-Banners/webactivity-03.jpg" alt="Residents enjoying activities at John Bertram House" style={{ width: '100%', borderRadius: '8px', marginBottom: '16px', objectFit: 'cover', height: '200px' }} />
+        <img src="/images/salem/scrabble1.jpg" alt="Residents playing Scrabble together at John Bertram House of Salem" style={{ width: '100%', borderRadius: '8px', marginBottom: '16px', objectFit: 'cover', height: '200px' }} />
         <div style={{ background: 'var(--off-white)', borderRadius: '8px', padding: '24px' }}>
           <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--burgundy)', marginBottom: '16px' }}>Award-Winning Programs</h4>
           <p style={{ fontSize: '0.9rem', color: '#555', lineHeight: 1.7 }}>Our non-denominational <strong>&quot;Gifts for the Soul&quot;</strong> spiritual program has received the <strong>MassALFA Program Innovation Award</strong> — a testament to our commitment to holistic, resident-centered programming.</p>
@@ -192,7 +192,7 @@ const team = (
         <a className="leader-email" href="mailto:ssterling@bertramhouse.org">ssterling@bertramhouse.org</a>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar">SC</div>
+        <div className="leader-avatar"><img src="/images/salem/suzanne1.jpg" alt="Suzanne Carr" /></div>
         <h4>Suzanne Carr</h4>
         <p className="leader-title">Assisted Living Coordinator</p>
       </div>
@@ -203,12 +203,12 @@ const team = (
         <a className="leader-email" href="mailto:mthompson@bertramhouse.org">mthompson@bertramhouse.org</a>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar">T</div>
+        <div className="leader-avatar"><img src="/images/salem/tracy1.jpg" alt="Tracy" /></div>
         <h4>Tracy</h4>
         <p className="leader-title">Activities Coordinator</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar">D</div>
+        <div className="leader-avatar"><img src="/images/salem/Duncan1.jpg" alt="Duncan" /></div>
         <h4>Duncan</h4>
         <p className="leader-title">Dining Service Coordinator</p>
       </div>

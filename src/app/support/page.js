@@ -112,7 +112,7 @@ export default function SupportPage() {
           <FadeIn className="two-col">
             <div className="image-block">
               <img
-                src="https://www.bertramhouse.org/images/jbh-house.png"
+                src="/images/salem/exterior1.jpg"
                 alt="The historic John Bertram House on Salem Common"
                 style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
               />

@@ -22,7 +22,7 @@ export default function ResidencesPage() {
           <div className="properties-grid">
             <FadeIn tag="article" className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="https://www.bertramhouse.org/images/jbh-house.png" alt="John Bertram House of Salem — historic Federalist home" />
+                <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem — historic Federalist home" />
                 <span className="property-badge">Est. 1990 — MA&apos;s First</span>
               </div>
               <div className="property-card-body">

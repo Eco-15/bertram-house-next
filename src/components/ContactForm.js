@@ -7,6 +7,7 @@ export default function ContactForm() {
   const searchParams = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
   const [defaultLoc, setDefaultLoc] = useState('');
 
   useEffect(() => {
@@ -14,13 +15,29 @@ export default function ContactForm() {
     if (loc) setDefaultLoc(loc);
   }, [searchParams]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
     setSubmitting(true);
-    setTimeout(() => {
+
+    const data = Object.fromEntries(new FormData(e.currentTarget));
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const result = await res.json().catch(() => ({}));
+      if (!res.ok || !result.ok) {
+        throw new Error(result.error || 'Something went wrong. Please try again.');
+      }
       setSubmitted(true);
+    } catch (err) {
+      setError(err.message || 'Something went wrong. Please try again.');
+    } finally {
       setSubmitting(false);
-    }, 800);
+    }
   };
 
   if (submitted) {
@@ -33,7 +50,17 @@ export default function ContactForm() {
   }
 
   return (
-    <form id="contactForm" onSubmit={handleSubmit} noValidate>
+    <form id="contactForm" onSubmit={handleSubmit}>
+      {/* Honeypot: hidden from people, tempting to bots. Hidden via inline
+          styles so it works without relying on a CSS class. */}
+      <input
+        type="text"
+        name="company"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+      />
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="firstName">First Name <span className="form-required">*</span></label>
@@ -115,6 +142,11 @@ export default function ContactForm() {
       >
         {submitting ? 'Sending...' : 'Send Message'}
       </button>
+      {error && (
+        <p role="alert" style={{ color: '#b00020', fontSize: '0.85rem', marginTop: '12px', textAlign: 'center' }}>
+          {error}
+        </p>
+      )}
       <p style={{ fontSize: '0.8rem', color: '#888', marginTop: '12px', textAlign: 'center' }}>
         We respond within one business day. Your information is kept strictly confidential.
       </p>
