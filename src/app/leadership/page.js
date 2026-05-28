@@ -51,21 +51,21 @@ const trustCards = [
 ];
 
 const salemTeam = [
-  { group: 'Executive Leadership', members: [{ name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' }] },
-  { group: 'Assisted Living Coordination', members: [{ name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1.jpg' }] },
-  { group: 'Wellness', members: [{ name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg' }] },
-  { group: 'Activities', members: [{ name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1.jpg' }] },
-  { group: 'Dining', members: [{ name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1.jpg' }] },
-  { group: 'Maintenance', members: [{ name: 'John', title: 'Maintenance', initials: 'J' }] },
+  { name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' },
+  { name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1.jpg' },
+  { name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg' },
+  { name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1.jpg' },
+  { name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1.jpg' },
+  { name: 'John', title: 'Maintenance', initials: 'J' },
 ];
 
 const swampscottTeam = [
-  { group: 'Executive Leadership', members: [{ name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' }] },
-  { group: 'Assisted Living Coordination', members: [{ name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' }] },
-  { group: 'Activities', members: [{ name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' }] },
-  { group: 'Memory Care · Reminiscence', members: [{ name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' }] },
-  { group: 'Dining', members: [{ name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' }] },
-  { group: 'Maintenance', members: [{ name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg' }] },
+  { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
+  { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
+  { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
+  { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
+  { name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' },
+  { name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg' },
 ];
 
 const board = [
@@ -103,17 +103,10 @@ function TeamCard({ m }) {
   );
 }
 
-function LocationTeam({ teamGroups }) {
+function LocationTeam({ members }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-      {teamGroups.map((g) => (
-        <div key={g.group}>
-          <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.18em', color: 'var(--navy)', marginBottom: '14px', paddingBottom: '8px', borderBottom: '1px solid #ececec' }}>{g.group}</h4>
-          <div className="team-grid">
-            {g.members.map((m) => <TeamCard key={`${g.group}-${m.name}`} m={m} />)}
-          </div>
-        </div>
-      ))}
+    <div className="team-grid">
+      {members.map((m) => <TeamCard key={m.name} m={m} />)}
     </div>
   );
 }
@@ -187,7 +180,7 @@ export default function LeadershipPage() {
             <div className="divider"></div>
           </FadeIn>
           <FadeIn>
-            <LocationTeam teamGroups={salemTeam} />
+            <LocationTeam members={salemTeam} />
           </FadeIn>
         </div>
       </section>
@@ -201,7 +194,7 @@ export default function LeadershipPage() {
             <div className="divider"></div>
           </FadeIn>
           <FadeIn>
-            <LocationTeam teamGroups={swampscottTeam} />
+            <LocationTeam members={swampscottTeam} />
           </FadeIn>
         </div>
       </section>
