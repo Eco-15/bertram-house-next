@@ -11,28 +11,9 @@ export const metadata = {
 };
 
 const seniorLeaders = [
-  {
-    name: 'Robert Wasserman, MPH',
-    title: 'President · Executive Director, Swampscott',
-    img: '/images/staff/RobertWasserman.jpg',
-    email: 'rwasserman@bertramhouse.org',
-    contactAbout: 'Operations, admissions inquiries, organizational leadership',
-    bio: 'Robert leads John Bertram Homes as President and also serves as Executive Director of the Swampscott community. He brings public-health training and a steady, hands-on approach to daily operations.',
-  },
-  {
-    name: 'Kelly Domeniconi',
-    title: 'Director of Sales',
-    img: '/images/staff/KellyDomeniconi.jpg',
-    contactAbout: 'Tours, availability, move-in process',
-    bio: 'Kelly works with families exploring assisted living and memory care. She is often the first point of contact for tours, availability questions, and walking through what to expect.',
-  },
-  {
-    name: 'Kathy Christopher',
-    title: 'Finance Director',
-    img: '/images/staff/KathyChristopher.jpg',
-    contactAbout: 'Finance, billing, administrative questions',
-    bio: 'Kathy oversees the financial stewardship of John Bertram Homes and supports both communities’ administrative operations.',
-  },
+  { name: 'Robert Wasserman, MPH', title: 'President · Executive Director, Swampscott', img: '/images/staff/RobertWasserman.jpg' },
+  { name: 'Kelly Domeniconi', title: 'Director of Sales', img: '/images/staff/KellyDomeniconi.jpg' },
+  { name: 'Kathy Christopher', title: 'Finance Director', img: '/images/staff/KathyChristopher.jpg' },
 ];
 
 const trustCards = [
@@ -60,7 +41,6 @@ const salemTeam = [
 ];
 
 const swampscottTeam = [
-  { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
   { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
   { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
   { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
@@ -159,12 +139,10 @@ export default function LeadershipPage() {
 
           <div className="team-grid" style={{ maxWidth: '1040px', margin: '0 auto' }}>
             {seniorLeaders.map((m) => (
-              <FadeIn key={m.name} className="leader-card" style={{ padding: '28px 24px' }}>
+              <FadeIn key={m.name} className="leader-card">
                 <div className="leader-avatar"><img src={m.img} alt={m.name} /></div>
                 <h4>{m.name}</h4>
                 <p className="leader-title">{m.title}</p>
-                <p style={{ fontSize: '0.85rem', color: '#666', marginTop: '12px', lineHeight: 1.6 }}>{m.bio}</p>
-                <p style={{ fontSize: '0.72rem', color: 'var(--navy)', marginTop: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Contact about: <span style={{ color: '#555', textTransform: 'none', fontWeight: 400, letterSpacing: 0 }}>{m.contactAbout}</span></p>
               </FadeIn>
             ))}
           </div>
