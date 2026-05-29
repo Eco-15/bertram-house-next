@@ -6,15 +6,6 @@ export const metadata = { title: 'Careers' };
 const INDEED_URL = 'https://www.indeed.com/cmp/Bertram-House-of-Swampscott';
 const LINKEDIN_URL = 'https://www.linkedin.com/jobs/search/?keywords=John%20Bertram%20House';
 
-const positions = [
-  { title: 'Care Manager', desc: 'Provide direct personal care and support to residents throughout the day.' },
-  { title: 'Kitchen Service Staff', desc: 'Help prepare and serve chef-crafted meals in our welcoming dining rooms.' },
-  { title: 'Concierge', desc: 'Welcome visitors, answer phones, and provide a warm first impression.' },
-  { title: 'Housekeeping Services', desc: 'Maintain a clean, comfortable, and home-like environment for residents.' },
-  { title: 'Maintenance Staff', desc: 'Ensure our facilities are safe, well-maintained, and in excellent condition.' },
-  { title: 'Administrative Support', desc: 'Support daily operations with organizational and administrative tasks.' },
-];
-
 export default function CareersPage() {
   return (
     <main>
@@ -38,7 +29,7 @@ export default function CareersPage() {
               </div>
             </div>
             <div>
-              <img src="/images/swampscott/lobby1.jpg" alt="Common area at John Bertram House of Swampscott" style={{ width: '100%', borderRadius: '8px' }} />
+              <img src="/images/swampscott/1stdining5.jpg" alt="Caregiver sharing the menu with a resident at John Bertram House of Swampscott" style={{ width: '100%', borderRadius: '8px' }} />
             </div>
           </div>
         </div>
@@ -84,33 +75,11 @@ export default function CareersPage() {
         </div>
       </FadeIn>
 
-      <FadeIn tag="section" className="section">
-        <div className="container">
-          <div className="section-header">
-            <span className="eyebrow">Current Opportunities</span>
-            <h2>Open Positions</h2>
-          </div>
-          <div className="role-cards">
-            {positions.map((p) => (
-              <div key={p.title} className="role-card">
-                <h4>{p.title}</h4>
-                <p>{p.desc}</p>
-                <a href="https://www.indeed.com/cmp/Bertram-House-of-Swampscott" target="_blank" rel="noopener" className="btn btn-navy">Learn More</a>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '40px', display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={INDEED_URL} target="_blank" rel="noopener" className="btn btn-navy">Apply with Indeed</a>
-            <a href={LINKEDIN_URL} target="_blank" rel="noopener" className="btn btn-outline">Apply with LinkedIn</a>
-          </div>
-        </div>
-      </FadeIn>
-
       <FadeIn tag="section" className="section section-navy">
-        <div className="container" style={{ textAlign: 'center' }}>
-          <h2>A Place Where Your Work Matters</h2>
-          <p>At John Bertram Homes, our residents are at the heart of everything we do. Staff members often describe the community as a place where relationships are genuine and where every person contributes to making daily life meaningful.</p>
-          <p>Whether you join us as an employee or volunteer, you become part of a tradition of service that has supported older adults on the North Shore for generations.</p>
+        <div className="container" style={{ maxWidth: '760px', textAlign: 'center' }}>
+          <h2 style={{ marginBottom: '32px' }}>A Place Where Your Work Matters</h2>
+          <p style={{ textAlign: 'justify', marginBottom: '20px' }}>At John Bertram Homes, our residents are at the heart of everything we do. Staff members often describe the community as a place where relationships are genuine and where every person contributes to making daily life meaningful.</p>
+          <p style={{ textAlign: 'justify', marginBottom: '40px' }}>Whether you join us as an employee or volunteer, you become part of a tradition of service that has supported older adults on the North Shore for generations.</p>
           <Link href="/contact" className="btn btn-navy">Contact Us</Link>
         </div>
       </FadeIn>

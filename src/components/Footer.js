@@ -50,7 +50,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/life">Life at JBH</Link></li>
+              <li><Link href="/life">Photo Gallery</Link></li>
               <li><Link href="/careers">Careers</Link></li>
               <li><Link href="/support">Support Our Mission</Link></li>
               <li><Link href="/contact">Contact</Link></li>

@@ -97,7 +97,7 @@ const suites = (
         { img: '/images/swampscott/sunroom1.jpg', alt: 'Sunroom', title: 'Sunroom', desc: 'Bright and cheerful gathering space for Scrabble, bridge, games, and social activities.' },
         { img: '/images/swampscott/1stdining1.jpg', alt: 'Dining room', title: 'Dining Room', desc: '"Often compared to a country inn" — elegant table settings create a warm, inviting atmosphere.' },
         { img: '/images/swampscott/3rdfloortvroom1.jpg', alt: 'TV room', title: 'TV Room', desc: 'Movies, exercise programs, group activities, and everything in between for entertaining afternoons.' },
-        { img: '/images/swampscott/library1.jpg', alt: 'Library with fireplace', title: 'Library', desc: 'Intimate room with classic and new books, and a cozy fireplace — perfect for quiet reading.' },
+        { img: '/images/swampscott/library4.jpg', alt: 'Library with fireplace', title: 'Library', desc: 'Intimate room with classic and new books, and a cozy fireplace — perfect for quiet reading.' },
         { img: '/images/swampscott/exterior8.jpg', alt: 'Outdoor courtyard', title: 'Outdoor Spaces', desc: 'Large outdoor courtyard and patios for enjoying the sunshine and refreshing North Shore sea breezes.' },
       ].map((c) => (
         <div key={c.title} style={{ background: 'var(--off-white)', borderRadius: '6px', overflow: 'hidden' }}>

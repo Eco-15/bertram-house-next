@@ -16,12 +16,6 @@ const ways = [
     icon: (<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>),
   },
   {
-    title: 'Reading',
-    desc: 'Read aloud to residents or share favorite books in the library.',
-    img: '/images/swampscott/library1.jpg',
-    icon: (<svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" strokeLinecap="round" strokeLinejoin="round"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" strokeLinecap="round" strokeLinejoin="round"/></svg>),
-  },
-  {
     title: 'Music',
     desc: 'Share songs, play an instrument, or lead sing-alongs.',
     img: '/images/swampscott/3rdfloormusic1.jpg',
@@ -73,7 +67,7 @@ export default function VolunteersPage() {
             <span className="eyebrow">Get Involved</span>
             <h2>Ways Volunteers Help</h2>
           </div>
-          <div className="benefit-cards">
+          <div className="benefit-cards benefit-cards-5">
             {ways.map((w) => (
               <div key={w.title} className="benefit-card">
                 <div className="benefit-card-image">

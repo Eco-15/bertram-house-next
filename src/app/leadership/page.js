@@ -14,6 +14,7 @@ const seniorLeaders = [
   { name: 'Robert Wasserman, MPH', title: 'President · Executive Director, Swampscott', img: '/images/staff/RobertWasserman.jpg' },
   { name: 'Kelly Domeniconi', title: 'Director of Sales', img: '/images/staff/KellyDomeniconi.jpg' },
   { name: 'Kathy Christopher', title: 'Finance Director', img: '/images/staff/KathyChristopher.jpg' },
+  { name: 'Sarah Sterling', title: 'Compliance Officer · Executive Director, Salem', img: '/images/staff/SarahSterling.jpg' },
 ];
 
 const trustCards = [
@@ -42,8 +43,8 @@ const salemTeam = [
 
 const swampscottTeam = [
   { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
-  { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
   { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
+  { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
   { name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' },
   { name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg' },
 ];
@@ -98,33 +99,9 @@ export default function LeadershipPage() {
       <JsonLd data={faqSchema(faqs)} />
       <JsonLd data={ORGANIZATION} />
 
-      <div className="page-hero">
-        <p className="eyebrow">Our Team</p>
-        <h1>Experienced, Compassionate People Behind Every Day of Care</h1>
-        <p>Our team includes leadership, wellness, care coordination, dining, activities, maintenance, and administrative professionals who work together to make daily life safe, comfortable, and meaningful for residents.</p>
-        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '28px' }}>
-          <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
-          <Link href="/contact" className="btn btn-navy">Contact Our Team</Link>
-        </div>
-      </div>
-
-      <section className="section">
+      <section className="section" style={{ paddingBottom: '0', textAlign: 'center' }}>
         <div className="container">
-          <FadeIn className="section-header">
-            <p className="eyebrow">Why Our Team Matters</p>
-            <h2>The People Behind the Care</h2>
-            <p>Care, wellness, dining, activities, maintenance, administration, leadership, and trustees all shape the resident experience. This page is more than a directory — it’s the team that makes daily life work.</p>
-            <div className="divider"></div>
-          </FadeIn>
-
-          <div className="features-grid">
-            {trustCards.map((c) => (
-              <FadeIn key={c.title} className="feature-item">
-                <h4>{c.title}</h4>
-                <p>{c.desc}</p>
-              </FadeIn>
-            ))}
-          </div>
+          <h1>Our Team</h1>
         </div>
       </section>
 
@@ -207,6 +184,26 @@ export default function LeadershipPage() {
       </section>
 
       <section className="section">
+        <div className="container">
+          <FadeIn className="section-header">
+            <p className="eyebrow">Why Our Team Matters</p>
+            <h2>The People Behind the Care</h2>
+            <p>Care, wellness, dining, activities, maintenance, administration, leadership, and trustees all shape the resident experience. This page is more than a directory — it’s the team that makes daily life work.</p>
+            <div className="divider"></div>
+          </FadeIn>
+
+          <div className="features-grid">
+            {trustCards.map((c) => (
+              <FadeIn key={c.title} className="feature-item">
+                <h4>{c.title}</h4>
+                <p>{c.desc}</p>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-light">
         <div className="container">
           <FadeIn className="callout-box" style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
             <h3>See the John Bertram Difference in Person</h3>

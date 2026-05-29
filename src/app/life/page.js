@@ -3,9 +3,9 @@ import FadeIn from '@/components/FadeIn';
 import { LightboxImage } from '@/components/Lightbox';
 
 export const metadata = {
-  title: 'Photo Tour | John Bertram Homes',
+  title: 'Photo Gallery | John Bertram Homes',
   description:
-    'Take a photo tour of John Bertram Homes — dining rooms, common spaces, the library, sunroom, and grounds at our Salem and Swampscott assisted living communities on the North Shore.',
+    'Browse the photo gallery of John Bertram Homes — dining rooms, common spaces, the library, sunroom, and grounds at our Salem and Swampscott assisted living communities on the North Shore.',
   alternates: { canonical: 'https://bertramhouse.org/life' },
 };
 
@@ -15,35 +15,38 @@ const photos = [
   { src: '/images/salem/exterior1.jpg', alt: 'Front entrance of John Bertram House of Salem', caption: 'Salem — Front Entrance' },
   { src: '/images/salem/dining1.jpg', alt: 'Elegant Salem dining room with floral wallpaper, chandelier, and fireplace', caption: 'Salem — Dining Room' },
   { src: '/images/salem/scrabble1.jpg', alt: 'Two residents playing Scrabble at John Bertram House of Salem', caption: 'Salem — Game Time' },
+  { src: '/images/salem/scrabble2.jpg', alt: 'Residents enjoying a game of Scrabble together at John Bertram House of Salem', caption: 'Salem — Scrabble Together' },
   { src: '/images/salem/library1.jpg', alt: 'Cozy library and reading room with fireplace at John Bertram House of Salem', caption: 'Salem — Library' },
   { src: '/images/salem/sunarea1.jpg', alt: 'Bright sun room at John Bertram House of Salem', caption: 'Salem — Sun Room' },
   { src: '/images/salem/livingarea1.jpg', alt: 'Comfortable living area at John Bertram House of Salem', caption: 'Salem — Living Area' },
   // Swampscott
   { src: '/images/swampscott/1stdining6.jpg', alt: 'Residents enjoying lunch together in the Swampscott dining room', caption: 'Swampscott — Dining Together' },
   { src: '/images/swampscott/1stdining5.jpg', alt: 'A caregiver sharing the menu with a resident at lunch', caption: 'Swampscott — Attentive Service' },
+  { src: '/images/swampscott/1stdining2.jpg', alt: 'Elegant first-floor dining room at John Bertram House of Swampscott', caption: 'Swampscott — Dining Room' },
+  { src: '/images/swampscott/1stdining7.jpg', alt: 'Dining room table settings at John Bertram House of Swampscott', caption: 'Swampscott — Country-Inn Dining' },
+  { src: '/images/swampscott/2nddining2.jpg', alt: 'Memory care dining room at John Bertram House of Swampscott', caption: 'Swampscott — Memory Care Dining' },
+  { src: '/images/swampscott/entrancehall1.jpg', alt: 'Entrance hall at John Bertram House of Swampscott', caption: 'Swampscott — Entrance Hall' },
+  { src: '/images/swampscott/lobby4.jpg', alt: 'First-floor lobby at John Bertram House of Swampscott', caption: 'Swampscott — First Floor Lobby' },
+  { src: '/images/swampscott/lobby2.jpg', alt: 'Veteran appreciation wall at John Bertram House of Swampscott', caption: 'Swampscott — Veteran Appreciation Wall' },
+  { src: '/images/swampscott/2ndfloorlobby1.jpg', alt: 'Second-floor lobby at John Bertram House of Swampscott', caption: 'Swampscott — Second Floor' },
   { src: '/images/swampscott/sunroom1.jpg', alt: 'Bright sunroom gathering space at John Bertram House of Swampscott', caption: 'Swampscott — Sunroom' },
-  { src: '/images/swampscott/library1.jpg', alt: 'Library and reading area with a fireplace', caption: 'Swampscott — Library' },
+  { src: '/images/swampscott/library4.jpg', alt: 'Library and reading area with a fireplace', caption: 'Swampscott — Library' },
   { src: '/images/swampscott/3rdfloormusic1.jpg', alt: 'Music and activity room at John Bertram House of Swampscott', caption: 'Swampscott — Music & Activities' },
   { src: '/images/swampscott/exterior8.jpg', alt: 'Outdoor courtyard at John Bertram House of Swampscott', caption: 'Swampscott — Outdoor Courtyard' },
+  { src: '/images/swampscott/exterior6.jpg', alt: 'Outdoor walking path at John Bertram House of Swampscott', caption: 'Swampscott — Outdoor Walking Path' },
+  { src: '/images/swampscott/exterior3.jpg', alt: 'Exterior grounds at John Bertram House of Swampscott', caption: 'Swampscott — Our Grounds' },
   { src: '/images/swampscott/exterior1.jpg', alt: 'Exterior of John Bertram House of Swampscott', caption: 'Swampscott — Our Community' },
 ];
 
 export default function LifePage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
-          <span className="eyebrow">Experience the Difference</span>
-          <h1>Photo Tour</h1>
-          <p>Step inside John Bertram Homes. Click any photo to enlarge it, then use the arrows to browse the full tour of both communities.</p>
-        </div>
-      </section>
-
       <section className="section">
         <div className="container">
           <FadeIn className="section-header">
             <span className="eyebrow">Our Communities</span>
-            <h2>A Look Inside Salem &amp; Swampscott</h2>
+            <h1>Photo Gallery</h1>
+            <p>A look inside Salem &amp; Swampscott. Click any photo to enlarge it, then use the arrows to browse both communities.</p>
           </FadeIn>
 
           <div className="photo-grid">

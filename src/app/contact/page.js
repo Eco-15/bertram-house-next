@@ -62,39 +62,33 @@ export default function ContactPage() {
       <section className="section-sm section-light" style={{ borderTop: '1px solid #e8e8e8' }}>
         <div className="container">
           <FadeIn style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
-            <div style={{ position: 'relative', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', minHeight: '400px' }}>
-              <iframe
-                src="https://maps.google.com/maps?ll=42.505,-70.905&z=12&output=embed"
-                width="100%"
-                height="400"
-                style={{ border: 0, display: 'block' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Map showing John Bertram Homes Salem and Swampscott locations"
-              />
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=29+Washington+Square,+Salem,+MA+01970"
-                target="_blank"
-                rel="noopener"
-                className="map-pin"
-                style={{ top: '26%', left: '54%' }}
-                aria-label="Get directions to John Bertram House of Salem"
-              >
-                <span className="map-pin-emoji" role="img" aria-hidden="true">🏠</span>
-                <span className="map-pin-label">Salem</span>
-              </a>
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=565+Humphrey+Street,+Swampscott,+MA+01907"
-                target="_blank"
-                rel="noopener"
-                className="map-pin"
-                style={{ top: '64%', left: '40%' }}
-                aria-label="Get directions to John Bertram House of Swampscott"
-              >
-                <span className="map-pin-emoji" role="img" aria-hidden="true">🏠</span>
-                <span className="map-pin-label">Swampscott</span>
-              </a>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+                <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--navy)', padding: '12px 16px', background: 'var(--off-white)' }}>John Bertram House of Salem</div>
+                <iframe
+                  src="https://maps.google.com/maps?q=29+Washington+Square,+Salem,+MA+01970&z=15&output=embed"
+                  width="100%"
+                  height="240"
+                  style={{ border: 0, display: 'block' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Map showing John Bertram House of Salem at 29 Washington Square"
+                />
+              </div>
+              <div style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
+                <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--navy)', padding: '12px 16px', background: 'var(--off-white)' }}>John Bertram House of Swampscott</div>
+                <iframe
+                  src="https://maps.google.com/maps?q=565+Humphrey+Street,+Swampscott,+MA+01907&z=15&output=embed"
+                  width="100%"
+                  height="240"
+                  style={{ border: 0, display: 'block' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Map showing John Bertram House of Swampscott at 565 Humphrey Street"
+                />
+              </div>
             </div>
 
             <div>

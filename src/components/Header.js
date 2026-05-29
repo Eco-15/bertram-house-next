@@ -17,7 +17,7 @@ const navLinks = [
       { href: '/testimonials', label: 'Testimonials' },
     ],
   },
-  { href: '/life', label: 'Photo Tour' },
+  { href: '/life', label: 'Photo Gallery' },
   {
     href: '/residences',
     label: 'Residences',
@@ -60,7 +60,7 @@ export default function Header() {
             <img
               src="/images/jbh-logo.png"
               alt="John Bertram Homes"
-              style={{ height: '80px', width: 'auto' }}
+              className="logo-img"
             />
           </Link>
           <nav aria-label="Primary navigation">
