@@ -38,10 +38,10 @@ const salemTeam = [
   { name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg' },
   { name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1.jpg' },
   { name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1.jpg' },
-  { name: 'John', title: 'Maintenance', initials: 'J' },
 ];
 
 const swampscottTeam = [
+  { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
   { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
   { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
   { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
@@ -54,13 +54,13 @@ const board = [
   'Susan Syversen, Treasurer',
   'Cathy Favreau, Secretary',
   'Jonathan Curtis',
-  'Lisa DiGianni',
+  'Jessica Demmerly',
   'Susan Maciewiczs',
 ];
 
 const faqs = [
   { q: 'Who should I contact about availability?', a: 'Kelly Domeniconi, our Director of Sales, is the best first contact for tours, availability, and move-in questions. You can also call either community directly: Salem at (978) 744-1002 or Swampscott at (781) 595-1991.' },
-  { q: 'Who coordinates resident care?', a: 'Each community has its own Assisted Living Coordinator and Wellness team who oversee care plans and daily support. They work closely with each resident’s personal physician and family.' },
+  { q: 'Who coordinates resident care?', a: 'Care coordination is a collaborative process led by our Assisted Living Coordinators, in partnership with the Resident Care Director, Wellness Team, residents, and their families. From the initial assessment through day-to-day support, our team works together to understand each resident’s routines, preferences, care needs, and goals. The Assisted Living Coordinators help serve as a key point of connection, making sure services are organized, communication stays clear, and each resident receives the right level of support. Our Resident Care Director and Wellness Team oversee clinical and personal care needs, while family members are encouraged to stay involved and informed. As needs change, the care plan can be reviewed and adjusted so residents continue to receive personalized, appropriate support in a comfortable and familiar environment.' },
   { q: 'Does each location have its own leadership team?', a: 'Yes. Salem and Swampscott each have a dedicated Executive Director and on-site team. Robert Wasserman serves as President of John Bertram Homes overall and Executive Director of the Swampscott community.' },
   { q: 'Who oversees wellness and daily care?', a: 'At Salem, MaryAnne Thompson serves as Wellness Nurse. At Swampscott, the Assisted Living Coordinator and Reminiscence Coordinator lead daily care for assisted living and memory care residents respectively.' },
   { q: 'Who supports activities and dining?', a: 'Each community has a dedicated Activities lead and Dining Service Coordinator who shape daily life, from meal experience to programming.' },

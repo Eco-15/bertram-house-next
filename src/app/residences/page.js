@@ -22,7 +22,7 @@ export default function ResidencesPage() {
           <div className="properties-grid">
             <FadeIn tag="article" className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem — historic Federalist home" />
+                <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem — historic Federalist home" />
                 <span className="property-badge">Est. 1990 — MA&apos;s First</span>
               </div>
               <div className="property-card-body">
@@ -46,7 +46,7 @@ export default function ResidencesPage() {
               </div>
               <div className="property-card-body">
                 <h3>John Bertram House of Swampscott</h3>
-                <p>Exceptional senior living just one block from the ocean on Boston&apos;s beautiful North Shore — 84 suites with ocean access within 10 minutes walking distance.</p>
+                <p>Exceptional senior living just one block from the ocean on Boston&apos;s beautiful North Shore — 59 residences with ocean access within 10 minutes walking distance.</p>
                 <div className="property-meta">
                   <a href="tel:7815951991">(781) 595-1991</a>
                 </div>

@@ -47,6 +47,14 @@ export const SALEM_BUSINESS = {
     postalCode: '01970',
     addressCountry: 'US',
   },
+  // NOTE: Approximate coordinates for 29 Washington Square (across from Salem Common).
+  // Confirm/replace with the exact lat/long from the Google Business Profile.
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 42.5215,
+    longitude: -70.8925,
+  },
+  hasMap: 'https://maps.google.com/?q=29+Washington+Square,+Salem,+MA+01970',
   parentOrganization: {
     '@type': 'NGO',
     name: 'John Bertram Homes',
@@ -69,6 +77,14 @@ export const SWAMPSCOTT_BUSINESS = {
     postalCode: '01907',
     addressCountry: 'US',
   },
+  // NOTE: Approximate coordinates for 565 Humphrey Street (one block from the ocean).
+  // Confirm/replace with the exact lat/long from the Google Business Profile.
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 42.4730,
+    longitude: -70.9120,
+  },
+  hasMap: 'https://maps.google.com/?q=565+Humphrey+Street,+Swampscott,+MA+01907',
   parentOrganization: {
     '@type': 'NGO',
     name: 'John Bertram Homes',

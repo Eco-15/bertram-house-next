@@ -26,6 +26,40 @@ export default function DonatePage() {
         </div>
       </section>
 
+      {/*
+        TODO(client): Drop the financial/donation widget embed here.
+        Paste the provider's <iframe>/<script> embed code (e.g. Givebutter, DonorBox,
+        Classy, or your processor) inside the bordered container below, replacing the
+        placeholder. The section heading and layout are already styled to match the site.
+      */}
+      <section className="section">
+        <div className="container">
+          <FadeIn className="section-header">
+            <p className="eyebrow">Give Online</p>
+            <h2>Make a Secure Online Gift</h2>
+            <p>Use the secure form below to make a one-time or recurring tax-deductible donation.</p>
+            <div className="divider"></div>
+          </FadeIn>
+          <FadeIn style={{ maxWidth: '720px', margin: '0 auto' }}>
+            <div
+              id="donation-widget"
+              style={{
+                background: 'var(--off-white)',
+                border: '1px dashed #c9c9c9',
+                borderRadius: '12px',
+                padding: '48px 24px',
+                textAlign: 'center',
+                color: '#777',
+              }}
+            >
+              {/* Replace this placeholder with the donation widget embed code. */}
+              <p style={{ marginBottom: '12px', fontWeight: 600, color: '#555' }}>Online donation widget will appear here.</p>
+              <p style={{ fontSize: '0.9rem' }}>In the meantime, you can give by <a href="tel:7815951991">phone</a>, by mail, or in person — details above.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       <section className="section section-light">
         <div className="container">
           <FadeIn className="section-header">

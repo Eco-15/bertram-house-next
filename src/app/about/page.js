@@ -113,7 +113,7 @@ export default function AboutPage() {
           <FadeIn className="properties-grid">
             <div className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem" />
+                <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem" />
                 <span className="property-badge">Est. 1990 — MA&apos;s First</span>
               </div>
               <div className="property-card-body">
@@ -133,7 +133,7 @@ export default function AboutPage() {
               </div>
               <div className="property-card-body">
                 <h3>John Bertram House of Swampscott</h3>
-                <p>Exceptional senior living just one block from the ocean on Boston&apos;s beautiful North Shore. 59 suites with stunning sea views.</p>
+                <p>Exceptional senior living just one block from the ocean on Boston&apos;s beautiful North Shore. 59 residences with stunning sea views.</p>
                 <div className="property-meta"><a href="tel:7815951991" style={{ color: 'var(--teal)' }}>(781) 595-1991</a></div>
               </div>
               <div className="property-card-footer">

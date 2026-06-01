@@ -57,11 +57,11 @@ const overview = (
 
 const suites = (
   <div>
-    <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222', marginBottom: '12px' }}>Our Suites</h2>
-    <p style={{ color: '#555', maxWidth: '720px', marginBottom: '32px' }}>John Bertram House of Salem offers a variety of thoughtfully designed suites within our historic Federalist home. Each suite is unique — reflecting the character of the original 19th-century architecture — while providing modern comfort and accessibility.</p>
+    <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222', marginBottom: '12px' }}>Our Residences</h2>
+    <p style={{ color: '#555', maxWidth: '720px', marginBottom: '32px' }}>John Bertram House of Salem offers a variety of thoughtfully designed residences within our historic Federalist home. Each residence is unique — reflecting the character of the original 19th-century architecture — while providing modern comfort and accessibility.</p>
     <div className="callout-box" style={{ maxWidth: '720px' }}>
-      <h3>Suite Information Coming Soon</h3>
-      <p>We&apos;re preparing detailed information and photography of our suite options. Please contact us directly to learn about availability, layouts, and pricing.</p>
+      <h3>Residence Information Coming Soon</h3>
+      <p>We&apos;re preparing detailed information and photography of our residence options. Please contact us directly to learn about availability, layouts, and pricing.</p>
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '12px' }}>
         <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
         <a href="tel:9787441002" className="btn btn-navy">Call (978) 744-1002</a>
@@ -189,7 +189,6 @@ const team = (
         <div className="leader-avatar"><img src="/images/staff/SarahSterling.jpg" alt="Sarah Sterling" /></div>
         <h4>Sarah Sterling</h4>
         <p className="leader-title">Executive Director</p>
-        <a className="leader-email" href="mailto:ssterling@bertramhouse.org">ssterling@bertramhouse.org</a>
       </div>
       <div className="leader-card">
         <div className="leader-avatar"><img src="/images/salem/suzanne1.jpg" alt="Suzanne Carr" /></div>
@@ -200,7 +199,6 @@ const team = (
         <div className="leader-avatar"><img src="/images/staff/MaryAnn.jpg" alt="MaryAnne Thompson" /></div>
         <h4>MaryAnne Thompson</h4>
         <p className="leader-title">Wellness Nurse</p>
-        <a className="leader-email" href="mailto:mthompson@bertramhouse.org">mthompson@bertramhouse.org</a>
       </div>
       <div className="leader-card">
         <div className="leader-avatar"><img src="/images/salem/tracy1.jpg" alt="Tracy" /></div>
@@ -211,11 +209,6 @@ const team = (
         <div className="leader-avatar"><img src="/images/salem/Duncan1.jpg" alt="Duncan" /></div>
         <h4>Duncan</h4>
         <p className="leader-title">Dining Service Coordinator</p>
-      </div>
-      <div className="leader-card">
-        <div className="leader-avatar">J</div>
-        <h4>John</h4>
-        <p className="leader-title">Maintenance</p>
       </div>
     </div>
   </div>
@@ -271,7 +264,7 @@ const directions = (
 
 const tabs = [
   { id: 'overview', label: 'Overview', content: overview },
-  { id: 'suites', label: 'Our Suites', content: suites },
+  { id: 'suites', label: 'Our Residences', content: suites },
   { id: 'wellness', label: 'Services & Wellness', content: wellness },
   { id: 'dining', label: 'Dining', content: dining },
   { id: 'activities', label: 'Activities', content: activities },
@@ -292,6 +285,24 @@ export default function SalemPage() {
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '28px' }}>
             <Link href="/contact?loc=salem" className="btn btn-salem">Schedule a Tour</Link>
             <a href="tel:9787441002" className="btn btn-navy">(978) 744-1002</a>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ background: '#fff', color: 'var(--navy)', padding: '24px 0', borderTop: '1px solid #ececec', borderBottom: '1px solid #ececec' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px', textAlign: 'center' }}>
+            {[
+              { n: '1887', l: 'Established' },
+              { n: '139', l: 'Years of Service' },
+              { n: '25', l: 'Residences' },
+              { n: 'Across From', l: 'Salem Common' },
+            ].map((s) => (
+              <div key={s.l}>
+                <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', fontWeight: 700 }}>{s.n}</div>
+                <div style={{ fontSize: '0.72rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#666' }}>{s.l}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import { LightboxImage } from '@/components/Lightbox';
 
-export const metadata = { title: 'Companion Suites' };
+export const metadata = { title: 'Companion Residences' };
 
 const photos = [
   { src: '/images/swampscott/3rdfloormusic1.jpg', alt: 'Reminiscence neighborhood common area', caption: 'Reminiscence Common Area' },
@@ -16,15 +16,15 @@ export default function SuiteCompanionPage() {
   return (
     <>
       <div className="page-hero">
-        <p className="eyebrow">Our Suites</p>
-        <h1>Companion Suites</h1>
+        <p className="eyebrow">Our Residences</p>
+        <h1>Companion Residences</h1>
         <p>Memory care living at John Bertram House of Swampscott.</p>
       </div>
 
       <section className="section">
         <div className="container">
           <FadeIn>
-            <p style={{ fontSize: '1.05rem', color: '#444', maxWidth: '720px', marginBottom: '40px' }}>Companion suites are available in our Reminiscence memory care neighborhood, offering shared living spaces in a safe, nurturing environment.</p>
+            <p style={{ fontSize: '1.05rem', color: '#444', maxWidth: '720px', marginBottom: '40px' }}>Companion residences are available in our Reminiscence memory care neighborhood, offering shared living spaces in a safe, nurturing environment.</p>
           </FadeIn>
 
           <div className="photo-grid">

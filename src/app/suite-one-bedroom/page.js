@@ -16,7 +16,7 @@ export default function SuiteOneBedroomPage() {
   return (
     <>
       <div className="page-hero">
-        <p className="eyebrow">Our Suites</p>
+        <p className="eyebrow">Our Residences</p>
         <h1>One-Bedroom Apartments</h1>
         <p>The most spacious option at John Bertram House of Swampscott.</p>
       </div>

@@ -15,17 +15,20 @@ const navLinks = [
       { href: '/blog', label: 'Blog' },
       { href: '/faq', label: 'FAQ' },
       { href: '/testimonials', label: 'Testimonials' },
+      { href: '/careers', label: 'Careers' },
+    ],
+  },
+  {
+    href: '/assisted-living',
+    label: 'Living Experiences',
+    dropdown: [
+      { href: '/assisted-living', label: 'Assisted Living' },
+      { href: '/memory-care', label: 'Memory Care' },
+      { href: '/independent-living', label: 'Independent Living' },
+      { href: '/respite-care', label: 'Respite Care' },
     ],
   },
   { href: '/life', label: 'Photo Gallery' },
-  {
-    href: '/residences',
-    label: 'Residences',
-    dropdown: [
-      { href: '/salem', label: 'John Bertram House of Salem' },
-      { href: '/swampscott', label: 'John Bertram House of Swampscott' },
-    ],
-  },
   {
     href: '/support',
     label: 'Support Our Mission',
@@ -36,7 +39,6 @@ const navLinks = [
       { href: '/volunteers', label: 'Volunteer Opportunities' },
     ],
   },
-  { href: '/careers', label: 'Careers' },
   { href: '/contact', label: 'Contact' },
 ];
 

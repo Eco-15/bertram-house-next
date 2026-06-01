@@ -9,7 +9,7 @@ import JsonLd, { ORGANIZATION, SALEM_BUSINESS, SWAMPSCOTT_BUSINESS } from '@/com
 const heroImages = [
   '/images/swampscott/exterior1.jpg',
   '/images/swampscott/1stdining6.jpg',
-  '/images/swampscott/library1.jpg',
+  '/images/salem/stairs3.jpg',
   '/images/swampscott/1stdining5.jpg',
   '/images/swampscott/sunroom1.jpg',
   '/images/swampscott/exterior8.jpg',
@@ -93,7 +93,7 @@ export default function Home() {
             </div>
             <div className="stat-item">
               <div className="number"><Counter target={84} /></div>
-              <div className="label">Resident Suites</div>
+              <div className="label">Residences</div>
             </div>
             <div className="stat-item">
               <div className="number"><Counter target={1887} /></div>
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="properties-grid">
             <FadeIn tag="article" className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem — historic Federalist home" />
+                <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem — historic Federalist home" />
                 <span className="property-badge">Established 1887 – On the Salem Common</span>
               </div>
               <div className="property-card-body">
@@ -141,7 +141,7 @@ export default function Home() {
               </div>
               <div className="property-card-body">
                 <h3>John Bertram House of Swampscott</h3>
-                <p>Exceptional senior living just one block from the ocean on Boston's beautiful North Shore. 84 suites with ocean access within 10 minutes walking distance.</p>
+                <p>Exceptional senior living just one block from the ocean on Boston's beautiful North Shore. 59 residences with ocean access within 10 minutes walking distance.</p>
                 <div className="property-meta"><a href="tel:7815951991">(781) 595-1991</a></div>
                 <div className="property-meta">
                   <a href="https://maps.google.com/?q=565+Humphrey+Street,+Swampscott,+MA+01907" target="_blank" rel="noopener noreferrer">565 Humphrey St., Swampscott, MA 01907</a>
@@ -188,7 +188,7 @@ export default function Home() {
               <Link href="/about" className="btn btn-navy">Read Our History</Link>
             </FadeIn>
             <FadeIn className="image-block">
-              <img src="/images/salem/exterior1.jpg" alt="John Bertram House of Salem" style={{ height: '380px', objectFit: 'cover', width: '100%' }} />
+              <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem" style={{ height: '380px', objectFit: 'cover', width: '100%' }} />
             </FadeIn>
           </div>
         </div>

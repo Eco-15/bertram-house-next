@@ -5,7 +5,7 @@ import JsonLd, { breadcrumbSchema, SWAMPSCOTT_BUSINESS } from '@/components/Json
 export const metadata = {
   title: 'John Bertram House of Swampscott — Assisted Living & Memory Care',
   description:
-    'Assisted living and memory care one block from the ocean at 565 Humphrey Street, Swampscott, MA. 59 suites and a dedicated Reminiscence neighborhood for Alzheimer’s and memory loss.',
+    'Assisted living and memory care one block from the ocean at 565 Humphrey Street, Swampscott, MA. 59 residences and a dedicated Reminiscence neighborhood for Alzheimer’s and memory loss.',
   alternates: { canonical: 'https://bertramhouse.org/swampscott' },
 };
 
@@ -15,7 +15,7 @@ const overview = (
       <div className="content-block">
         <h2>Exceptional Senior Living by the Sea</h2>
         <p>John Bertram House of Swampscott offers an unparalleled assisted living experience just one block from the ocean on beautiful Humphrey Street — often described as feeling &quot;more like a bed and breakfast than a resort or hospital.&quot;</p>
-        <p>Established in 1997 on the former site of the historic New Ocean House Hotel, our community brings together the warmth of a family home and the resources of an expertly managed senior living community. With <strong>59 beautifully appointed suites</strong>, ocean access within five minutes, and a team of dedicated, experienced caregivers, life here is truly exceptional.</p>
+        <p>Established in 1997 on the former site of the historic New Ocean House Hotel, our community brings together the warmth of a family home and the resources of an expertly managed senior living community. With <strong>59 beautifully appointed residences</strong>, ocean access within five minutes, and a team of dedicated, experienced caregivers, life here is truly exceptional.</p>
         <p>We are managed with the expertise of <strong>Sunrise Senior Living</strong>, founded in 1981, bringing decades of professional senior care to our community while preserving the intimate, personal character that makes John Bertram Homes unique.</p>
       </div>
       <div className="image-block">
@@ -68,14 +68,14 @@ const overview = (
 
 const suites = (
   <>
-    <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222', marginBottom: '8px' }}>Our Suites &amp; Common Areas</h2>
-    <p style={{ color: '#666', marginBottom: '40px' }}>59 total suites in three styles, plus beautifully appointed common areas that make every day feel like home.</p>
+    <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222', marginBottom: '8px' }}>Our Residences &amp; Common Areas</h2>
+    <p style={{ color: '#666', marginBottom: '40px' }}>59 total residences in three styles, plus beautifully appointed common areas that make every day feel like home.</p>
 
     <div className="suite-cards" style={{ marginBottom: '48px' }}>
       {[
         { img: '/images/swampscott/room1.jpg', alt: 'One-bedroom living area', title: 'One-Bedroom Apartments', tagline: 'Most spacious option', body: 'Separate living room, private bedroom, bathroom, and kitchenette with one or two closets. Select first-floor units offer deck or patio access for outdoor enjoyment.' },
-        { img: '/images/swampscott/2ndroom1.jpg', alt: 'Studio suite', title: 'Studio Suites', tagline: 'Efficient & comfortable', body: 'Private bedroom, bathroom, kitchenette, and ample closet space. Select first-floor studios feature deck access. A cozy, manageable space for comfortable living.' },
-        { img: '/images/swampscott/room3.jpg', alt: 'Companion suite entrance', title: 'Companion Suites', tagline: 'Memory care neighborhood', body: 'Available exclusively in our Reminiscence (memory care) neighborhood. Shared living arrangements to promote social connection and emotional growth for memory care residents.' },
+        { img: '/images/swampscott/2ndroom1.jpg', alt: 'Studio residence', title: 'Studio Residences', tagline: 'Efficient & comfortable', body: 'Private bedroom, bathroom, kitchenette, and ample closet space. Select first-floor studios feature deck access. A cozy, manageable space for comfortable living.' },
+        { img: '/images/swampscott/room3.jpg', alt: 'Companion residence entrance', title: 'Companion Residences', tagline: 'Memory care neighborhood', body: 'Available exclusively in our Reminiscence (memory care) neighborhood. Shared living arrangements to promote social connection and emotional growth for memory care residents.' },
       ].map((s) => (
         <div key={s.title} className="suite-card">
           <img className="suite-img" src={s.img} alt={s.alt} />
@@ -219,15 +219,91 @@ const directions = (
         <h4>From the North</h4>
         <p>Take Route 128 South to Exit 25 (Route 114 East/Salem). Follow signs through Salem to Salem State College; turn right on Route 1A toward Swampscott. At Vinnin Square, turn left then immediately right onto Salem Street. Follow to Humphrey Street; facility is ½ mile on the left.</p>
       </div>
+
+      <div style={{ background: 'var(--off-white)', color: '#222', borderRadius: '8px', overflow: 'hidden', border: '1px solid #ececec', marginTop: '16px' }}>
+        <iframe
+          title="John Bertram House of Swampscott — Map"
+          src="https://maps.google.com/maps?q=565+Humphrey+Street,+Swampscott,+MA+01907&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="320"
+          style={{ border: 0, display: 'block' }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
+        <div style={{ padding: '16px 20px', textAlign: 'center' }}>
+          <a href="https://maps.google.com/?q=565+Humphrey+Street,+Swampscott,+MA+01907" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--teal)', fontWeight: 600 }}>Open in Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const dining = (
+  <div>
+    <div className="two-col" style={{ marginBottom: '48px' }}>
+      <div className="content-block">
+        <h2>Dining by the Sea</h2>
+        <p>Meals at John Bertram House of Swampscott are a highlight of every day. Our dining room — &quot;often compared to a country inn&quot; — sets a warm, elegant stage with attentive service and the company of friends and neighbors.</p>
+        <p>Our chefs prepare fresh, home-style meals daily, accommodating special dietary needs and preferences as part of each resident&apos;s personalized service plan. Through our <strong>Universal Caregiver Model</strong>, the same caring team that serves your meals knows you by name.</p>
+        <p>Three meals a day plus snacks are included, with hydration and fresh options available throughout the day.</p>
+      </div>
+      <div className="image-block">
+        <img src="/images/swampscott/1stdining1.jpg" alt="Elegant country-inn style dining room at John Bertram House of Swampscott" />
+      </div>
+    </div>
+
+    <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--teal)', marginBottom: '24px' }}>Daily Meal Schedule</h3>
+    <div className="meal-cards">
+      {[
+        { title: 'Breakfast', desc: 'A flexible morning with coffee, tea, fresh fruit, cereals, eggs, and breakfast favorites — start your day your way.' },
+        { title: 'Lunch', desc: 'A hearty midday meal with chef-prepared entrées, fresh vegetables, salads, and desserts served in our elegant dining room.' },
+        { title: 'Dinner', desc: 'A lighter evening meal of soups, sandwiches, comforting entrées, and sweet finishes shared with friends.' },
+        { title: 'Daily Snacks', desc: 'Fresh fruit, baked goods, and refreshments available throughout the day in our common areas.' },
+      ].map((m) => (
+        <div key={m.title} className="meal-card">
+          <h4>{m.title}</h4>
+          <p>{m.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const swampscottTeam = [
+  { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
+  { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
+  { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
+  { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
+  { name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' },
+  { name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg' },
+];
+
+const team = (
+  <div>
+    <div className="section-header" style={{ marginBottom: '40px' }}>
+      <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222' }}>Meet Our Team</h2>
+      <p style={{ color: '#666', maxWidth: '560px', margin: '12px auto 0' }}>Our dedicated Swampscott team supports both assisted living and Reminiscence memory care residents.</p>
+    </div>
+    <div className="team-grid">
+      {swampscottTeam.map((m) => (
+        <div key={m.name} className="leader-card">
+          <div className="leader-avatar">{m.img ? <img src={m.img} alt={m.name} /> : m.initials}</div>
+          <h4>{m.name}</h4>
+          <p className="leader-title">{m.title}</p>
+        </div>
+      ))}
     </div>
   </div>
 );
 
 const tabs = [
   { id: 'overview', label: 'Overview', content: overview },
-  { id: 'suites', label: 'Our Suites', content: suites },
-  { id: 'services', label: 'Services & Amenities', content: services },
+  { id: 'suites', label: 'Our Residences', content: suites },
+  { id: 'services', label: 'Services & Wellness', content: services },
+  { id: 'dining', label: 'Dining', content: dining },
   { id: 'activities', label: 'Activities', content: activities },
+  { id: 'team', label: 'Our Team', content: team },
   { id: 'directions', label: 'Directions', content: directions },
 ];
 
@@ -240,7 +316,7 @@ export default function SwampscottPage() {
         <div style={{ position: 'relative', zIndex: 1 }}>
           <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', color: 'var(--teal)', marginBottom: '12px' }}>Exceptional Senior Living on Boston&apos;s North Shore</p>
           <h1>John Bertram House of Swampscott</h1>
-          <p>One block from the ocean — 59 beautifully appointed suites with personalized care, vibrant activities, and ocean access within 10 minutes walking distance.</p>
+          <p>One block from the ocean — 59 beautifully appointed residences with personalized care, vibrant activities, and ocean access within 10 minutes walking distance.</p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '28px' }}>
             <Link href="/contact?loc=swampscott" className="btn btn-swampscott">Schedule a Tour</Link>
             <a href="tel:7815951991" className="btn btn-navy">(781) 595-1991</a>
@@ -254,7 +330,7 @@ export default function SwampscottPage() {
             {[
               { n: '1997', l: 'Established' },
               { n: '29', l: 'Years of Service' },
-              { n: '59', l: 'Suites' },
+              { n: '59', l: 'Residences' },
               { n: '1 Block', l: 'From the Ocean' },
             ].map((s) => (
               <div key={s.l}>

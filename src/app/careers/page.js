@@ -3,8 +3,8 @@ import FadeIn from '@/components/FadeIn';
 
 export const metadata = { title: 'Careers' };
 
-const INDEED_URL = 'https://www.indeed.com/cmp/Bertram-House-of-Swampscott';
-const LINKEDIN_URL = 'https://www.linkedin.com/jobs/search/?keywords=John%20Bertram%20House';
+const INDEED_URL = 'https://www.indeed.com/cmp/Bertram-House-of-Swampscott-1/jobs';
+const LINKEDIN_URL = 'https://www.linkedin.com/company/john-bertram-house/jobs/';
 
 export default function CareersPage() {
   return (
