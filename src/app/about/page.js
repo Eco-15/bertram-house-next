@@ -53,17 +53,17 @@ export default function AboutPage() {
           <FadeIn style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'start' }}>
             <div>
               <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.3rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--navy)', marginBottom: '20px' }}>Captain John Bertram</h3>
-              <img
-                src="/images/captain-john-bertram.png"
-                alt="Portrait of Captain John Bertram, founder of the John Bertram Homes legacy"
-                style={{ width: '220px', maxWidth: '45%', height: 'auto', float: 'left', marginRight: '24px', marginBottom: '12px', borderRadius: '6px', border: '1px solid #ececec' }}
-              />
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>Born on the Isle of Jersey in the Channel Islands, Captain John Bertram arrived in America in 1807 as a young boy of ten aboard the ship <em>Alert</em>. His family settled in Salem, Massachusetts, where he began his remarkable journey from cabin boy earning $5 a month to one of Salem&apos;s most celebrated sea captains and philanthropists.</p>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>As a captain, he accumulated considerable wealth through trading voyages to South Africa, Zanzibar, Madagascar, and Brazil, and later invested in North American railways. His philanthropic spirit led him to found Salem Hospital and establish programs for women and children.</p>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>In 1887, he created the <strong>Salem Home for Aged Men</strong> — providing shelter, meals, and community to older men without family, especially retired sailors. His legacy continues to inspire the John Bertram Homes community today.</p>
               <div style={{ borderLeft: '4px solid var(--navy)', padding: '20px 24px', background: 'var(--off-white)', borderRadius: '0 6px 6px 0', margin: '24px 0' }}>
                 <p style={{ fontStyle: 'italic', color: '#444', fontSize: '0.95rem', lineHeight: 1.8 }}>Captain Bertram&apos;s legacy of caring for the elderly continues to this day in the communities that bear his name — a living testament to a life of service and generosity.</p>
               </div>
+              <img
+                src="/images/captain-john-bertram.png"
+                alt="Portrait of Captain John Bertram, founder of the John Bertram Homes legacy"
+                style={{ width: '220px', maxWidth: '60%', height: 'auto', display: 'block', marginTop: '24px', borderRadius: '6px', border: '1px solid #ececec' }}
+              />
             </div>
 
             <div>

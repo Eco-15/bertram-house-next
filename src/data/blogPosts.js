@@ -1,0 +1,160 @@
+// Blog content for John Bertram Homes.
+// NOTE: Evergreen placeholder posts for demo purposes.
+// Replace `body` content with the client's copy from the blog doc when provided.
+//
+// Each post body is an array of blocks rendered by /blog/[slug]/page.js:
+//   { type: 'p',  text }            — paragraph
+//   { type: 'h2', text }            — section heading
+//   { type: 'ul', items: [...] }    — bulleted list
+//   { type: 'quote', text, cite }   — pull quote
+
+export const posts = [
+  {
+    slug: '5-questions-to-ask-when-touring-assisted-living',
+    date: 'May 2026',
+    readTime: '5 min read',
+    title: '5 Questions to Ask When Touring an Assisted Living Community',
+    img: '/images/swampscott/lobby1.jpg',
+    alt: 'Welcoming foyer and living room at John Bertram House of Swampscott',
+    desc: 'Touring senior living can feel overwhelming. Here are the five questions that reveal the most about the quality of care — and how John Bertram Homes answers each one.',
+    body: [
+      { type: 'p', text: 'Choosing an assisted living community is one of the most important decisions a family will make. A tour is your best chance to look past the brochure and see how a community really works — but only if you know what to ask. After welcoming families to the North Shore since 1887, we’ve learned which questions tell you the most. Here are five to bring with you, and how we answer each one at John Bertram Homes.' },
+      { type: 'h2', text: '1. What is the staff-to-resident ratio, and how is care personalized?' },
+      { type: 'p', text: 'Numbers matter, but so does philosophy. Ask how care plans are built and how often they’re reviewed. At our Salem and Swampscott communities, every resident has an individualized care plan developed with their family and updated as needs change — so support grows with the person, never the other way around.' },
+      { type: 'h2', text: '2. How do you handle changing care needs over time?' },
+      { type: 'p', text: 'A good community plans for the future. Ask what happens if a loved one needs more help, or begins to experience memory loss. Our Swampscott location includes a dedicated Reminiscence memory care neighborhood, so many residents can transition without leaving the community they call home.' },
+      { type: 'h2', text: '3. What does a typical day look like?' },
+      { type: 'p', text: 'Activities aren’t filler — they’re the heart of community life. Ask to see a real activity calendar and notice whether residents look engaged. From morning exercise and music to outings and seasonal celebrations, our programming is designed to bring residents together every single day.' },
+      { type: 'h2', text: '4. Tell me about dining.' },
+      { type: 'p', text: 'Meals are a highlight of the day. Ask whether food is made fresh on-site, how dietary needs are accommodated, and — ideally — stay for lunch. Our chef-prepared meals are served restaurant-style, with seasonal menus and options for every dietary requirement.' },
+      { type: 'h2', text: '5. Are you for-profit or non-profit?' },
+      { type: 'p', text: 'This shapes every other answer. As a 501(c)(3) non-profit, our mission — not margins — drives every decision we make. Reinvestment goes back into care, staff, and the community rather than to shareholders.' },
+      { type: 'quote', text: 'The best tour question is simply: “Can I stay for a meal and talk to residents?” The answer tells you everything.', cite: 'The John Bertram Homes team' },
+      { type: 'p', text: 'Ready to see for yourself? We’d love to show you around. Schedule a tour and bring your questions — all of them.' },
+    ],
+  },
+  {
+    slug: 'what-makes-memory-care-different',
+    date: 'May 2026',
+    readTime: '4 min read',
+    title: 'What Makes Memory Care Different',
+    img: '/images/swampscott/3rdfloormusic1.jpg',
+    alt: 'Music and activity space in the Swampscott Reminiscence neighborhood',
+    desc: 'Our dedicated Reminiscence neighborhood in Swampscott is designed around structure, familiarity, and dignity. Here’s how memory care differs from assisted living.',
+    body: [
+      { type: 'p', text: 'Families often ask us what really separates memory care from assisted living. Both provide support with daily living, but memory care is built from the ground up for people living with Alzheimer’s and other forms of dementia. The difference is in the design, the staff training, and the daily rhythm — all centered on structure, familiarity, and dignity.' },
+      { type: 'h2', text: 'A space designed to reduce confusion' },
+      { type: 'p', text: 'Our Reminiscence neighborhood in Swampscott is purpose-built. Clear sightlines, consistent layouts, secure outdoor access, and gentle visual cues all help residents feel oriented and calm. A familiar environment lowers anxiety and supports independence for as long as possible.' },
+      { type: 'h2', text: 'Specially trained staff' },
+      { type: 'p', text: 'Caring for someone with memory loss calls for a different skill set. Our team is trained in dementia-specific approaches — meeting residents where they are, communicating with patience, and redirecting with warmth rather than correction.' },
+      { type: 'h2', text: 'Structure that brings comfort' },
+      { type: 'p', text: 'Predictable routines are reassuring. Meals, activities, and rest follow a steady rhythm, while programming like music, art, and reminiscence therapy taps into long-term memory and emotion.' },
+      { type: 'ul', items: [
+        'Music sessions that reconnect residents with cherished songs',
+        'Sensory and reminiscence activities that spark positive memories',
+        'Small-group engagement that fosters genuine connection',
+        'Secure spaces that allow safe, independent movement',
+      ] },
+      { type: 'quote', text: 'Memory care isn’t about doing things for people — it’s about creating a world where they can still do for themselves.', cite: 'The John Bertram Homes team' },
+      { type: 'p', text: 'If your family is beginning to navigate a dementia diagnosis, you don’t have to do it alone. Reach out to learn how our Reminiscence neighborhood can help.' },
+    ],
+  },
+  {
+    slug: 'a-day-in-the-life',
+    date: 'April 2026',
+    readTime: '4 min read',
+    title: 'A Day in the Life at John Bertram Homes',
+    img: '/images/swampscott/1stdining6.jpg',
+    alt: 'Residents sharing a meal together in the dining room',
+    desc: 'From morning coffee in the sunroom to evening entertainment, see how a typical day unfolds across our Salem and Swampscott communities.',
+    body: [
+      { type: 'p', text: 'What does daily life actually feel like in an assisted living community? It’s a question every family asks — and the honest answer is that no two days look exactly alike. Still, there’s a comforting rhythm to life here. Come along for a typical day.' },
+      { type: 'h2', text: 'Morning' },
+      { type: 'p', text: 'The day begins gently. Residents wake on their own schedule, with care staff nearby for those who’d like a hand. Fresh coffee and a hot breakfast are served in the dining room, and the sunroom fills with early risers reading the paper or chatting with friends.' },
+      { type: 'h2', text: 'Midday' },
+      { type: 'p', text: 'Mornings often include exercise, a current-events group, or a craft. Lunch is the social anchor of the day — chef-prepared, served restaurant-style, and rarely rushed. Afterward, some residents rest while others head out for a scheduled outing or a walk in the gardens.' },
+      { type: 'h2', text: 'Afternoon' },
+      { type: 'p', text: 'Afternoons bring music, games, visiting performers, or simply time with family. Our activity calendar is full but never forced — residents choose what speaks to them.' },
+      { type: 'h2', text: 'Evening' },
+      { type: 'p', text: 'Dinner is followed by quieter pleasures: a movie, live entertainment, or conversation in the living room. As the evening winds down, staff remain on hand around the clock, so residents and families alike can rest easy.' },
+      { type: 'quote', text: 'It’s not a facility — it’s home, with friends down the hall and help whenever you need it.', cite: 'The John Bertram Homes team' },
+      { type: 'p', text: 'The best way to understand a day here is to spend one with us. Schedule a visit and see the rhythm for yourself.' },
+    ],
+  },
+  {
+    slug: 'why-non-profit-senior-living-matters',
+    date: 'April 2026',
+    readTime: '5 min read',
+    title: 'Why Non-Profit Senior Living Matters',
+    img: '/images/swampscott/exterior1.jpg',
+    alt: 'Exterior of John Bertram House of Swampscott',
+    desc: 'As a 501(c)(3) serving the North Shore since 1887, our mission — not margins — drives every decision. Here’s why that matters for families.',
+    body: [
+      { type: 'p', text: 'When families compare senior living options, one distinction is easy to overlook but profoundly important: whether a community is run for profit or for mission. John Bertram Homes is a 501(c)(3) non-profit that has served the North Shore since 1887. Here’s why that matters for the people in our care.' },
+      { type: 'h2', text: 'Mission over margins' },
+      { type: 'p', text: 'In a for-profit model, surplus revenue flows to owners or shareholders. In ours, it flows back into the community — into staffing, care, programming, and the buildings our residents call home. Every decision is measured against our mission, not a quarterly target.' },
+      { type: 'h2', text: 'Stability and history' },
+      { type: 'p', text: 'We’ve been here for well over a century. That longevity reflects a commitment that outlasts market cycles and ownership changes. Families can plan for the future knowing we plan to be here for it too.' },
+      { type: 'h2', text: 'Community support, community benefit' },
+      { type: 'p', text: 'As a non-profit, we’re supported by donors, volunteers, and partners who believe in dignified aging on the North Shore. That generosity lets us do more — and it’s why giving and volunteering are woven into the fabric of who we are.' },
+      { type: 'ul', items: [
+        'Reinvestment into resident care and staff, not shareholder returns',
+        'A 135+ year track record of stability and service',
+        'Charitable support that extends what we’re able to offer',
+        'Accountability to a community board and a public mission',
+      ] },
+      { type: 'quote', text: 'When your mission is people instead of profit, every choice gets simpler — you just ask what’s best for the resident.', cite: 'The John Bertram Homes team' },
+      { type: 'p', text: 'Want to learn more about our mission, or support it? Explore our giving and volunteer opportunities, or reach out to schedule a visit.' },
+    ],
+  },
+  {
+    slug: 'activities-that-bring-residents-together',
+    date: 'March 2026',
+    readTime: '4 min read',
+    title: 'Activities That Bring Residents Together',
+    img: '/images/swampscott/3rdfloortvroom1.jpg',
+    alt: 'Residents gathering in a common area',
+    desc: 'Music, exercise, outings, and games aren’t filler — they’re how friendships form. A look at the programs that shape community life.',
+    body: [
+      { type: 'p', text: 'Ask any resident what they love most about life here, and few will mention the apartment or even the meals. They’ll talk about the people. Friendships are what turn a community into a home — and our activities are how those friendships begin.' },
+      { type: 'h2', text: 'Movement and wellness' },
+      { type: 'p', text: 'Gentle exercise classes, chair yoga, and group walks keep bodies moving and spirits up. Done together, they become a daily social ritual as much as a wellness routine.' },
+      { type: 'h2', text: 'Music and the arts' },
+      { type: 'p', text: 'Live performers, sing-alongs, and art projects light up our common spaces. Music in particular has a special power to connect — across generations, abilities, and memories.' },
+      { type: 'h2', text: 'Outings and connection' },
+      { type: 'p', text: 'Scenic drives, local outings, and seasonal trips bring the wider North Shore to our residents. Closer to home, games, book clubs, and current-events groups give everyone a reason to gather.' },
+      { type: 'ul', items: [
+        'Exercise and wellness classes that double as social hours',
+        'Live music, sing-alongs, and creative arts',
+        'Group outings around Salem and Swampscott',
+        'Games, clubs, and discussion groups',
+      ] },
+      { type: 'quote', text: 'Activities aren’t something we schedule around community life — they are community life.', cite: 'The John Bertram Homes team' },
+      { type: 'p', text: 'Curious what this month looks like? Take a look at our activity calendars, or schedule a visit to join in.' },
+    ],
+  },
+  {
+    slug: 'welcoming-spring-on-the-north-shore',
+    date: 'March 2026',
+    readTime: '3 min read',
+    title: 'Welcoming Spring on the North Shore',
+    img: '/images/swampscott/exterior5.jpg',
+    alt: 'Gardens and grounds at John Bertram Homes',
+    desc: 'Warmer days mean garden walks, patio gatherings, and seasonal menus. Here’s what residents look forward to as spring arrives in Salem and Swampscott.',
+    body: [
+      { type: 'p', text: 'After a New England winter, few things feel as welcome as the first warm day of spring. Across our Salem and Swampscott communities, the season brings a fresh energy — and a long list of things our residents look forward to.' },
+      { type: 'h2', text: 'Back into the gardens' },
+      { type: 'p', text: 'Our grounds come alive in spring. Garden walks, patio coffee, and afternoons in the sun become daily pleasures. For many residents, simply being outside among the blooms is the highlight of the day.' },
+      { type: 'h2', text: 'Seasonal menus' },
+      { type: 'p', text: 'Spring brings brighter, fresher flavors to the table. Our chefs lean into the season with new menus that make mealtimes something to anticipate.' },
+      { type: 'h2', text: 'Gathering outdoors' },
+      { type: 'p', text: 'Warmer weather means patio gatherings, outdoor entertainment, and visits with family on the grounds. After months indoors, these moments of fresh air and togetherness mean all the more.' },
+      { type: 'quote', text: 'There’s nothing like watching the gardens bloom again — it reminds everyone that there’s always something to look forward to.', cite: 'The John Bertram Homes team' },
+      { type: 'p', text: 'Spring is a wonderful time to visit. Schedule a tour and enjoy our gardens and grounds at their best.' },
+    ],
+  },
+];
+
+export function getPost(slug) {
+  return posts.find((p) => p.slug === slug);
+}
