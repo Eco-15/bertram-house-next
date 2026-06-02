@@ -71,11 +71,13 @@ export default function SupportPage() {
         <div className="container">
           <FadeIn className="two-col">
             <div className="content-block">
-              <p className="eyebrow" style={{ color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', marginBottom: '12px' }}>Why Non-Profit Matters</p>
-              <h2>Mission Over Margin</h2>
-              <p>Non-profit status is more than a tax designation. It’s a structural commitment: every operating decision is guided by what serves residents, families, and our long-term community mission — not investor returns.</p>
-              <p>For families, that means trust. For donors, that means stewardship. For residents, that means dignity, continuity, and a community that exists for them.</p>
-              <p>This page is for both families considering John Bertram Homes and supporters who want to deepen their investment in our mission.</p>
+              <p className="eyebrow" style={{ color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', marginBottom: '12px' }}>Our Mission</p>
+              <h2>Who We Are</h2>
+              <p>John Bertram Homes is a non-sectarian, not-for-profit charitable organization providing exceptional assisted living care to seniors and families on Massachusetts’ North Shore. With communities in Salem and Swampscott, Massachusetts, we combine personalized support, meaningful daily life, strong family communication, and a warm residential environment where residents are treated with dignity, respect, and genuine care.</p>
+              <p>Our legacy began in 1887 with Captain John Bertram’s commitment to serving older adults in the Salem community. Today, that mission continues through two distinguished communities: John Bertram House of Salem, located in a beautifully restored historic Federalist-style home near Salem Common, and John Bertram House of Swampscott, an ocean-side senior living community one block from the water.</p>
+              <p>We offer individualized service plans, daily dining, engaging activities, wellness support, housekeeping, laundry, medication management, and compassionate assistance with daily living. Our Swampscott community also includes a dedicated Reminiscence memory care neighborhood for residents living with Alzheimer’s disease and memory loss.</p>
+              <p>At John Bertram Homes, care is personal. Our team of CNAs, nurses, dining staff, activities professionals, housekeepers, maintenance staff, administrators, volunteers, and leadership work together to create a home-like environment where residents can remain independent while receiving the support they need.</p>
+              <p>We share community news, celebrate our staff, highlight career opportunities, recognize volunteers and donors, and showcase life inside our Salem and Swampscott communities.</p>
             </div>
             <div className="image-block">
               <img
