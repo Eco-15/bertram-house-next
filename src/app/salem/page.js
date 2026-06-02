@@ -109,6 +109,9 @@ const wellness = (
     </div>
 
     <div>
+      <div className="image-block" style={{ marginBottom: '24px' }}>
+        <img src="/images/salem/livingarea1.jpg" alt="Elegant living room and social common area at John Bertram House of Salem" style={{ width: '100%', height: '260px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+      </div>
       <div style={{ background: 'var(--off-white)', borderRadius: '8px', padding: '32px', marginBottom: '24px' }}>
         <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--burgundy)', marginBottom: '16px' }}>Our Wellness Philosophy</h4>
         <p style={{ fontStyle: 'italic', fontSize: '1rem', color: '#444', lineHeight: 1.8, borderLeft: '4px solid var(--burgundy)', paddingLeft: '20px' }}>&quot;The Bertram communities are dedicated to promoting the highest level of Wellness for each of our residents, through a combination of encouraging independence, providing support when needed, and communicating regularly with family members, residents, and each resident&apos;s personal medical team.&quot;</p>
@@ -146,8 +149,8 @@ const dining = (
     <div className="meal-cards">
       {[
         { title: 'Breakfast', desc: 'Flexible schedule with a variety of options including coffee, tea, cereals, toast, fresh fruit, eggs, and breakfast meats. Start your morning your way.' },
-        { title: 'Lunch (Noon)', desc: 'Our main meal of the day features fresh, chef-prepared entrées such as grilled salmon, homemade meatloaf, roasted potatoes, fresh vegetables, salads, and desserts.' },
-        { title: 'Dinner (~5:00 PM)', desc: 'A lighter, satisfying evening meal with hot and cold sandwiches, soups, salads, pot pies, lasagna, turnovers, and ice cream and desserts.' },
+        { title: 'Lunch', desc: 'Our main meal of the day features fresh, chef-prepared entrées such as grilled salmon, homemade meatloaf, roasted potatoes, fresh vegetables, salads, and desserts.' },
+        { title: 'Dinner', desc: 'A lighter, satisfying evening meal with hot and cold sandwiches, soups, salads, pot pies, lasagna, turnovers, and ice cream and desserts.' },
         { title: 'Daily Snacks', desc: "Served in the sunroom throughout the day — from fresh fruit and mini quiches to freshly baked cookies. There's always something delicious available." },
       ].map((m) => (
         <div key={m.title} className="meal-card">
