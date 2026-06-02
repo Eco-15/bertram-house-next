@@ -112,8 +112,8 @@ export default function MemoryCarePage() {
             </FadeIn>
             <FadeIn className="image-block">
               <img
-                src="/images/swampscott/sunroom1.jpg"
-                alt="Bright common space at John Bertram House of Swampscott"
+                src="/images/swampscott/3rdfloortvroom1.jpg"
+                alt="Comfortable lounge in the Reminiscence memory care neighborhood at John Bertram House of Swampscott"
                 style={{ height: '380px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
               />
             </FadeIn>
