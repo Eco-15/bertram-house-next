@@ -47,7 +47,7 @@ const photos = [
 export default function LifePage() {
   return (
     <>
-      <section className="section">
+      <section className="section" style={{ paddingTop: '32px' }}>
         <div className="container">
           <FadeIn className="section-header">
             <span className="eyebrow">Our Communities</span>
