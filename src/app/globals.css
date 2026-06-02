@@ -2312,8 +2312,8 @@ nav > ul > li.has-dropdown:nth-last-child(-n+3):focus-within > .dropdown {
 }
 
 .leader-card .leader-avatar {
-  width: 120px;
-  height: 140px;
+  width: 160px;
+  height: 190px;
   border-radius: 8px;
   background: var(--navy);
   display: flex;

@@ -217,7 +217,7 @@ const team = (
         <p className="leader-title">Assisted Living Coordinator</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar"><img src="/images/staff/MaryAnn.jpg" alt="MaryAnne Thompson" /></div>
+        <div className="leader-avatar"><img src="/images/staff/MaryAnn_head.jpg" alt="MaryAnne Thompson" /></div>
         <h4>MaryAnne Thompson</h4>
         <p className="leader-title">Wellness Nurse</p>
       </div>

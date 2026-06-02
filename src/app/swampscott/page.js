@@ -272,7 +272,7 @@ const dining = (
 
 const swampscottTeam = [
   { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
-  { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
+  { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters_head.jpg' },
   { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
   { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
   { name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' },

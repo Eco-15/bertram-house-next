@@ -11,10 +11,10 @@ export const metadata = {
 };
 
 const seniorLeaders = [
-  { name: 'Robert Wasserman, MPH', title: 'President · Executive Director, Swampscott', img: '/images/staff/RobertWasserman.jpg' },
+  { name: 'Robert Wasserman, MPH', title: 'President', img: '/images/staff/RobertWasserman.jpg' },
   { name: 'Kelly Domeniconi', title: 'Director of Sales', img: '/images/staff/KellyDomeniconi.jpg' },
-  { name: 'Kathy Christopher', title: 'Finance Director', img: '/images/staff/KathyChristopher.jpg' },
-  { name: 'Sarah Sterling', title: 'Compliance Officer · Executive Director, Salem', img: '/images/staff/SarahSterling.jpg' },
+  { name: 'Alda Sharxhi', title: 'Finance Director', img: '/images/staff/KathyChristopher.jpg' },
+  { name: 'Sarah Sterling', title: 'Compliance Officer', img: '/images/staff/SarahSterling.jpg' },
 ];
 
 const trustCards = [
@@ -34,15 +34,15 @@ const trustCards = [
 
 const salemTeam = [
   { name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' },
-  { name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1.jpg' },
-  { name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn.jpg' },
-  { name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1.jpg' },
-  { name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1.jpg' },
+  { name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1_head.jpg' },
+  { name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn_head.jpg' },
+  { name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1_head.jpg' },
+  { name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1_head.jpg' },
 ];
 
 const swampscottTeam = [
   { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
-  { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters.jpg' },
+  { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters_head.jpg' },
   { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
   { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
   { name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' },
@@ -96,12 +96,6 @@ export default function LeadershipPage() {
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
       <JsonLd data={faqSchema(faqs)} />
       <JsonLd data={ORGANIZATION} />
-
-      <section className="section" style={{ paddingBottom: '0', textAlign: 'center' }}>
-        <div className="container">
-          <h1>Our Team</h1>
-        </div>
-      </section>
 
       <section className="section section-light">
         <div className="container">
