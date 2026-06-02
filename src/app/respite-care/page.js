@@ -73,8 +73,8 @@ export default function RespiteCarePage() {
             </div>
             <div className="image-block">
               <img
-                src="/images/swampscott/sunroom1.jpg"
-                alt="Comfortable, sunlit common space at John Bertram House"
+                src="/images/swampscott/3rdfloormusic2.jpg"
+                alt="Residents enjoying a group sing-along activity at John Bertram House"
                 style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
               />
             </div>
