@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
+import Counter from '@/components/Counter';
 
 export const metadata = { title: 'Ways to Give' };
 
@@ -41,33 +42,71 @@ const options = [
   },
 ];
 
+const stats = [
+  { value: 139, suffix: '', label: 'Years of Care' },
+  { value: 2, suffix: '', label: 'Communities' },
+  { value: 1887, suffix: '', label: 'Founded' },
+  { value: 100, suffix: '%', label: 'Non-Profit' },
+];
+
 export default function WaysToGivePage() {
   return (
     <>
-      <div className="page-hero">
-        <p className="eyebrow">Support Our Mission</p>
-        <h1>Ways to Give</h1>
-        <p>There are many ways to support John Bertram Homes and make a lasting impact.</p>
-      </div>
+      <section className="section give-hero">
+        <div className="container">
+          <FadeIn className="two-col">
+            <div className="content-block">
+              <p className="eyebrow">Support Our Mission</p>
+              <h1>Ways to Give</h1>
+              <p>Your generosity helps our residents live with dignity, comfort, and joy — and keeps our non-profit communities thriving for generations to come. However you choose to give, your gift makes a difference.</p>
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                <Link href="/donate" className="btn btn-navy">Donate Now</Link>
+                <Link href="/contact" className="btn btn-outline">Contact Us</Link>
+              </div>
+            </div>
+            <div className="image-block">
+              <img src="/images/giving-hero.jpg" alt="A John Bertram Homes resident smiling while planting tomatoes in the community garden" />
+            </div>
+          </FadeIn>
+        </div>
+      </section>
 
-      <section className="section">
+      <section className="section section-light">
         <div className="container">
           <FadeIn className="section-header">
             <p className="eyebrow">Choose Your Path</p>
             <h2>How to Give</h2>
             <div className="divider"></div>
           </FadeIn>
-          <FadeIn className="giving-list">
+          <FadeIn className="giving-grid">
             {options.map((o) => (
-              <div key={o.title} className="giving-row">
-                <div className="giving-row-icon">{o.icon}</div>
-                <div className="giving-row-body">
-                  <h4>{o.title}</h4>
-                  <p>{o.desc}</p>
-                </div>
-                <Link href={o.href} className="btn btn-navy" style={{ fontSize: '0.75rem', padding: '10px 18px' }}>{o.cta}</Link>
+              <div key={o.title} className="giving-card">
+                <div className="giving-icon">{o.icon}</div>
+                <h4>{o.title}</h4>
+                <p>{o.desc}</p>
+                <Link href={o.href} className="btn btn-navy" style={{ marginTop: '20px', fontSize: '0.72rem', padding: '10px 18px' }}>{o.cta}</Link>
               </div>
             ))}
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <FadeIn className="section-header">
+            <p className="eyebrow">Your Gift at Work</p>
+            <h2>A Legacy of Care</h2>
+            <div className="divider"></div>
+          </FadeIn>
+          <FadeIn className="stats-bar">
+            <div className="stats-grid">
+              {stats.map((s) => (
+                <div key={s.label} className="stat-item">
+                  <div className="number"><Counter target={s.value} suffix={s.suffix} /></div>
+                  <div className="label">{s.label}</div>
+                </div>
+              ))}
+            </div>
           </FadeIn>
         </div>
       </section>

@@ -1923,6 +1923,30 @@ nav > ul > li.has-dropdown:nth-last-child(-n+3):focus-within > .dropdown {
 
 /* ── GIVING METHOD CARDS ── */
 
+/* ── WAYS TO GIVE — SPLIT HERO ── */
+.give-hero { padding-top: 56px; }
+
+.give-hero h1 {
+  font-size: clamp(2rem, 4.2vw, 2.9rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.give-hero .content-block p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.give-hero .image-block img {
+  height: 460px;
+  object-position: center 18%;
+}
+
 .giving-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
