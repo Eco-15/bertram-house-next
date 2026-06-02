@@ -1,11 +1,21 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
+import FAQ from '@/components/FAQ';
+import JsonLd, { faqSchema } from '@/components/JsonLd';
 
 export const metadata = { title: 'About Us' };
+
+const faqs = [
+  { q: 'Who should I contact about availability?', a: 'Kelly Domeniconi, our Director of Sales, is the best first contact for tours, availability, and move-in questions. You can also call either community directly: Salem at (978) 744-1002 or Swampscott at (781) 595-1991.' },
+  { q: 'Where are John Bertram Homes located?', a: 'John Bertram Homes has two assisted living communities on Massachusetts’ North Shore: John Bertram House of Salem at 29 Washington Square, Salem, MA 01970, and John Bertram House of Swampscott at 565 Humphrey Street, Swampscott, MA 01907.' },
+  { q: 'Who coordinates resident care?', a: 'Care coordination is a collaborative process led by our Assisted Living Coordinators, in partnership with the Resident Care Director, Wellness Team, residents, and their families. From the initial assessment through day-to-day support, our team works together to understand each resident’s routines, preferences, care needs, and goals. The Assisted Living Coordinators help serve as a key point of connection, making sure services are organized, communication stays clear, and each resident receives the right level of support. Our Resident Care Director and Wellness Team oversee clinical and personal care needs, while family members are encouraged to stay involved and informed. As needs change, the care plan can be reviewed and adjusted so residents continue to receive personalized, appropriate support in a comfortable and familiar environment.' },
+  { q: 'Do you offer memory care?', a: 'Yes. Dedicated memory care is offered exclusively at John Bertram House of Swampscott, in our Reminiscence neighborhood for residents living with Alzheimer’s or dementia. John Bertram House of Salem provides assisted living but not dedicated memory care.' },
+];
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={faqSchema(faqs)} />
       <div className="page-hero">
         <p className="eyebrow">Our Story</p>
         <h1>About John Bertram Homes</h1>
@@ -140,6 +150,19 @@ export default function AboutPage() {
                 <Link href="/swampscott" className="btn btn-swampscott" style={{ fontSize: '0.78rem', padding: '10px 20px' }}>View Community</Link>
               </div>
             </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="section section-light">
+        <div className="container">
+          <FadeIn className="section-header">
+            <p className="eyebrow">Questions Families Ask</p>
+            <h2>Frequently Asked Questions</h2>
+            <div className="divider"></div>
+          </FadeIn>
+          <FadeIn style={{ maxWidth: '820px', margin: '0 auto' }}>
+            <FAQ items={faqs} />
           </FadeIn>
         </div>
       </section>
