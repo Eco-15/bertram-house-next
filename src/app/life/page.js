@@ -19,6 +19,12 @@ const photos = [
   { src: '/images/salem/library1.jpg', alt: 'Cozy library and reading room with fireplace at John Bertram House of Salem', caption: 'Salem — Library' },
   { src: '/images/salem/sunarea1.jpg', alt: 'Bright sun room at John Bertram House of Salem', caption: 'Salem — Sun Room' },
   { src: '/images/salem/livingarea1.jpg', alt: 'Comfortable living area at John Bertram House of Salem', caption: 'Salem — Living Area' },
+  { src: '/images/salem/livingarea2.jpg', alt: 'Elegant parlor with chandelier, fireplace, and piano at John Bertram House of Salem', caption: 'Salem — Parlor' },
+  { src: '/images/salem/dining2.jpg', alt: 'Historic dining hall with floral wallpaper and fireplace at John Bertram House of Salem', caption: 'Salem — Dining Hall' },
+  { src: '/images/salem/library2.jpg', alt: 'Reading room with built-in bookshelves and chandelier at John Bertram House of Salem', caption: 'Salem — Reading Room' },
+  { src: '/images/salem/stairs3.jpg', alt: 'Grand staircase and front hall with grandfather clock at John Bertram House of Salem', caption: 'Salem — Grand Staircase' },
+  { src: '/images/salem/park1.jpg', alt: 'Salem Common with the historic bandstand across from John Bertram House of Salem', caption: 'Salem — Salem Common' },
+  { src: '/images/salem/sunarea2.jpg', alt: 'Outdoor deck with seating and shade at John Bertram House of Salem', caption: 'Salem — Outdoor Deck' },
   // Swampscott
   { src: '/images/swampscott/1stdining6.jpg', alt: 'Residents enjoying lunch together in the Swampscott dining room', caption: 'Swampscott — Dining Together' },
   { src: '/images/swampscott/1stdining5.jpg', alt: 'A caregiver sharing the menu with a resident at lunch', caption: 'Swampscott — Attentive Service' },
