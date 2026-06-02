@@ -27,12 +27,12 @@ export default function Footer() {
               North Shore since 1887.
             </p>
             <div className="footer-social">
-              <a href="https://www.facebook.com/JohnBertramHouse" target="_blank" rel="noopener noreferrer" aria-label="John Bertram Homes on Facebook">
+              <a href="https://www.facebook.com/people/Bertram-House-of-Swampscott/61579304325001/" target="_blank" rel="noopener noreferrer" aria-label="John Bertram Homes on Facebook">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z" />
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/company/john-bertram-house/" target="_blank" rel="noopener noreferrer" aria-label="John Bertram Homes on LinkedIn">
+              <a href="https://www.linkedin.com/company/john-bertram-homes/" target="_blank" rel="noopener noreferrer" aria-label="John Bertram Homes on LinkedIn">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M4.98 3.5a2.5 2.5 0 11-.02 5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.83v1.64h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14V21h-4v-5.46c0-1.3-.02-2.98-1.82-2.98-1.82 0-2.1 1.42-2.1 2.88V21H9z" />
                 </svg>

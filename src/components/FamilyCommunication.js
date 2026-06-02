@@ -26,7 +26,7 @@ export default function FamilyCommunication() {
           </FadeIn>
           <FadeIn className="feature-item">
             <h4>Follow Us on Facebook</h4>
-            <p>Our <a href="https://www.facebook.com/JohnBertramHouse" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navy)', fontWeight: 600 }}>Facebook page</a> shows regular photos of activities, outings, celebrations, and more — a window into daily life at John Bertram Homes.</p>
+            <p>Our <a href="https://www.facebook.com/people/Bertram-House-of-Swampscott/61579304325001/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--navy)', fontWeight: 600 }}>Facebook page</a> shows regular photos of activities, outings, celebrations, and more — a window into daily life at John Bertram Homes.</p>
           </FadeIn>
         </div>
       </div>
