@@ -1,6 +1,17 @@
 import Link from 'next/link';
 import Tabs from '@/components/Tabs';
+import { LightboxImage } from '@/components/Lightbox';
 import JsonLd, { breadcrumbSchema, SALEM_BUSINESS } from '@/components/JsonLd';
+
+const salemResidencePhotos = [
+  { src: '/images/salem/room1.jpg', alt: 'Spacious residence with three windows at John Bertram House of Salem', caption: 'Residence' },
+  { src: '/images/salem/room2.jpg', alt: 'Bright bedroom residence at John Bertram House of Salem', caption: 'Residence' },
+  { src: '/images/salem/room3.jpg', alt: 'Cozy bedroom residence at John Bertram House of Salem', caption: 'Residence' },
+  { src: '/images/salem/room4.jpg', alt: 'Comfortable residence at John Bertram House of Salem', caption: 'Residence' },
+  { src: '/images/salem/room5.jpg', alt: 'Elegant residence at John Bertram House of Salem', caption: 'Residence' },
+  { src: '/images/salem/room6.jpg', alt: 'Warm, sunlit residence at John Bertram House of Salem', caption: 'Residence' },
+  { src: '/images/salem/room7.jpg', alt: 'Charming residence at John Bertram House of Salem', caption: 'Residence' },
+];
 
 export const metadata = {
   title: 'John Bertram House of Salem — Assisted Living on Salem Common',
@@ -59,9 +70,16 @@ const suites = (
   <div>
     <h2 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#222', marginBottom: '12px' }}>Our Residences</h2>
     <p style={{ color: '#555', maxWidth: '720px', marginBottom: '32px' }}>John Bertram House of Salem offers a variety of thoughtfully designed residences within our historic Federalist home. Each residence is unique — reflecting the character of the original 19th-century architecture — while providing modern comfort and accessibility.</p>
+
+    <div className="photo-grid" style={{ marginBottom: '40px' }}>
+      {salemResidencePhotos.map((p) => (
+        <LightboxImage key={p.src} src={p.src} alt={p.alt} caption={p.caption} gallery={salemResidencePhotos} />
+      ))}
+    </div>
+
     <div className="callout-box" style={{ maxWidth: '720px' }}>
-      <h3>Residence Information Coming Soon</h3>
-      <p>We&apos;re preparing detailed information and photography of our residence options. Please contact us directly to learn about availability, layouts, and pricing.</p>
+      <h3>Schedule a Visit</h3>
+      <p>Contact us directly to learn about availability, layouts, and pricing — or schedule a tour to see our residences in person.</p>
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '12px' }}>
         <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
         <a href="tel:9787441002" className="btn btn-navy">Call (978) 744-1002</a>
@@ -191,7 +209,7 @@ const team = (
         <p className="leader-title">Executive Director</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar"><img src="/images/salem/suzanne1.jpg" alt="Suzanne Carr" /></div>
+        <div className="leader-avatar"><img src="/images/salem/suzanne1_head.jpg" alt="Suzanne Carr" /></div>
         <h4>Suzanne Carr</h4>
         <p className="leader-title">Assisted Living Coordinator</p>
       </div>
@@ -201,12 +219,12 @@ const team = (
         <p className="leader-title">Wellness Nurse</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar"><img src="/images/salem/tracy1.jpg" alt="Tracy" /></div>
+        <div className="leader-avatar"><img src="/images/salem/tracy1_head.jpg" alt="Tracy" /></div>
         <h4>Tracy</h4>
         <p className="leader-title">Activities Coordinator</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar"><img src="/images/salem/Duncan1.jpg" alt="Duncan" /></div>
+        <div className="leader-avatar"><img src="/images/salem/Duncan1_head.jpg" alt="Duncan" /></div>
         <h4>Duncan</h4>
         <p className="leader-title">Dining Service Coordinator</p>
       </div>
