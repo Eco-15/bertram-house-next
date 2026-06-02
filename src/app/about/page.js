@@ -72,7 +72,7 @@ export default function AboutPage() {
               <img
                 src="/images/captain-john-bertram.png"
                 alt="Portrait of Captain John Bertram, founder of the John Bertram Homes legacy"
-                style={{ width: '220px', maxWidth: '60%', height: 'auto', display: 'block', marginTop: '24px', borderRadius: '6px', border: '1px solid #ececec' }}
+                style={{ width: '360px', maxWidth: '100%', height: 'auto', display: 'block', margin: '32px auto 0', borderRadius: '6px', border: '1px solid #ececec' }}
               />
             </div>
 
