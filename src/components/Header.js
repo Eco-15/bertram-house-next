@@ -11,6 +11,8 @@ const navLinks = [
     label: 'About Us',
     dropdown: [
       { href: '/about', label: 'Who We Are' },
+      { href: '/salem', label: 'John Bertram House of Salem' },
+      { href: '/swampscott', label: 'John Bertram House of Swampscott' },
       { href: '/leadership', label: 'Leadership' },
       { href: '/blog', label: 'Blog' },
       { href: '/faq', label: 'FAQ' },
