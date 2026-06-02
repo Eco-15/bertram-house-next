@@ -15,7 +15,7 @@ const photos = [
   { src: '/images/salem/exterior1.jpg', alt: 'Front entrance of John Bertram House of Salem', caption: 'Salem — Front Entrance' },
   { src: '/images/salem/dining1.jpg', alt: 'Elegant Salem dining room with floral wallpaper, chandelier, and fireplace', caption: 'Salem — Dining Room' },
   { src: '/images/salem/scrabble1.jpg', alt: 'Two residents playing Scrabble at John Bertram House of Salem', caption: 'Salem — Game Time' },
-  { src: '/images/salem/room1.jpg', alt: 'Sunlit resident suite with three windows and classic furnishings at John Bertram House of Salem', caption: 'Salem — Resident Suite' },
+  { src: '/images/salem/menu1.jpg', alt: 'A server presenting the day’s menu to a resident in the elegant Salem dining room', caption: 'Salem — Tableside Service' },
   { src: '/images/salem/library1.jpg', alt: 'Cozy library and reading room with fireplace at John Bertram House of Salem', caption: 'Salem — Library' },
   { src: '/images/salem/sunarea1.jpg', alt: 'Bright sun room at John Bertram House of Salem', caption: 'Salem — Sun Room' },
   { src: '/images/salem/livingarea1.jpg', alt: 'Comfortable living area at John Bertram House of Salem', caption: 'Salem — Living Area' },
