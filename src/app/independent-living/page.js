@@ -58,8 +58,8 @@ export default function IndependentLivingPage() {
             </div>
             <div className="image-block">
               <img
-                src="/images/swampscott/sunroom1.jpg"
-                alt="Bright, comfortable common space at John Bertram House"
+                src="/images/swampscott/1stdining5.jpg"
+                alt="A team member sharing the menu with a smiling resident in the dining room at John Bertram House"
                 style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
               />
             </div>
