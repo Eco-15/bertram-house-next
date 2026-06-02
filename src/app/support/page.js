@@ -79,8 +79,8 @@ export default function SupportPage() {
             </div>
             <div className="image-block">
               <img
-                src="/images/swampscott/exterior4.jpg"
-                alt="John Bertram House of Swampscott exterior on Boston's North Shore"
+                src="/images/swampscott/1stdining6.jpg"
+                alt="Residents sharing lunch and conversation in the dining room at John Bertram Homes"
                 style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
               />
             </div>
