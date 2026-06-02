@@ -23,7 +23,7 @@ const reasons = [
 ];
 
 const included = [
-  'A fully furnished room',
+  'A comfortable room (furnished when available)',
   'Three meals daily plus snacks',
   'Personal care and medication support',
   'Housekeeping and laundry',
@@ -33,8 +33,8 @@ const included = [
 
 const faqs = [
   { q: 'What is respite care?', a: 'Respite care is a short-term stay in our community that provides the same meals, activities, and personal care our full-time residents enjoy. It’s ideal for caregiver relief, recovery after a hospital stay, or experiencing community life before making a longer-term decision.' },
-  { q: 'How long can a respite stay last?', a: 'Respite stays are flexible and arranged based on need and availability. Contact our team to discuss timing — we’ll work with you to find an arrangement that fits. [Confirm minimum/maximum length of stay per client document.]' },
-  { q: 'What’s included in a respite stay?', a: 'A respite stay typically includes a furnished room, three daily meals plus snacks, personal care and medication support, housekeeping and laundry, and full access to activities and common spaces.' },
+  { q: 'How long can a respite stay last?', a: 'Respite stays are typically one month, with the option to extend based on availability. Contact our team to arrange timing and discuss your needs.' },
+  { q: 'What’s included in a respite stay?', a: 'A respite stay typically includes a comfortable room (furnished when available), three daily meals plus snacks, personal care and medication support, housekeeping and laundry, and full access to activities and common spaces.' },
   { q: 'Is respite care available at both locations?', a: 'Respite availability varies by community and season. Please contact John Bertram House of Salem or Swampscott directly to check current availability.' },
 ];
 
@@ -69,7 +69,7 @@ export default function RespiteCarePage() {
               <p className="eyebrow" style={{ color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', marginBottom: '12px' }}>Support When You Need It Most</p>
               <h2>A Comfortable Short-Term Stay</h2>
               <p>Respite care gives your loved one a fully supported short-term stay in our community — and gives family caregivers the peace of mind to travel, recover, or rest. Guests enjoy the same meals, activities, personal care, and warm surroundings as our full-time residents.</p>
-              <p>Whether you need coverage for a few days, a recovery period after a hospital stay, or a longer seasonal arrangement, our team will help you find a comfortable solution.</p>
+              <p>A respite stay is typically one month, with the option to extend based on availability — whether for recovery after a hospital stay, caregiver relief, or a longer seasonal arrangement, our team will help you find a comfortable solution.</p>
             </div>
             <div className="image-block">
               <img
