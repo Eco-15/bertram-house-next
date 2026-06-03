@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { openLightbox } from './Lightbox';
 
 export default function ActivityCalendars({ salem, swampscott, label }) {
   const [active, setActive] = useState('salem');
@@ -40,7 +41,27 @@ export default function ActivityCalendars({ salem, swampscott, label }) {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'start' }}>
         <div style={{ background: '#fff', border: '1px solid #ececec', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-          {current.pdf ? (
+          {current.images && current.images.length ? (
+            <div>
+              {current.images.map((img, i) => {
+                const gallery = current.images.map((s, idx) => ({
+                  src: s,
+                  alt: `${current.locationName} activity calendar — ${current.monthLabel}${current.images.length > 1 ? ` (page ${idx + 1})` : ''}`,
+                }));
+                return (
+                  <img
+                    key={img}
+                    src={img}
+                    alt={gallery[i].alt}
+                    onClick={() => openLightbox(img, gallery)}
+                    title="Click to enlarge"
+                    loading="lazy"
+                    style={{ width: '100%', display: 'block', cursor: 'zoom-in', borderBottom: i < current.images.length - 1 ? '1px solid #ececec' : 'none' }}
+                  />
+                );
+              })}
+            </div>
+          ) : current.pdf ? (
             <div style={{ aspectRatio: '8.5 / 11', background: '#f5f5f5' }}>
               <iframe
                 title={`${current.locationName} activity calendar`}
