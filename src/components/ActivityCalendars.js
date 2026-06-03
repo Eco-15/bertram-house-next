@@ -1,10 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { openLightbox } from './Lightbox';
 
 export default function ActivityCalendars({ salem, swampscott, label }) {
   const [active, setActive] = useState('salem');
+
+  // Honor a ?loc=salem|swampscott deep link (e.g. from the location pages'
+  // "Activity Calendar" tab) so the right calendar shows on arrival.
+  useEffect(() => {
+    const loc = new URLSearchParams(window.location.search).get('loc');
+    if (loc === 'salem' || loc === 'swampscott') setActive(loc);
+  }, []);
   const current = active === 'salem' ? salem : swampscott;
   const accent = active === 'salem' ? 'var(--navy)' : 'var(--navy)';
 

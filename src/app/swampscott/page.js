@@ -302,6 +302,7 @@ const tabs = [
   { id: 'services', label: 'Services & Wellness', content: services },
   { id: 'dining', label: 'Dining', content: dining },
   { id: 'activities', label: 'Activities', content: activities },
+  { id: 'calendar', label: 'Activity Calendar', href: '/activities?loc=swampscott#calendar' },
   { id: 'team', label: 'Our Team', content: team },
   { id: 'directions', label: 'Directions', content: directions },
 ];

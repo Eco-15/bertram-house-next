@@ -135,12 +135,12 @@ export default function ActivitiesPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="calendar" style={{ scrollMarginTop: '90px' }}>
         <div className="container">
           <FadeIn className="section-header">
             <p className="eyebrow">Monthly Calendars</p>
             <h2>Salem &amp; Swampscott Activity Calendars</h2>
-            <p>Browse the current calendar for either community, or read this month’s highlights. Programming varies month to month.</p>
+            <p>Browse the current calendar for either community. Programming varies month to month.</p>
             <div className="divider"></div>
           </FadeIn>
           <FadeIn>
