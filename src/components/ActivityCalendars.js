@@ -39,7 +39,7 @@ export default function ActivityCalendars({ salem, swampscott, label }) {
         ))}
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', alignItems: 'start' }}>
+      <div style={{ maxWidth: '1040px', margin: '0 auto' }}>
         <div style={{ background: '#fff', border: '1px solid #ececec', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
           {current.images && current.images.length ? (
             <div>
@@ -76,7 +76,7 @@ export default function ActivityCalendars({ salem, swampscott, label }) {
               <div>
                 <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.72rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.18em', color: '#999', marginBottom: '8px' }}>{current.locationName}</div>
                 <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', color: 'var(--navy)', marginBottom: '12px' }}>Current Calendar Coming Soon</h4>
-                <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.6 }}>The monthly activity calendar will appear here. In the meantime, see this month’s highlights to the right — or contact us for the current PDF.</p>
+                <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.6 }}>The monthly activity calendar will appear here soon. Please contact us for the current calendar.</p>
               </div>
             </div>
           )}
@@ -93,19 +93,6 @@ export default function ActivityCalendars({ salem, swampscott, label }) {
               </a>
             )}
           </div>
-        </div>
-
-        <div>
-          <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--navy)', marginBottom: '6px' }}>Featured This Month</h3>
-          <p style={{ fontSize: '0.88rem', color: '#666', marginBottom: '20px' }}>{current.locationName} · {current.monthLabel}</p>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            {current.highlights.map((h) => (
-              <li key={h.title} style={{ background: '#fff', border: '1px solid #ececec', borderRadius: '8px', padding: '14px 18px', marginBottom: '10px' }}>
-                <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', color: 'var(--navy)', marginBottom: '4px' }}>{h.title}</h4>
-                <p style={{ fontSize: '0.88rem', color: '#555', margin: 0 }}>{h.desc}</p>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>
