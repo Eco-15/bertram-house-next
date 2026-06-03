@@ -11,7 +11,7 @@ export const metadata = {
 
 const photos = [
   // Salem
-  { src: '/images/salem/exterior5.jpg', alt: 'Historic brick exterior of John Bertram House of Salem with American flag on Salem Common', caption: 'Salem — On the Common' },
+  { src: '/images/salem/exterior4.jpg', alt: 'John Bertram House sign and historic brick facade with American flag at the Salem community', caption: 'Salem — John Bertram House' },
   { src: '/images/salem/exterior1.jpg', alt: 'Front entrance of John Bertram House of Salem', caption: 'Salem — Front Entrance' },
   { src: '/images/salem/dining1.jpg', alt: 'Elegant Salem dining room with floral wallpaper, chandelier, and fireplace', caption: 'Salem — Dining Room' },
   { src: '/images/salem/scrabble1.jpg', alt: 'Two residents playing Scrabble at John Bertram House of Salem', caption: 'Salem — Game Time' },
