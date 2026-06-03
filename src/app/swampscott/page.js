@@ -15,8 +15,7 @@ const overview = (
       <div className="content-block">
         <h2>Exceptional Senior Living by the Sea</h2>
         <p>John Bertram House of Swampscott offers an unparalleled assisted living experience just one block from the ocean on beautiful Humphrey Street — often described as feeling &quot;more like a bed and breakfast than a resort or hospital.&quot;</p>
-        <p>Established in 1997 on the former site of the historic New Ocean House Hotel, our community brings together the warmth of a family home and the resources of an expertly managed senior living community. With <strong>59 beautifully appointed residences</strong>, ocean access within five minutes, and a team of dedicated, experienced caregivers, life here is truly exceptional.</p>
-        <p>We are managed with the expertise of <strong>Sunrise Senior Living</strong>, founded in 1981, bringing decades of professional senior care to our community while preserving the intimate, personal character that makes John Bertram Homes unique.</p>
+        <p>Established in 1997 on the former site of the historic New Ocean House Hotel, our community brings together the warmth of a family home and the resources of an expertly managed senior living community. With <strong>59 beautifully appointed residences</strong>, ocean access within a 10-minute walk, and a team of dedicated, experienced caregivers, life here is truly exceptional.</p>
       </div>
       <div className="image-block">
         <img src="/images/swampscott/exterior1.jpg" alt="John Bertram House of Swampscott exterior" />
