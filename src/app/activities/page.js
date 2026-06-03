@@ -34,8 +34,8 @@ const calendarsData = {
   label: 'Monthly Activity Calendars',
   salem: {
     locationName: 'John Bertram House of Salem',
-    monthLabel: 'Current Month',
-    pdf: null,
+    monthLabel: 'June 2026',
+    pdf: '/calendars/salem-activities-june-2026.pdf',
     highlights: [
       { title: 'Salem Common Walks', desc: 'Weather-permitting strolls across one of America’s oldest public commons.' },
       { title: 'Gifts for the Soul', desc: 'Our award-winning non-denominational spiritual program continues weekly.' },
@@ -46,8 +46,8 @@ const calendarsData = {
   },
   swampscott: {
     locationName: 'John Bertram House of Swampscott',
-    monthLabel: 'Current Month',
-    pdf: null,
+    monthLabel: 'June 2026',
+    pdf: '/calendars/swampscott-activities-june-2026.pdf',
     highlights: [
       { title: 'Chair Dance & Chair Chi', desc: 'Group movement classes that meet residents where they are.' },
       { title: 'Library & Reading Circle', desc: 'Intimate book gatherings by the fireplace in our library.' },
