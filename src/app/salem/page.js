@@ -169,6 +169,11 @@ const activities = (
         <h2>Engaging Activities</h2>
         <p>Life at John Bertram House of Salem is vibrant and full of purpose. Our Activities and Volunteer Coordinator <strong>Liz Stone</strong> creates a rich calendar of programs that adapt to the evolving interests and abilities of our residents.</p>
         <p>From morning exercise to evening entertainment, every day offers opportunities for connection, creativity, growth, and joy.</p>
+        <div className="callout-box" style={{ marginTop: '24px' }}>
+          <h3>Vibrant Activity Programs</h3>
+          <p>See everything happening this month — exercise, music, outings, games, spiritual life, and more — on our full monthly activities calendar.</p>
+          <Link href="/activities?loc=salem#calendar" className="btn btn-salem" style={{ marginTop: '8px' }}>Go to Activities Calendar</Link>
+        </div>
       </div>
       <div>
         <img src="/images/salem/scrabble1.jpg" alt="Residents playing Scrabble together at John Bertram House of Salem" style={{ width: '100%', borderRadius: '8px', marginBottom: '16px', objectFit: 'cover', height: '200px' }} />
@@ -289,7 +294,6 @@ const tabs = [
   { id: 'wellness', label: 'Services & Wellness', content: wellness },
   { id: 'dining', label: 'Dining', content: dining },
   { id: 'activities', label: 'Activities', content: activities },
-  { id: 'calendar', label: 'Activity Calendar', href: '/activities?loc=salem#calendar' },
   { id: 'team', label: 'Our Team', content: team },
   { id: 'directions', label: 'Directions', content: directions },
 ];

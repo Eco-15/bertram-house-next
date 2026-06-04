@@ -159,6 +159,11 @@ const activities = (
         <h2>Vibrant Activities Program</h2>
         <p>Life at John Bertram House of Swampscott is full and engaging. Our comprehensive activities calendar offers something for every interest and ability — from vigorous exercise to quiet contemplation, from artistic expression to community service.</p>
         <p>We regularly venture out to the finest cultural attractions of Boston&apos;s North Shore and beyond.</p>
+        <div className="callout-box" style={{ marginTop: '24px' }}>
+          <h3>Vibrant Activity Programs</h3>
+          <p>See everything happening this month — exercise, music, outings, games, spiritual life, and more — on our full monthly activities calendar.</p>
+          <Link href="/activities?loc=swampscott#calendar" className="btn btn-swampscott" style={{ marginTop: '8px' }}>Go to Activities Calendar</Link>
+        </div>
       </div>
       <div style={{ background: 'var(--off-white)', borderRadius: '8px', overflow: 'hidden' }}>
         <img src="/images/swampscott/exterior5.jpg" alt="Outdoor garden and grounds at John Bertram House of Swampscott" style={{ width: '100%', height: '320px', objectFit: 'cover', display: 'block' }} />
@@ -302,7 +307,6 @@ const tabs = [
   { id: 'services', label: 'Services & Wellness', content: services },
   { id: 'dining', label: 'Dining', content: dining },
   { id: 'activities', label: 'Activities', content: activities },
-  { id: 'calendar', label: 'Activity Calendar', href: '/activities?loc=swampscott#calendar' },
   { id: 'team', label: 'Our Team', content: team },
   { id: 'directions', label: 'Directions', content: directions },
 ];
