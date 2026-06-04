@@ -167,7 +167,7 @@ const activities = (
     <div className="two-col" style={{ marginBottom: '48px' }}>
       <div className="content-block">
         <h2>Engaging Activities</h2>
-        <p>Life at John Bertram House of Salem is vibrant and full of purpose. Our Activities and Volunteer Coordinator <strong>Liz Stone</strong> creates a rich calendar of programs that adapt to the evolving interests and abilities of our residents.</p>
+        <p>Life at John Bertram House of Salem is vibrant and full of purpose. Our Activities and Volunteer Coordinator creates a rich calendar of programs that adapt to the evolving interests and abilities of our residents.</p>
         <p>From morning exercise to evening entertainment, every day offers opportunities for connection, creativity, growth, and joy.</p>
         <div className="callout-box" style={{ marginTop: '24px' }}>
           <h3>Vibrant Activity Programs</h3>
