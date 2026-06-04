@@ -136,9 +136,6 @@ export default function ActivitiesPage() {
           <FadeIn>
             <ActivityCalendars {...calendarsData} />
           </FadeIn>
-          <p style={{ textAlign: 'center', marginTop: '24px', fontSize: '0.88rem', color: '#666' }}>
-            Need the latest calendar? <Link href="/contact" style={{ color: 'var(--navy)', fontWeight: 600 }}>Request it from our team</Link>.
-          </p>
         </div>
       </section>
 
