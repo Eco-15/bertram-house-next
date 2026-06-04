@@ -20,16 +20,6 @@ const categoryCards = [
   { title: 'Family & Community Events', desc: 'Programs that bring residents, families, volunteers, and staff together.' },
 ];
 
-const sampleWeek = [
-  { day: 'Monday', morning: 'Chair fitness', afternoon: 'Crafts & creative arts', evening: 'Movie night' },
-  { day: 'Tuesday', morning: 'Walking group', afternoon: 'Trivia & brain teasers', evening: 'Music & sing-along' },
-  { day: 'Wednesday', morning: 'Stretching class', afternoon: 'Continuing education talk', evening: 'Social hour' },
-  { day: 'Thursday', morning: 'Chair dance', afternoon: 'Shopping outing', evening: 'Card games' },
-  { day: 'Friday', morning: 'Gentle yoga', afternoon: 'Live performance', evening: 'Resident-favorite film' },
-  { day: 'Saturday', morning: 'Scenic drive', afternoon: 'Bingo', evening: 'Family event or gathering' },
-  { day: 'Sunday', morning: 'Church transportation', afternoon: 'Brunch & conversation', evening: 'Quiet reading hour' },
-];
-
 const calendarsData = {
   label: 'Monthly Activity Calendars',
   salem: {
@@ -149,55 +139,6 @@ export default function ActivitiesPage() {
           <p style={{ textAlign: 'center', marginTop: '24px', fontSize: '0.88rem', color: '#666' }}>
             Need the latest calendar? <Link href="/contact" style={{ color: 'var(--navy)', fontWeight: 600 }}>Request it from our team</Link>.
           </p>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container">
-          <FadeIn className="section-header">
-            <p className="eyebrow">Daily Rhythm</p>
-            <h2>A Sample Week</h2>
-            <p>An evergreen sample to help families picture the daily rhythm. Real programming varies — see the monthly calendars above for what’s happening now.</p>
-            <div className="divider"></div>
-          </FadeIn>
-
-          <FadeIn style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', maxWidth: '900px', margin: '0 auto', borderCollapse: 'collapse', background: '#fff', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-              <thead>
-                <tr style={{ background: 'var(--navy)', color: '#fff' }}>
-                  <th style={{ padding: '12px 14px', textAlign: 'left', fontFamily: "'Raleway', sans-serif", fontSize: '0.78rem', letterSpacing: '0.1em' }}>Day</th>
-                  <th style={{ padding: '12px 14px', textAlign: 'left', fontFamily: "'Raleway', sans-serif", fontSize: '0.78rem', letterSpacing: '0.1em' }}>Morning</th>
-                  <th style={{ padding: '12px 14px', textAlign: 'left', fontFamily: "'Raleway', sans-serif", fontSize: '0.78rem', letterSpacing: '0.1em' }}>Afternoon</th>
-                  <th style={{ padding: '12px 14px', textAlign: 'left', fontFamily: "'Raleway', sans-serif", fontSize: '0.78rem', letterSpacing: '0.1em' }}>Evening</th>
-                </tr>
-              </thead>
-              <tbody>
-                {sampleWeek.map((d, i) => (
-                  <tr key={d.day} style={{ borderBottom: i === sampleWeek.length - 1 ? 'none' : '1px solid #ececec' }}>
-                    <td style={{ padding: '12px 14px', fontWeight: 600, color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem' }}>{d.day}</td>
-                    <td style={{ padding: '12px 14px', fontSize: '0.9rem', color: '#555' }}>{d.morning}</td>
-                    <td style={{ padding: '12px 14px', fontSize: '0.9rem', color: '#555' }}>{d.afternoon}</td>
-                    <td style={{ padding: '12px 14px', fontSize: '0.9rem', color: '#555' }}>{d.evening}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </FadeIn>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <FadeIn className="section-header">
-            <p className="eyebrow">The People Behind the Programs</p>
-            <h2>Activities Teams at Salem &amp; Swampscott</h2>
-            <p>Programming is shaped by people who know our residents personally. Meet the Activities team on our <Link href="/leadership" style={{ color: 'var(--navy)', fontWeight: 600 }}>Our Team</Link> page, or visit during a class.</p>
-            <div className="divider"></div>
-          </FadeIn>
-
-          <div style={{ textAlign: 'center' }}>
-            <Link href="/contact" className="btn btn-navy">Request the Current Activities Calendar</Link>
-          </div>
         </div>
       </section>
 
