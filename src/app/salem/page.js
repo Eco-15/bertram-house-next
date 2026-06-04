@@ -167,7 +167,7 @@ const activities = (
     <div className="two-col" style={{ marginBottom: '48px' }}>
       <div className="content-block">
         <h2>Engaging Activities</h2>
-        <p>Life at John Bertram House of Salem is vibrant and full of purpose. Our Activities and Volunteer Coordinator creates a rich calendar of programs that adapt to the evolving interests and abilities of our residents.</p>
+        <p>Life at John Bertram House of Salem is vibrant and full of purpose. Our Activities and Volunteer Coordinator <strong>Tracy Curtis</strong> creates a rich calendar of programs that adapt to the evolving interests and abilities of our residents.</p>
         <p>From morning exercise to evening entertainment, every day offers opportunities for connection, creativity, growth, and joy.</p>
         <div className="callout-box" style={{ marginTop: '24px' }}>
           <h3>Vibrant Activity Programs</h3>
@@ -227,13 +227,13 @@ const team = (
         <p className="leader-title">Wellness Nurse</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar"><img src="/images/salem/tracy1_head.jpg" alt="Tracy" /></div>
-        <h4>Tracy</h4>
-        <p className="leader-title">Activities Coordinator</p>
+        <div className="leader-avatar"><img src="/images/salem/tracy1_head.jpg" alt="Tracy Curtis" /></div>
+        <h4>Tracy Curtis</h4>
+        <p className="leader-title">Activities and Volunteer Coordinator</p>
       </div>
       <div className="leader-card">
-        <div className="leader-avatar"><img src="/images/salem/Duncan1_head.jpg" alt="Duncan" /></div>
-        <h4>Duncan</h4>
+        <div className="leader-avatar"><img src="/images/salem/Duncan1_head.jpg" alt="Duncan Marcillus" /></div>
+        <h4>Duncan Marcillus</h4>
         <p className="leader-title">Dining Service Coordinator</p>
       </div>
     </div>

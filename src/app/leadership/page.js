@@ -36,15 +36,15 @@ const salemTeam = [
   { name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' },
   { name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1_head.jpg' },
   { name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn_head.jpg' },
-  { name: 'Tracy', title: 'Activities Coordinator', img: '/images/salem/tracy1_head.jpg' },
-  { name: 'Duncan', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1_head.jpg' },
+  { name: 'Tracy Curtis', title: 'Activities and Volunteer Coordinator', img: '/images/salem/tracy1_head.jpg' },
+  { name: 'Duncan Marcillus', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1_head.jpg' },
 ];
 
 const swampscottTeam = [
   { name: 'Robert Wasserman, MPH', title: 'Executive Director', img: '/images/staff/RobertWasserman.jpg' },
   { name: 'Marisa Waters', title: 'Assisted Living Coordinator', img: '/images/staff/MarisaWaters_head.jpg' },
   { name: 'Pablo Solorzano', title: 'Reminiscence Coordinator', img: '/images/staff/Pablo Solorzano.jpg' },
-  { name: 'Athena Raptis', title: 'Activities Director', img: '/images/staff/AthenaRaptis.jpg' },
+  { name: 'Athena Raptis', title: 'Activities and Volunteer Coordinator', img: '/images/staff/AthenaRaptis.jpg' },
   { name: 'Eddy Morales', title: 'Dining Service Coordinator', img: '/images/staff/EddyMorales.jpg' },
   { name: 'Jim Vahey', title: 'Maintenance Coordinator', img: '/images/staff/JimVahey.jpg' },
 ];
