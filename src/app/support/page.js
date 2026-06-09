@@ -7,13 +7,13 @@ import JsonLd, { faqSchema, breadcrumbSchema, ORGANIZATION } from '@/components/
 export const metadata = {
   title: 'Non-Profit Mission | John Bertram Homes',
   description:
-    'A not-for-profit assisted living organization serving Salem and Swampscott, MA since 1887. Mission-first care, donor-supported impact, and a legacy of people-first service on the North Shore.',
+    'A not-for-profit assisted living organization serving Salem and Swampscott, MA since 1877. Mission-first care, donor-supported impact, and a legacy of people-first service on the North Shore.',
   alternates: { canonical: 'https://bertramhouse.org/support' },
 };
 
 const missionCards = [
   { title: 'Mission Over Profit', desc: 'Decisions are guided by resident care, dignity, and long-term community service — not shareholders.' },
-  { title: '139 Years of Service', desc: 'John Bertram Homes continues a legacy of care that began in Salem in 1887.' },
+  { title: '149 Years of Service', desc: 'John Bertram Homes continues a legacy of care that began in Salem in 1877.' },
   { title: 'Two North Shore Communities', desc: 'Salem and Swampscott share the same people-first mission and standards of care.' },
   { title: 'Volunteer Leadership', desc: 'A volunteer Board of Trustees provides governance, stewardship, and oversight.' },
   { title: 'Donor-Supported Impact', desc: 'Gifts help support programs, improvements, and resident-centered initiatives that go beyond the basics.' },
@@ -60,7 +60,7 @@ export default function SupportPage() {
       <div className="page-hero">
         <p className="eyebrow">Our Mission</p>
         <h1>A Non-Profit Mission Rooted in People-First Care</h1>
-        <p>For more than 139 years, John Bertram Homes has served seniors and families on the North Shore with a simple guiding principle: people come first. As a not-for-profit charitable organization, our mission is focused on care, dignity, and community.</p>
+        <p>For more than 149 years, John Bertram Homes has served seniors and families on the North Shore with a simple guiding principle: people come first. As a not-for-profit charitable organization, our mission is focused on care, dignity, and community.</p>
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '28px' }}>
           <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
           <Link href="/donate" className="btn btn-navy">Support Our Mission</Link>
@@ -74,7 +74,7 @@ export default function SupportPage() {
               <p className="eyebrow" style={{ color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', marginBottom: '12px' }}>Our Mission</p>
               <h2>Who We Are</h2>
               <p>John Bertram Homes is a non-sectarian, not-for-profit charitable organization providing exceptional assisted living care to seniors and families on Massachusetts’ North Shore. With communities in Salem and Swampscott, Massachusetts, we combine personalized support, meaningful daily life, strong family communication, and a warm residential environment where residents are treated with dignity, respect, and genuine care.</p>
-              <p>Our legacy began in 1887 with Captain John Bertram’s commitment to serving older adults in the Salem community. Today, that mission continues through two distinguished communities: John Bertram House of Salem, located in a beautifully restored historic Federalist-style home near Salem Common, and John Bertram House of Swampscott, an ocean-side senior living community one block from the water.</p>
+              <p>Our legacy began in 1877 with Captain John Bertram’s commitment to serving older adults in the Salem community. Today, that mission continues through two distinguished communities: John Bertram House of Salem, located in a beautifully restored historic Federalist-style home across from Salem Common, and John Bertram House of Swampscott, an ocean-side senior living community one block from the water.</p>
               <p>We offer individualized service plans, daily dining, engaging activities, wellness support, housekeeping, laundry, medication management, and compassionate assistance with daily living. Our Swampscott community also includes a dedicated Reminiscence memory care neighborhood for residents living with Alzheimer’s disease and memory loss.</p>
               <p>At John Bertram Homes, care is personal. Our team of CNAs, nurses, dining staff, activities professionals, housekeepers, maintenance staff, administrators, volunteers, and leadership work together to create a home-like environment where residents can remain independent while receiving the support they need.</p>
               <p>We share community news, celebrate our staff, highlight career opportunities, recognize volunteers and donors, and showcase life inside our Salem and Swampscott communities.</p>
@@ -115,14 +115,14 @@ export default function SupportPage() {
             <div className="image-block">
               <img
                 src="/images/salem/exterior1.jpg"
-                alt="The historic John Bertram House on Salem Common"
+                alt="The historic John Bertram House across from Salem Common"
                 style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
               />
             </div>
             <div className="content-block">
               <p className="eyebrow" style={{ color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', marginBottom: '12px' }}>Our Legacy</p>
-              <h2>Since 1887, on the North Shore</h2>
-              <p>Our story begins with Captain John Bertram — a Salem sea captain whose life of trade and philanthropy shaped the city. The Salem Home for Aged Men, founded in his name in 1887, provided shelter and care to older men in the community, especially retired sailors.</p>
+              <h2>Since 1877, on the North Shore</h2>
+              <p>Our story begins with Captain John Bertram — a Salem sea captain whose life of trade and philanthropy shaped the city. The Salem Home for Aged Men, founded in his name in 1877, provided shelter and care to older men in the community, especially retired sailors.</p>
               <p>In 1990, the John Bertram House reopened as Massachusetts’ very first certified free-standing assisted living community. In 1997, our Swampscott community opened just one block from the ocean. Today, both communities share the same mission and the same Board of Trustees.</p>
               <p><Link href="/about" style={{ color: 'var(--navy)', fontWeight: 600 }}>Read our full history →</Link></p>
             </div>
@@ -135,11 +135,11 @@ export default function SupportPage() {
           <FadeIn className="stats-bar">
             <div className="stats-grid">
               <div className="stat-item">
-                <div className="number"><Counter target={139} /></div>
+                <div className="number"><Counter target={149} /></div>
                 <div className="label">Years of Service</div>
               </div>
               <div className="stat-item">
-                <div className="number"><Counter target={1887} /></div>
+                <div className="number"><Counter target={1877} /></div>
                 <div className="label">Established</div>
               </div>
               <div className="stat-item">
@@ -204,7 +204,7 @@ export default function SupportPage() {
               <p className="eyebrow" style={{ color: 'var(--navy)', fontFamily: "'Raleway', sans-serif", fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.3em', marginBottom: '12px' }}>For Families</p>
               <h2>Why Non-Profit Matters When Choosing a Community</h2>
               <p>When you’re comparing assisted living options, non-profit status is a meaningful signal. It tells you the organization exists to serve residents — that mission and care, not investor returns, drive decisions.</p>
-              <p>That’s why John Bertram Homes has remained rooted on the North Shore since 1887: because the mission has never been about scale or margin. It’s about the next resident, the next family, and the next day of care done well.</p>
+              <p>That’s why John Bertram Homes has remained rooted on the North Shore since 1877: because the mission has never been about scale or margin. It’s about our residents, their families, and care done well today, tomorrow, and for generations to come.</p>
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '16px' }}>
                 <Link href="/salem" className="btn btn-navy">Explore Salem</Link>
                 <Link href="/swampscott" className="btn btn-navy">Explore Swampscott</Link>
@@ -238,7 +238,7 @@ export default function SupportPage() {
         <div className="container">
           <FadeIn className="callout-box" style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
             <h3>See the John Bertram Difference in Person</h3>
-            <p>Whether you’re considering a community for a loved one or supporting the mission, visit us to see what 139 years of people-first care looks like.</p>
+            <p>Whether you’re considering a community for a loved one or supporting the mission, visit us to see what 149 years of people-first care looks like.</p>
             <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '12px' }}>
               <Link href="/contact" className="btn btn-gold">Schedule a Tour</Link>
               <Link href="/donate" className="btn btn-navy">Make a Donation</Link>

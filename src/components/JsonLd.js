@@ -99,9 +99,9 @@ export const ORGANIZATION = {
   name: 'John Bertram Homes',
   alternateName: 'JBH',
   url: 'https://bertramhouse.org',
-  foundingDate: '1887',
+  foundingDate: '1877',
   description:
-    'A non-sectarian, not-for-profit charitable organization providing assisted living care on Massachusetts’ North Shore since 1887.',
+    'A non-sectarian, not-for-profit charitable organization providing assisted living care on Massachusetts’ North Shore since 1877.',
   areaServed: { '@type': 'AdministrativeArea', name: 'North Shore of Massachusetts' },
   subOrganization: [
     { '@id': 'https://bertramhouse.org/salem#facility' },

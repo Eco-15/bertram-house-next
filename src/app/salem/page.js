@@ -14,9 +14,9 @@ const salemResidencePhotos = [
 ];
 
 export const metadata = {
-  title: 'John Bertram House of Salem — Assisted Living on Salem Common',
+  title: 'John Bertram House of Salem — Assisted Living across from Salem Common',
   description:
-    'Massachusetts’ first assisted living community, on Salem Common. Personalized assisted living in a historic Federalist home at 29 Washington Square, Salem, MA.',
+    'Massachusetts’ first assisted living community, across from Salem Common. Personalized assisted living in a historic Federalist home at 29 Washington Square, Salem, MA.',
   alternates: { canonical: 'https://bertramhouse.org/salem' },
 };
 
@@ -25,30 +25,50 @@ const overview = (
     <div className="two-col fade-in visible">
       <div className="content-block">
         <h2>A Historic Community</h2>
-        <p>John Bertram House of Salem holds the distinction of being <strong>Massachusetts&apos; first certified free-standing assisted living community</strong>, having opened in 1990 after an extensive restoration and renovation of the historic property.</p>
-        <p>Nestled in the heart of downtown Salem, our community is housed in a stunning Federalist-style home that perfectly blends historical elegance with modern assisted living care. Residents enjoy the charm of a beautifully restored historic building while receiving personalized, compassionate support.</p>
-        <p>Our social model of care empowers residents to maintain their independence while ensuring that expert support is always available. Residents keep their own physicians and specialists, and our Registered Nurse Resident Care Director leads individualized service plans for every resident.</p>
+        <p>John Bertram House of Salem holds the distinction of being <strong>Massachusetts&apos; first certified free-standing assisted living community</strong>, reopening in 1990 after an extensive restoration and renovation of the historic property.</p>
+        <p>Located in the heart of downtown Salem, across from Salem Common, our community is housed in a beautifully restored Federalist-style home that blends historic character with modern assisted living support. The residence is within walking distance of some of Salem&apos;s most recognizable destinations, including the Hawthorne Hotel, the Salem Witch Museum, local shops, restaurants, and other downtown attractions.</p>
+        <p>Residents enjoy the warmth and charm of a landmark setting while receiving personalized, compassionate care. Our social model of care supports independence, with expert assistance available when needed. Residents continue seeing their own physicians and specialists, while our Resident Care Director, Wellness Nurses, and Assisted Living Coordinators collaborate with each resident and their family to create individualized service plans in a warm, welcoming, and resident-centered environment.</p>
       </div>
-      <div className="image-block">
-        <img src="/images/salem/exterior1.jpg" alt="Front entrance of John Bertram House of Salem, a historic brick Federalist home" />
+      <div className="image-block" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--off-white)', borderRadius: '8px', padding: '24px' }}>
+        <img src="/images/captain-john-bertram.png" alt="Portrait of Captain John Bertram, founder of the John Bertram Homes legacy" style={{ maxWidth: '100%', maxHeight: '440px', height: 'auto', display: 'block', borderRadius: '6px' }} />
       </div>
     </div>
 
-    <div style={{ marginTop: '56px' }}>
-      <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--burgundy)', marginBottom: '24px' }}>What We Offer</h3>
-      <div className="features-grid" style={{ background: 'transparent' }}>
+    <div style={{ marginTop: '48px' }}>
+      <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--burgundy)', marginBottom: '24px' }}>Life at John Bertram House of Salem</h3>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px' }}>
         {[
-          { title: 'Personalized Care Plans', desc: 'Every resident receives a customized service plan tailored to their preferences, from shower timing to medication reminders.' },
-          { title: 'Social Model of Care', desc: "Residents keep their own doctors and specialists. Our RN leads wellness assessments while honoring each person's medical preferences." },
-          { title: 'Family Communication', desc: 'Weekly management meetings to discuss residents; prompt family notifications of any changes in health or wellbeing.' },
+          {
+            title: 'Across from Salem Common',
+            desc: 'Located directly across from historic Salem Common, offering residents a beautiful downtown setting with nearby green space and local charm.',
+            img: '/images/salem/park1.jpg',
+            icon: (<svg viewBox="0 0 24 24"><path d="M2 17l5-5 4 4 5-7 6 8" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 21c2-1 4-1 6 0s4 1 6 0 4-1 6 0" strokeLinecap="round" strokeLinejoin="round"/></svg>),
+          },
+          {
+            title: 'Universal Caregiver Model',
+            desc: 'Our caregivers wear many hats — serving meals, supporting activities, and providing personal care — building deeper, more familiar relationships with residents.',
+            img: '/images/salem/menu1.jpg',
+            icon: (<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87" strokeLinecap="round" strokeLinejoin="round"/><path d="M16 3.13a4 4 0 010 7.75" strokeLinecap="round" strokeLinejoin="round"/></svg>),
+          },
+          {
+            title: 'Local Shops, Restaurants, and Museums',
+            desc: 'Within walking distance of local shops, restaurants, museums, and downtown Salem attractions.',
+            img: '/images/salem/exterior1.jpg',
+            icon: (<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round"/><polyline points="9 22 9 12 15 12 15 22"/></svg>),
+          },
+          {
+            title: 'Pet-Friendly',
+            desc: 'Pets welcome (some restrictions apply) — because furry companions matter.',
+            img: '/images/salem/livingarea1.jpg',
+            icon: (<svg viewBox="0 0 24 24"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="14" r="2"/><circle cx="4" cy="8" r="2"/><path d="M8 22c-2 0-3-1.5-3-3 0-3 4-4 4-7 0-1.5 1-3 3-3s3 1.5 3 3c0 3 4 4 4 7 0 1.5-1 3-3 3-2 0-3-1-4-1s-2 1-4 1z" strokeLinecap="round" strokeLinejoin="round"/></svg>),
+          },
         ].map((c) => (
-          <div key={c.title} style={{ textAlign: 'left', padding: 0 }}>
-            <div style={{ display: 'flex', alignItems: 'start', gap: '16px', marginBottom: '24px' }}>
-              <span style={{ fontSize: '1.4rem', marginTop: '2px' }}>-</span>
-              <div>
-                <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.88rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#222', marginBottom: '6px' }}>{c.title}</h4>
-                <p style={{ fontSize: '0.9rem', color: '#555' }}>{c.desc}</p>
-              </div>
+          <div key={c.title} style={{ background: '#fff', border: '1px solid #ececec', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+            <img src={c.img} alt={c.title} style={{ width: '100%', height: '140px', objectFit: 'cover', display: 'block' }} loading="lazy" />
+            <div style={{ padding: '20px', textAlign: 'center' }}>
+              <div className="tile-icon">{c.icon}</div>
+              <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--burgundy)', marginBottom: '8px' }}>{c.title}</h4>
+              <p style={{ fontSize: '0.88rem', color: '#555' }}>{c.desc}</p>
             </div>
           </div>
         ))}
@@ -58,7 +78,7 @@ const overview = (
     <div style={{ marginTop: '40px' }}>
       <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--burgundy)', marginBottom: '24px' }}>Included Services &amp; Amenities</h3>
       <div className="amenities-grid">
-        {['Private rooms', '3 meals daily', 'Weekly housekeeping', 'Laundry service', 'Medication management', 'Full activities calendar', 'Personal alarm system'].map((a) => (
+        {['3 Meals Daily + Snacks', 'Weekly Housekeeping', 'Daily Bed-Making', 'Weekly Laundry', 'Full Activities Calendar & Outings', 'On-Site Hair Salon', 'All Utilities Included', 'Wi-Fi', 'Emergency Pendant', 'Phone', 'Cable Available', 'Outdoor Spaces', 'Pet-Friendly'].map((a) => (
           <div key={a} className="amenity-item"><span>-</span> {a}</div>
         ))}
       </div>
@@ -176,11 +196,7 @@ const activities = (
         </div>
       </div>
       <div>
-        <img src="/images/salem/scrabble1.jpg" alt="Residents playing Scrabble together at John Bertram House of Salem" style={{ width: '100%', borderRadius: '8px', marginBottom: '16px', objectFit: 'cover', height: '200px' }} />
-        <div style={{ background: 'var(--off-white)', borderRadius: '8px', padding: '24px' }}>
-          <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--burgundy)', marginBottom: '16px' }}>Award-Winning Programs</h4>
-          <p style={{ fontSize: '0.9rem', color: '#555', lineHeight: 1.7 }}>Our non-denominational <strong>&quot;Gifts for the Soul&quot;</strong> spiritual program has received the <strong>MassALFA Program Innovation Award</strong> — a testament to our commitment to holistic, resident-centered programming.</p>
-        </div>
+        <img src="/images/salem/scrabble1.jpg" alt="Residents playing Scrabble together at John Bertram House of Salem" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover', height: '320px' }} />
       </div>
     </div>
 
@@ -188,10 +204,8 @@ const activities = (
       {[
         { title: 'Exercise & Wellness', items: ['Exercise and walking groups', 'Chair fitness classes', 'Stretching and movement'] },
         { title: 'Arts & Culture', items: ['Crafts and creative arts', 'Continuing education discussions', 'Slide presentations & lectures'] },
-        { title: 'Entertainment', items: ['Singers, pianists, guitarists', 'Harpists, poets, dancers', 'Social Hour with refreshments'] },
-        { title: 'Community & Outings', items: ['Scenic drives & restaurant trips', 'Movies, theater, library visits', 'Bowling & Boston adventures'] },
-        { title: 'Shopping', items: ['Weekly local shopping trips', 'Clothing & holiday gift trips', 'Scheduled medical transport'] },
-        { title: 'Spiritual Life', items: ['Monthly church services on-site', 'Sunday church transportation', '"Gifts for the Soul" program'] },
+        { title: 'Entertainment', items: ['Singers, pianists, guitarists', 'Family parties & holiday celebrations', 'Social Hour with refreshments'] },
+        { title: 'Community & Outings', items: ['Scenic drives & restaurant trips', 'Movies, theater, library visits', 'Boston adventures', 'Walking distance to local shops, restaurants, and Salem Common'] },
       ].map((c) => (
         <div key={c.title} style={{ padding: '24px', background: 'var(--off-white)', borderRadius: '8px', borderLeft: '4px solid var(--burgundy)' }}>
           <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--burgundy)', marginBottom: '12px' }}>{c.title}</h4>
@@ -223,7 +237,7 @@ const team = (
       </div>
       <div className="leader-card">
         <div className="leader-avatar"><img src="/images/staff/MaryAnn_head.jpg" alt="MaryAnne Thompson" /></div>
-        <h4>MaryAnne Thompson</h4>
+        <h4>MaryAnne Thompson, RN</h4>
         <p className="leader-title">Wellness Nurse</p>
       </div>
       <div className="leader-card">
@@ -319,8 +333,8 @@ export default function SalemPage() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px', textAlign: 'center' }}>
             {[
-              { n: '1887', l: 'Established' },
-              { n: '139', l: 'Years of Service' },
+              { n: '1877', l: 'Established' },
+              { n: '149', l: 'Years of Service' },
               { n: '25', l: 'Residences' },
               { n: 'Across From', l: 'Salem Common' },
             ].map((s) => (

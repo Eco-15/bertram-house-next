@@ -35,7 +35,7 @@ const trustCards = [
 const salemTeam = [
   { name: 'Sarah Sterling', title: 'Executive Director', img: '/images/staff/SarahSterling.jpg' },
   { name: 'Suzanne Carr', title: 'Assisted Living Coordinator', img: '/images/salem/suzanne1_head.jpg' },
-  { name: 'MaryAnne Thompson', title: 'Wellness Nurse', img: '/images/staff/MaryAnn_head.jpg' },
+  { name: 'MaryAnne Thompson, RN', title: 'Wellness Nurse', img: '/images/staff/MaryAnn_head.jpg' },
   { name: 'Tracy Curtis', title: 'Activities and Volunteer Coordinator', img: '/images/salem/tracy1_head.jpg' },
   { name: 'Duncan Marcillus', title: 'Dining Service Coordinator', img: '/images/salem/Duncan1_head.jpg' },
 ];
@@ -123,7 +123,7 @@ export default function LeadershipPage() {
           <FadeIn className="section-header">
             <p className="eyebrow">Salem · 29 Washington Square</p>
             <h2>John Bertram House of Salem Team</h2>
-            <p>Our Salem community team supports assisted living residents in a historic Federalist home on Salem Common.</p>
+            <p>Our Salem community team supports assisted living residents in a historic Federalist home across from Salem Common.</p>
             <div className="divider"></div>
           </FadeIn>
           <FadeIn>
@@ -151,7 +151,7 @@ export default function LeadershipPage() {
           <FadeIn className="section-header">
             <p className="eyebrow">Governance</p>
             <h2>Board of Trustees</h2>
-            <p>Our volunteer Board provides strategic oversight, financial stewardship, and protection of the non-profit mission that has guided John Bertram Homes since 1887.</p>
+            <p>Our volunteer Board provides strategic oversight, financial stewardship, and protection of the non-profit mission that has guided John Bertram Homes since 1877.</p>
             <div className="divider"></div>
           </FadeIn>
           <FadeIn className="board-list" style={{ textAlign: 'center', maxWidth: '500px', margin: '0 auto' }}>

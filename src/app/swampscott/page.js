@@ -62,6 +62,15 @@ const overview = (
         ))}
       </div>
     </div>
+
+    <div style={{ marginTop: '48px' }}>
+      <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--teal)', marginBottom: '24px' }}>Included Services &amp; Amenities</h3>
+      <div className="amenities-grid">
+        {['3 Meals Daily + Snacks', 'Weekly Housekeeping', 'Daily Bed-Making', 'Weekly Laundry', 'Full Activities Calendar & Outings', 'On-Site Hair Salon', 'All Utilities Included', 'Wi-Fi', 'Emergency Pendant', 'Phone', 'Cable Available', 'Outdoor Spaces', 'Pet-Friendly'].map((a) => (
+          <div key={a} className="amenity-item"><span>-</span> {a}</div>
+        ))}
+      </div>
+    </div>
   </>
 );
 
@@ -112,44 +121,44 @@ const suites = (
 );
 
 const services = (
-  <>
-    <div className="two-col" style={{ marginBottom: '48px' }}>
-      <div>
-        <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--teal)', marginBottom: '20px' }}>Included in Base Rate</h3>
-        <div className="amenities-grid">
-          {['3 meals daily + snacks', 'Weekly housekeeping', 'Daily bed-making', 'Weekly laundry', 'Full activities calendar', 'On-site hair salon', 'Most utilities incl.', 'WiFi available', 'Pet-friendly', 'Emergency alert system', 'Outdoor spaces'].map((a) => (
-            <div key={a} className="amenity-item"><span>-</span> {a}</div>
-          ))}
-        </div>
-      </div>
-      <div>
-        <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--teal)', marginBottom: '20px' }}>Additional Services</h3>
-        <div style={{ background: 'var(--off-white)', borderRadius: '8px', padding: '24px' }}>
-          <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid #ddd' }}>
-            <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, color: '#333', marginBottom: '8px' }}>Activities of Daily Living</h4>
-            <p style={{ fontSize: '0.88rem', color: '#555' }}>Assistance with bathing, dressing, grooming, and mobility — tailored to each resident&apos;s needs.</p>
-          </div>
-          <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid #ddd' }}>
-            <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, color: '#333', marginBottom: '8px' }}>Medication Management</h4>
-            <p style={{ fontSize: '0.88rem', color: '#555' }}>Comprehensive medication oversight and reminders coordinated with your personal physician.</p>
-          </div>
-          <div>
-            <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, color: '#333', marginBottom: '8px' }}>Memory Care Support</h4>
-            <p style={{ fontSize: '0.88rem', color: '#555' }}>Specialized Reminiscence neighborhood care for residents with Alzheimer&apos;s and other memory loss conditions.</p>
-          </div>
-        </div>
+  <div className="two-col">
+    <div className="content-block">
+      <h2>Wellness &amp; Care</h2>
+      <p>Our approach to wellness is rooted in a <strong>social model of care</strong> — supporting independence, strong social connections, and a sense of purpose alongside attentive personal care. Residents continue seeing their own physicians and specialists, while our team provides essential daily support and wellness oversight.</p>
+      <p>Care is coordinated by our Resident Care Director, Wellness Nurses, and Assisted Living Coordinators, who collaborate with each resident and their family to build an individualized service plan. For residents in our dedicated <strong>Reminiscence memory care neighborhood</strong>, that support extends to specialized, compassionate care for those living with Alzheimer&apos;s and memory loss.</p>
 
-        <div style={{ borderRadius: '8px', overflow: 'hidden', marginTop: '20px' }}>
-          <img src="/images/swampscott/3rdfloormusic1.jpg" alt="Reminiscence memory care neighborhood activities" style={{ width: '100%', height: '200px', objectFit: 'cover', display: 'block' }} />
-          <div style={{ background: 'var(--off-white)', color: '#222', padding: '20px', borderTop: '1px solid #ececec' }}>
-            <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px', color: 'var(--teal)' }}>Universal Caregiver Model</h4>
-            <p style={{ fontSize: '0.88rem', color: '#555', lineHeight: 1.7 }}>Our CNAs and Home Health Aides wear multiple hats — serving meals, managing laundry, leading activities, and providing personal care. This model creates deeper bonds between staff and residents.</p>
-          </div>
-        </div>
-      </div>
+      <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.9rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: '#222', marginBottom: '12px', marginTop: '24px' }}>Individualized Service Plans</h4>
+      <p style={{ fontSize: '0.95rem', color: '#555', lineHeight: 1.7 }}>Every resident receives a customized plan covering:</p>
+      <ul style={{ margin: '12px 0 0 20px', listStyle: 'disc', fontSize: '0.9rem', color: '#555', lineHeight: 2 }}>
+        <li>Personal care preferences (bathing, dressing, grooming, daily routines)</li>
+        <li>Medication reminders and support</li>
+        <li>Mobility and physical activity support</li>
+        <li>Dietary needs and preferences</li>
+        <li>Memory care support in our Reminiscence neighborhood</li>
+        <li>Family communication and collaboration</li>
+      </ul>
     </div>
 
-  </>
+    <div>
+      <div className="image-block" style={{ marginBottom: '24px' }}>
+        <img src="/images/swampscott/sunroom1.jpg" alt="Bright, comfortable common space at John Bertram House of Swampscott" style={{ width: '100%', height: '260px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+      </div>
+      <div style={{ background: 'var(--off-white)', borderRadius: '8px', padding: '32px', marginBottom: '24px' }}>
+        <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--teal)', marginBottom: '16px' }}>Our Wellness Philosophy</h4>
+        <p style={{ fontStyle: 'italic', fontSize: '1rem', color: '#444', lineHeight: 1.8, borderLeft: '4px solid var(--teal)', paddingLeft: '20px' }}>&quot;The Bertram communities are dedicated to promoting the highest level of Wellness for each of our residents, through a combination of encouraging independence, providing support when needed, and communicating regularly with family members, residents, and each resident&apos;s personal medical team.&quot;</p>
+      </div>
+      <div style={{ background: 'var(--off-white)', color: '#222', borderRadius: '8px', padding: '32px', border: '1px solid #ececec' }}>
+        <h4 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '16px', color: 'var(--teal)' }}>Communication Commitment</h4>
+        <ul style={{ listStyle: 'none', fontSize: '0.9rem', lineHeight: 2, color: '#444' }}>
+          <li>✓ Collaboration with residents, families &amp; the care team</li>
+          <li>✓ Prompt family notification of changes</li>
+          <li>✓ Regular care plan reviews</li>
+          <li>✓ Open-door family policy</li>
+          <li>✓ No restrictions on visiting hours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 );
 
 const activities = (

@@ -24,7 +24,7 @@ export default function Footer() {
             <p>
               A non-sectarian, not-for-profit charitable organization providing exceptional
               assisted living care to generations of residents and their families on Massachusetts'
-              North Shore since 1887.
+              North Shore since 1877.
             </p>
             <div className="footer-social">
               <a href="https://www.facebook.com/people/Bertram-House-of-Swampscott/61579304325001/" target="_blank" rel="noopener noreferrer" aria-label="John Bertram Homes on Facebook">

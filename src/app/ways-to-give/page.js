@@ -43,9 +43,9 @@ const options = [
 ];
 
 const stats = [
-  { value: 139, suffix: '', label: 'Years of Care' },
+  { value: 149, suffix: '', label: 'Years of Care' },
   { value: 2, suffix: '', label: 'Communities' },
-  { value: 1887, suffix: '', label: 'Founded' },
+  { value: 1877, suffix: '', label: 'Founded' },
   { value: 100, suffix: '%', label: 'Non-Profit' },
 ];
 

@@ -59,7 +59,7 @@ const careCards = [
   {
     href: '/support',
     title: 'Non-Profit Mission',
-    desc: 'As a not-for-profit charitable trust, 139 years of service — our mission is always people first.',
+    desc: 'As a not-for-profit charitable trust, 149 years of service — our mission is always people first.',
     icon: (<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" strokeLinecap="round" strokeLinejoin="round"/></svg>),
   },
 ];
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <div className="number"><Counter target={139} /></div>
+              <div className="number"><Counter target={149} /></div>
               <div className="label">Years of Service</div>
             </div>
             <div className="stat-item">
@@ -96,7 +96,7 @@ export default function Home() {
               <div className="label">Residences</div>
             </div>
             <div className="stat-item">
-              <div className="number"><Counter target={1887} /></div>
+              <div className="number"><Counter target={1877} /></div>
               <div className="label">Established</div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Home() {
             <FadeIn tag="article" className="property-card property-card-salem">
               <div className="property-card-image">
                 <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem — historic Federalist home" />
-                <span className="property-badge">Established 1887 – On the Salem Common</span>
+                <span className="property-badge">Established 1877 — Across from Salem Common</span>
               </div>
               <div className="property-card-body">
                 <h3>John Bertram House of Salem</h3>
@@ -161,7 +161,7 @@ export default function Home() {
           <FadeIn className="section-header">
             <p className="eyebrow">Why John Bertram Homes</p>
             <h2>Care You Can Trust</h2>
-            <p>For 139 years, John Bertram Homes has delivered exceptional, personalized care rooted in respect, warmth, and purpose.</p>
+            <p>For 149 years, John Bertram Homes has delivered exceptional, personalized care rooted in respect, warmth, and purpose.</p>
             <div className="divider"></div>
           </FadeIn>
 
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="two-col">
             <FadeIn className="content-block">
               <h2>A Legacy of Compassionate Care</h2>
-              <p>The story of John Bertram Homes begins with Captain John Bertram — a Salem sea captain who arrived in America at age 10 and built a remarkable life of philanthropy and service, founding the Salem Home for Aged Men in 1887.</p>
+              <p>The story of John Bertram Homes begins with Captain John Bertram — a Salem sea captain who arrived in America at age 10 and built a remarkable life of philanthropy and service, founding the Salem Home for Aged Men in 1877.</p>
               <p>In 1990, the John Bertram House became Massachusetts' very first certified free-standing assisted living community. Since then, we have cared for hundreds of residents and their families with the same devotion Captain Bertram showed to his community.</p>
               <p>Our Swampscott location opened in 1997, extending our mission to a beautiful seaside setting. Both communities are governed by the John Bertram Homes Board of Trustees.</p>
               <Link href="/about" className="btn btn-navy">Read Our History</Link>
@@ -210,7 +210,7 @@ export default function Home() {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
                 {[
                   {
-                    n: '139',
+                    n: '149',
                     l: 'Years of Service',
                     icon: (<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14" strokeLinecap="round" strokeLinejoin="round"/></svg>),
                   },

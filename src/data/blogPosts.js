@@ -18,7 +18,7 @@ export const posts = [
     alt: 'Welcoming foyer and living room at John Bertram House of Swampscott',
     desc: 'Touring senior living can feel overwhelming. Here are the five questions that reveal the most about the quality of care — and how John Bertram Homes answers each one.',
     body: [
-      { type: 'p', text: 'Choosing an assisted living community is one of the most important decisions a family will make. A tour is your best chance to look past the brochure and see how a community really works — but only if you know what to ask. After welcoming families to the North Shore since 1887, we’ve learned which questions tell you the most. Here are five to bring with you, and how we answer each one at John Bertram Homes.' },
+      { type: 'p', text: 'Choosing an assisted living community is one of the most important decisions a family will make. A tour is your best chance to look past the brochure and see how a community really works — but only if you know what to ask. After welcoming families to the North Shore since 1877, we’ve learned which questions tell you the most. Here are five to bring with you, and how we answer each one at John Bertram Homes.' },
       { type: 'h2', text: '1. What is the staff-to-resident ratio, and how is care personalized?' },
       { type: 'p', text: 'Numbers matter, but so does philosophy. Ask how care plans are built and how often they’re reviewed. At our Salem and Swampscott communities, every resident has an individualized care plan developed with their family and updated as needs change — so support grows with the person, never the other way around.' },
       { type: 'h2', text: '2. How do you handle changing care needs over time?' },
@@ -88,9 +88,9 @@ export const posts = [
     title: 'Why Non-Profit Senior Living Matters',
     img: '/images/swampscott/exterior1.jpg',
     alt: 'Exterior of John Bertram House of Swampscott',
-    desc: 'As a 501(c)(3) serving the North Shore since 1887, our mission — not margins — drives every decision. Here’s why that matters for families.',
+    desc: 'As a 501(c)(3) serving the North Shore since 1877, our mission — not margins — drives every decision. Here’s why that matters for families.',
     body: [
-      { type: 'p', text: 'When families compare senior living options, one distinction is easy to overlook but profoundly important: whether a community is run for profit or for mission. John Bertram Homes is a 501(c)(3) non-profit that has served the North Shore since 1887. Here’s why that matters for the people in our care.' },
+      { type: 'p', text: 'When families compare senior living options, one distinction is easy to overlook but profoundly important: whether a community is run for profit or for mission. John Bertram Homes is a 501(c)(3) non-profit that has served the North Shore since 1877. Here’s why that matters for the people in our care.' },
       { type: 'h2', text: 'Mission over margins' },
       { type: 'p', text: 'In a for-profit model, surplus revenue flows to owners or shareholders. In ours, it flows back into the community — into staffing, care, programming, and the buildings our residents call home. Every decision is measured against our mission, not a quarterly target.' },
       { type: 'h2', text: 'Stability and history' },

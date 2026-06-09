@@ -19,7 +19,7 @@ export default function AboutPage() {
       <div className="page-hero">
         <p className="eyebrow">Our Story</p>
         <h1>About John Bertram Homes</h1>
-        <p>A mission rooted in compassion, service, and 139 years of exceptional elder care.</p>
+        <p>A mission rooted in compassion, service, and 149 years of exceptional elder care.</p>
       </div>
 
       <section className="section">
@@ -65,7 +65,7 @@ export default function AboutPage() {
               <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.3rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--navy)', marginBottom: '20px' }}>Captain John Bertram</h3>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>Born on the Isle of Jersey in the Channel Islands, Captain John Bertram arrived in America in 1807 as a young boy of ten aboard the ship <em>Alert</em>. His family settled in Salem, Massachusetts, where he began his remarkable journey from cabin boy earning $5 a month to one of Salem&apos;s most celebrated sea captains and philanthropists.</p>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>As a captain, he accumulated considerable wealth through trading voyages to South Africa, Zanzibar, Madagascar, and Brazil, and later invested in North American railways. His philanthropic spirit led him to found Salem Hospital and establish programs for women and children.</p>
-              <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>In 1887, he created the <strong>Salem Home for Aged Men</strong> — providing shelter, meals, and community to older men without family, especially retired sailors. His legacy continues to inspire the John Bertram Homes community today.</p>
+              <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>In 1877, he created the <strong>Salem Home for Aged Men</strong> — providing shelter, meals, and community to older men without family, especially retired sailors. His legacy continues to inspire the John Bertram Homes community today.</p>
               <div style={{ borderLeft: '4px solid var(--navy)', padding: '20px 24px', background: 'var(--off-white)', borderRadius: '0 6px 6px 0', margin: '24px 0' }}>
                 <p style={{ fontStyle: 'italic', color: '#444', fontSize: '0.95rem', lineHeight: 1.8 }}>Captain Bertram&apos;s legacy of caring for the elderly continues to this day in the communities that bear his name — a living testament to a life of service and generosity.</p>
               </div>
@@ -80,8 +80,8 @@ export default function AboutPage() {
               <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.3rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--navy)', marginBottom: '20px' }}>Our Modern History</h3>
               <div style={{ position: 'relative', paddingLeft: '40px' }}>
                 {[
+                  { year: '1877', title: 'Salem Home for Aged Men Founded', desc: 'The Salem Home for Aged Men is established in Salem, MA — providing shelter, meals, and community for older men, particularly retired sailors, and carrying forward Captain Bertram’s philanthropic legacy.' },
                   { year: '1882', title: 'Captain Bertram Passes', desc: 'Captain John Bertram dies. His widow donates their home to become the Salem Public Library, continuing his legacy of community giving.' },
-                  { year: '1887', title: 'Salem Home for Aged Men Founded', desc: 'The Salem Home for Aged Men is established in Salem, MA — providing shelter, meals, and community for older men, particularly retired sailors, and carrying forward Captain Bertram’s philanthropic legacy.' },
                   { year: '1988', title: 'Original Home Facing Closure', desc: 'The original home was closing with only 3 residents remaining, prompting the Board of Trustees to consider a new model of care.' },
                   { year: '1990 – 1991', title: "Massachusetts' First Assisted Living", desc: "After extensive restoration and renovation, John Bertram House reopens as Massachusetts' very first certified free-standing assisted living community — a landmark moment in elder care." },
                   { year: '1997', title: 'John Bertram House of Swampscott Opens', desc: "The second community opens at 565 Humphrey Street in Swampscott, MA — just one block from the ocean — extending the mission to the North Shore's beautiful coastline." },

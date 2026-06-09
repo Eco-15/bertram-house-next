@@ -122,7 +122,7 @@ export default function AssistedLivingPage() {
           <div className="properties-grid">
             <FadeIn className="property-card property-card-salem">
               <div className="property-card-image">
-                <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem on Salem Common" />
+                <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem across from Salem Common" />
               </div>
               <div className="property-card-body">
                 <h3>John Bertram House of Salem</h3>
