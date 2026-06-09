@@ -112,11 +112,11 @@ export default function SupportPage() {
       <section className="section">
         <div className="container">
           <FadeIn className="two-col">
-            <div className="image-block">
+            <div className="image-block" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--off-white)', borderRadius: '12px', padding: '24px' }}>
               <img
-                src="/images/salem/exterior1.jpg"
-                alt="The historic John Bertram House across from Salem Common"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                src="/images/captain-john-bertram.png"
+                alt="Portrait of Captain John Bertram, founder of the John Bertram Homes legacy"
+                style={{ maxWidth: '100%', maxHeight: '420px', height: 'auto', display: 'block', borderRadius: '6px' }}
               />
             </div>
             <div className="content-block">
