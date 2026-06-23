@@ -11,6 +11,9 @@ const COMMUNITIES = [
 ];
 
 const STORAGE_KEY = 'jbh-greeted';
+// "Once per visit": suppress the greeting for this long after it shows, then
+// greet again on a later visit. Spans tabs (localStorage), unlike sessionStorage.
+const GREET_TTL_MS = 12 * 60 * 60 * 1000; // 12 hours
 
 function distanceMi(lat1, lon1, lat2, lon2) {
   const toRad = (d) => (d * Math.PI) / 180;
@@ -46,7 +49,8 @@ export default function GeoGreeting() {
     // Once per visit (browser session).
     if (typeof window === 'undefined') return;
     try {
-      if (sessionStorage.getItem(STORAGE_KEY)) return;
+      const last = Number(localStorage.getItem(STORAGE_KEY) || 0);
+      if (last && Date.now() - last < GREET_TTL_MS) return;
     } catch {
       return;
     }
@@ -67,7 +71,7 @@ export default function GeoGreeting() {
         setCommunity(nearestCommunity(data.lat, data.lon));
         timer = setTimeout(() => {
           if (cancelled) return;
-          try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch {}
+          try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch {}
           setVisible(true);
         }, 1200);
       } catch {
