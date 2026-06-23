@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import Lightbox from '@/components/Lightbox';
+import GeoGreeting from '@/components/GeoGreeting';
 
 // Google Analytics 4. Set NEXT_PUBLIC_GA_ID (e.g. "G-XXXXXXXXXX") in the Netlify
 // environment (and .env.local for dev). When unset, no analytics is loaded.
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <ScrollToTop />
         <Lightbox />
+        <GeoGreeting />
         {GA_ID && (
           <>
             <Script

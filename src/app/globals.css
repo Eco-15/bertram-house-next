@@ -3575,3 +3575,101 @@ a.feature-item:hover {
   .resident-card { padding: 20px; }
   .portal-residents { grid-template-columns: 1fr; }
 }
+
+/* ── GEO GREETING POP-UP ── */
+
+.geo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(6, 32, 107, 0.55);
+  backdrop-filter: blur(2px);
+  animation: geo-fade 0.25s ease;
+}
+
+.geo-modal {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 32px 32px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  border-top: 5px solid var(--gold);
+  animation: geo-pop 0.3s cubic-bezier(0.2, 0.8, 0.3, 1.1);
+}
+
+.geo-modal-wave {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.geo-modal h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.geo-modal p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.geo-modal-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.geo-modal-secondary {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+.geo-modal-secondary:hover { color: var(--gold-dark); }
+
+.geo-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.geo-modal-close:hover { color: var(--navy); }
+
+@keyframes geo-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes geo-pop {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 480px) {
+  .geo-modal { padding: 32px 22px 26px; }
+  .geo-modal h2 { font-size: 1.3rem; }
+}
