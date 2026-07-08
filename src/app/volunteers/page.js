@@ -1,6 +1,11 @@
 import FadeIn from '@/components/FadeIn';
 
-export const metadata = { title: 'Volunteer Opportunities' };
+export const metadata = {
+  title: 'Volunteer Opportunities',
+  description:
+    'Volunteer at John Bertram Homes in Salem or Swampscott, MA. Make a difference in the lives of seniors through companionship, events, and community support.',
+  alternates: { canonical: '/volunteers' },
+};
 
 const ways = [
   {

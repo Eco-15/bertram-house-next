@@ -2,7 +2,12 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import FAQ from '@/components/FAQ';
 
-export const metadata = { title: 'Frequently Asked Questions' };
+export const metadata = {
+  title: 'Frequently Asked Questions',
+  description:
+    'Answers to common questions about assisted living, memory care, costs, tours, and daily life at John Bertram Homes in Salem and Swampscott, MA.',
+  alternates: { canonical: '/faq' },
+};
 
 const items = [
   { q: 'What is assisted living?', a: 'Assisted living is a residential option for older adults who need some help with daily activities but do not require the level of care provided in a nursing home. At John Bertram Homes, we provide personalized support with activities of daily living while promoting independence and quality of life.' },

@@ -14,10 +14,11 @@ const salemResidencePhotos = [
 ];
 
 export const metadata = {
-  title: 'John Bertram House of Salem — Assisted Living across from Salem Common',
+  title: 'John Bertram House of Salem \u2014 Assisted Living across from Salem Common',
   description:
-    'Massachusetts’ first assisted living community, across from Salem Common. Personalized assisted living in a historic Federalist home at 29 Washington Square, Salem, MA.',
-  alternates: { canonical: 'https://bertramhouse.org/salem' },
+    "Massachusetts' first assisted living community, across from Salem Common. Personalized assisted living in a historic Federalist home at 29 Washington Square, Salem, MA.",
+  alternates: { canonical: '/salem' },
+  openGraph: { images: ['/images/salem/exterior6.jpg'] },
 };
 
 const overview = (
@@ -196,7 +197,7 @@ const activities = (
         </div>
       </div>
       <div>
-        <img src="/images/salem/scrabble1.jpg" alt="Residents playing Scrabble together at John Bertram House of Salem" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover', height: '320px' }} />
+        <img src="/images/salem/scrabble1.jpg" alt="Residents playing Scrabble together at John Bertram House of Salem" className="responsive-feature-img" />
       </div>
     </div>
 

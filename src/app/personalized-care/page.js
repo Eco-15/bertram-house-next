@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Personalized Assisted Living Care | John Bertram Homes',
   description:
     'Personalized assisted living care in Salem and Swampscott, MA. Customized service plans built around each resident’s routines, health, and preferences on the North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/personalized-care' },
+  alternates: { canonical: '/personalized-care' },
 };
 
 const careCards = [
@@ -91,7 +91,7 @@ export default function PersonalizedCarePage() {
               <img
                 src="/images/swampscott/sunroom1.jpg"
                 alt="Resident enjoying a quiet conversation in the sunroom at John Bertram House"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

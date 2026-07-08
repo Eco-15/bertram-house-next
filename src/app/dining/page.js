@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Chef-Crafted Dining at John Bertram Homes',
   description:
     'Three home-cooked meals daily in welcoming dining rooms at our Salem and Swampscott assisted living communities. Fresh ingredients, snacks, and seasonal celebrations on the North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/dining' },
+  alternates: { canonical: '/dining' },
 };
 
 const diningCards = [
@@ -81,7 +81,7 @@ export default function DiningPage() {
               <img
                 src="/images/swampscott/1stdining1.jpg"
                 alt="Residents enjoying a meal together in the dining room at John Bertram House of Swampscott"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

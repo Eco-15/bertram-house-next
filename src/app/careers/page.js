@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 
-export const metadata = { title: 'Careers' };
+export const metadata = {
+  title: 'Careers',
+  description:
+    'Join the team at John Bertram Homes — career opportunities in senior care, dining, activities, and administration in Salem and Swampscott, MA.',
+  alternates: { canonical: '/careers' },
+};
 
 const INDEED_URL = 'https://www.indeed.com/cmp/Bertram-House-of-Swampscott-1/jobs';
 const LINKEDIN_URL = 'https://www.linkedin.com/company/john-bertram-homes/jobs/';

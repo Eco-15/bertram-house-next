@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 
-export const metadata = { title: 'Our Supporters' };
+export const metadata = {
+  title: 'Our Supporters',
+  description:
+    'Donors and community partners who help sustain John Bertram Homes — non-profit assisted living and memory care in Salem and Swampscott, MA.',
+  alternates: { canonical: '/supporters' },
+};
 
 export default function SupportersPage() {
   return (

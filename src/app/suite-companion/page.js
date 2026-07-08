@@ -2,7 +2,12 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import { LightboxImage } from '@/components/Lightbox';
 
-export const metadata = { title: 'Companion Residences' };
+export const metadata = {
+  title: 'Companion Residences',
+  description:
+    'Shared companion suites in the Reminiscence memory care neighborhood at John Bertram House of Swampscott — supportive, secure residences on the North Shore.',
+  alternates: { canonical: '/suite-companion' },
+};
 
 const photos = [
   { src: '/images/swampscott/3rdfloormusic1.jpg', alt: 'Reminiscence neighborhood common area', caption: 'Reminiscence Common Area' },

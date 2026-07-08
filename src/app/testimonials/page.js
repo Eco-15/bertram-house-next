@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import TestimonialsGrid from '@/components/TestimonialsGrid';
 
-export const metadata = { title: 'Testimonials' };
+export const metadata = {
+  title: 'Testimonials',
+  description:
+    'Read what families and residents say about life at John Bertram Homes — assisted living and memory care in Salem and Swampscott on the North Shore.',
+  alternates: { canonical: '/testimonials' },
+};
 
 const items = [
   { location: 'both', quote: 'Everything all of you do every day to help the Bertram House residents and their families is so important and valued. We can never thank you enough.', attribution: 'Family of a 12.5-year resident' },

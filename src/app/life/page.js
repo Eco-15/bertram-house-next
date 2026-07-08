@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Photo Gallery | John Bertram Homes',
   description:
     'Browse the photo gallery of John Bertram Homes — dining rooms, common spaces, the library, sunroom, and grounds at our Salem and Swampscott assisted living communities on the North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/life' },
+  alternates: { canonical: '/life' },
 };
 
 const photos = [

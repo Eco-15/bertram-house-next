@@ -2,7 +2,12 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import { LightboxImage } from '@/components/Lightbox';
 
-export const metadata = { title: 'Studio Residences' };
+export const metadata = {
+  title: 'Studio Residences',
+  description:
+    'Private studio apartments at John Bertram House of Swampscott — cozy, well-appointed residences for assisted living on the North Shore of Massachusetts.',
+  alternates: { canonical: '/suite-studio' },
+};
 
 const photos = [
   { src: '/images/swampscott/2ndroom1.jpg', alt: 'Studio residence bedroom', caption: 'Bedroom' },

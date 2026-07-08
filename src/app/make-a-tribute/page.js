@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Make a Tribute Gift | John Bertram Homes',
   description:
     'Honor or remember a loved one with a tribute or memorial gift to John Bertram Homes, a 501(c)(3) non-profit serving seniors in Salem and Swampscott, MA.',
-  alternates: { canonical: 'https://bertramhouse.org/make-a-tribute' },
+  alternates: { canonical: '/make-a-tribute' },
 };
 
 const tributeTypes = [

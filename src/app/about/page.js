@@ -3,7 +3,12 @@ import FadeIn from '@/components/FadeIn';
 import FAQ from '@/components/FAQ';
 import JsonLd, { faqSchema } from '@/components/JsonLd';
 
-export const metadata = { title: 'About Us' };
+export const metadata = {
+  title: 'About Us',
+  description:
+    'The story of John Bertram Homes — a non-profit serving seniors on the North Shore since 1877 with assisted living communities in Salem and Swampscott, MA.',
+  alternates: { canonical: '/about' },
+};
 
 const faqs = [
   { q: 'Who should I contact about availability?', a: 'Kelly Domeniconi, our Director of Sales, is the best first contact for tours, availability, and move-in questions. You can also call either community directly: Salem at (978) 744-1002 or Swampscott at (781) 595-1991.' },
@@ -36,7 +41,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="image-block">
-              <img src="/images/swampscott/sunroom1.jpg" alt="Sunroom at John Bertram House of Swampscott" style={{ height: '380px', objectFit: 'cover', width: '100%' }} />
+              <img src="/images/swampscott/sunroom1.jpg" alt="Sunroom at John Bertram House of Swampscott" className="responsive-feature-img" />
             </div>
           </FadeIn>
         </div>
@@ -44,7 +49,7 @@ export default function AboutPage() {
 
       <section className="section-sm" style={{ padding: '40px 0' }}>
         <div className="container">
-          <FadeIn className="mission-block" style={{ background: 'var(--off-white)', color: '#222', borderRadius: '8px', padding: '40px', textAlign: 'center', border: '1px solid #ececec' }}>
+          <FadeIn className="mission-block callout-box" style={{ textAlign: 'center', borderLeft: 'none' }}>
             <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--navy)', marginBottom: '16px' }}>Our Mission</h3>
             <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: '#444', lineHeight: 1.8, maxWidth: '680px', margin: '0 auto' }}>&quot;The John Bertram Homes communities are dedicated to promoting the highest level of Wellness for each of our residents, through a combination of encouraging independence, providing support when needed, and communicating regularly with family members, residents, and each resident&apos;s personal medical team.&quot;</p>
           </FadeIn>
@@ -60,7 +65,7 @@ export default function AboutPage() {
             <div className="divider"></div>
           </FadeIn>
 
-          <FadeIn style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'start' }}>
+          <FadeIn className="history-grid">
             <div>
               <h3 style={{ fontFamily: "'Raleway', sans-serif", fontSize: '1.3rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--navy)', marginBottom: '20px' }}>Captain John Bertram</h3>
               <p style={{ color: '#555', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '16px' }}>Born on the Isle of Jersey in the Channel Islands, Captain John Bertram arrived in America in 1807 as a young boy of ten aboard the ship <em>Alert</em>. His family settled in Salem, Massachusetts, where he began his remarkable journey from cabin boy earning $5 a month to one of Salem&apos;s most celebrated sea captains and philanthropists.</p>
@@ -105,7 +110,8 @@ export default function AboutPage() {
             <img
               src="/images/swampscott/1stdining6.jpg"
               alt="Residents sharing lunch and conversation in the dining room at John Bertram Homes"
-              style={{ width: '100%', height: '380px', objectFit: 'cover', display: 'block' }}
+              className="responsive-feature-img"
+              style={{ display: 'block', borderRadius: 0 }}
             />
           </FadeIn>
         </div>

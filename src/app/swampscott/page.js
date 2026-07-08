@@ -3,10 +3,11 @@ import Tabs from '@/components/Tabs';
 import JsonLd, { breadcrumbSchema, SWAMPSCOTT_BUSINESS } from '@/components/JsonLd';
 
 export const metadata = {
-  title: 'John Bertram House of Swampscott — Assisted Living & Memory Care',
+  title: 'John Bertram House of Swampscott \u2014 Assisted Living & Memory Care',
   description:
-    'Assisted living and memory care one block from the ocean at 565 Humphrey Street, Swampscott, MA. 59 residences and a dedicated Reminiscence neighborhood for Alzheimer’s and memory loss.',
-  alternates: { canonical: 'https://bertramhouse.org/swampscott' },
+    "Assisted living and memory care one block from the ocean at 565 Humphrey Street, Swampscott, MA. 59 residences and a dedicated Reminiscence neighborhood for Alzheimer's and memory loss.",
+  alternates: { canonical: '/swampscott' },
+  openGraph: { images: ['/images/swampscott/exterior1.jpg'] },
 };
 
 const overview = (
@@ -175,7 +176,7 @@ const activities = (
         </div>
       </div>
       <div style={{ background: 'var(--off-white)', borderRadius: '8px', overflow: 'hidden' }}>
-        <img src="/images/swampscott/exterior5.jpg" alt="Outdoor garden and grounds at John Bertram House of Swampscott" style={{ width: '100%', height: '320px', objectFit: 'cover', display: 'block' }} />
+        <img src="/images/swampscott/exterior5.jpg" alt="Outdoor garden and grounds at John Bertram House of Swampscott" className="responsive-feature-img" style={{ display: 'block' }} />
       </div>
     </div>
 

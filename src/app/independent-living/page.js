@@ -12,7 +12,7 @@ export const metadata = {
   title: 'Independent Living | John Bertram Homes',
   description:
     'Independent living options at John Bertram Homes on Massachusetts’ North Shore. Maintenance-free living with community, dining, and activities — and care available as needs change.',
-  alternates: { canonical: 'https://bertramhouse.org/independent-living' },
+  alternates: { canonical: '/independent-living' },
 };
 
 const highlights = [
@@ -60,7 +60,7 @@ export default function IndependentLivingPage() {
               <img
                 src="/images/swampscott/1stdining5.jpg"
                 alt="A team member sharing the menu with a smiling resident in the dining room at John Bertram House"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

@@ -41,6 +41,7 @@ yarn-error.log*
 
 # working folders
 /photo labeled/
+/screenshots/
 
 # typescript
 *.tsbuildinfo

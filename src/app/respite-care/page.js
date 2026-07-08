@@ -12,7 +12,7 @@ export const metadata = {
   title: 'Respite & Short-Term Care | John Bertram Homes',
   description:
     'Short-term respite care at John Bertram Homes in Salem and Swampscott, MA. A safe, supportive stay with meals, activities, and personal care — ideal after a hospital stay or for caregiver relief.',
-  alternates: { canonical: 'https://bertramhouse.org/respite-care' },
+  alternates: { canonical: '/respite-care' },
 };
 
 const reasons = [
@@ -75,7 +75,7 @@ export default function RespiteCarePage() {
               <img
                 src="/images/swampscott/3rdfloormusic2.jpg"
                 alt="Residents enjoying a group sing-along activity at John Bertram House"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

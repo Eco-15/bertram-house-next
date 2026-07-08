@@ -2,7 +2,12 @@ import { Suspense } from 'react';
 import FadeIn from '@/components/FadeIn';
 import ContactForm from '@/components/ContactForm';
 
-export const metadata = { title: 'Contact Us' };
+export const metadata = {
+  title: 'Contact Us',
+  description:
+    'Contact John Bertram Homes to schedule a tour or learn about assisted living and memory care in Salem and Swampscott, MA. Call, email, or fill out our online form.',
+  alternates: { canonical: '/contact' },
+};
 
 export default function ContactPage() {
   return (
@@ -61,7 +66,7 @@ export default function ContactPage() {
 
       <section className="section-sm section-light" style={{ borderTop: '1px solid #e8e8e8' }}>
         <div className="container">
-          <FadeIn style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+          <FadeIn className="contact-maps-grid">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div style={{ borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
                 <div style={{ fontFamily: "'Raleway', sans-serif", fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--navy)', padding: '12px 16px', background: 'var(--off-white)' }}>John Bertram House of Salem</div>

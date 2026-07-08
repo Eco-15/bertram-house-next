@@ -11,12 +11,21 @@ import GeoGreeting from '@/components/GeoGreeting';
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata = {
+  metadataBase: new URL('https://bertramhouse.org'),
   title: {
     default: 'John Bertram Homes — Exceptional Assisted Living in Salem & Swampscott, MA',
     template: '%s — John Bertram Homes',
   },
   description:
     "John Bertram Homes operates two exceptional assisted living communities on Massachusetts' North Shore — John Bertram House of Salem and John Bertram House of Swampscott.",
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'John Bertram Homes',
+    images: ['/images/swampscott/exterior1.jpg'],
+  },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function RootLayout({ children }) {

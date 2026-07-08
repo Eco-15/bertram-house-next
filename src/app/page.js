@@ -188,7 +188,7 @@ export default function Home() {
               <Link href="/about" className="btn btn-navy">Read Our History</Link>
             </FadeIn>
             <FadeIn className="image-block">
-              <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem" style={{ height: '380px', objectFit: 'cover', width: '100%' }} />
+              <img src="/images/salem/exterior6.jpg" alt="John Bertram House of Salem" className="responsive-feature-img" />
             </FadeIn>
           </div>
         </div>

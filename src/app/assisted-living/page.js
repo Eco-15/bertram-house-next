@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Assisted Living in Salem & Swampscott, MA | John Bertram Homes',
   description:
     'Assisted living at John Bertram Homes in Salem and Swampscott, MA. Personalized service plans, support with daily living, and care that adapts over time on the North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/assisted-living' },
+  alternates: { canonical: '/assisted-living' },
 };
 
 const careCards = [
@@ -84,7 +84,7 @@ export default function AssistedLivingPage() {
               <img
                 src="/images/swampscott/sunroom1.jpg"
                 alt="Resident enjoying a quiet conversation in the sunroom at John Bertram House"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

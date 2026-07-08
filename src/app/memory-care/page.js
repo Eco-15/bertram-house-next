@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Memory Care in Swampscott, MA | John Bertram House',
   description:
     'Dedicated memory care for Alzheimer’s and dementia at John Bertram House of Swampscott. Structured, safe, and compassionate support on Boston’s North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/memory-care' },
+  alternates: { canonical: '/memory-care' },
 };
 
 const careCards = [
@@ -77,7 +77,7 @@ export default function MemoryCarePage() {
               <img
                 src="/images/swampscott/3rdfloormusic1.jpg"
                 alt="Calm activity space in the Reminiscence memory care neighborhood at John Bertram House of Swampscott"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>
@@ -114,7 +114,7 @@ export default function MemoryCarePage() {
               <img
                 src="/images/swampscott/3rdfloortvroom1.jpg"
                 alt="Comfortable lounge in the Reminiscence memory care neighborhood at John Bertram House of Swampscott"
-                style={{ height: '380px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </FadeIn>
           </div>

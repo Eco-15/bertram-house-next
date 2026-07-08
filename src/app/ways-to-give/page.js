@@ -2,7 +2,12 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import Counter from '@/components/Counter';
 
-export const metadata = { title: 'Ways to Give' };
+export const metadata = {
+  title: 'Ways to Give',
+  description:
+    'Support John Bertram Homes through donations, recurring gifts, tribute gifts, in-kind donations, and more. Every gift supports non-profit senior care on the North Shore.',
+  alternates: { canonical: '/ways-to-give' },
+};
 
 const options = [
   {

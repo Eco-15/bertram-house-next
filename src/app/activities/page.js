@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Vibrant Activities & Monthly Calendars | John Bertram Homes',
   description:
     'Exercise, music, arts, outings, religious services, and community events at John Bertram Homes in Salem and Swampscott, MA. View monthly activity calendars for each community.',
-  alternates: { canonical: 'https://bertramhouse.org/activities' },
+  alternates: { canonical: '/activities' },
 };
 
 const categoryCards = [
@@ -99,7 +99,7 @@ export default function ActivitiesPage() {
               <img
                 src="/images/swampscott/3rdfloormusic1.jpg"
                 alt="Residents participating in a music program at John Bertram House"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

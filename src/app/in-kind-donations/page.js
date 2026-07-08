@@ -6,7 +6,7 @@ export const metadata = {
   title: 'In-Kind Donations | John Bertram Homes',
   description:
     'Donate goods, supplies, or services that directly benefit seniors at John Bertram Homes in Salem and Swampscott, MA. Learn what we welcome and how to give in-kind.',
-  alternates: { canonical: 'https://bertramhouse.org/in-kind-donations' },
+  alternates: { canonical: '/in-kind-donations' },
 };
 
 const welcomeItems = [

@@ -8,7 +8,7 @@ export const metadata = {
   title: 'Non-Profit Mission | John Bertram Homes',
   description:
     'A not-for-profit assisted living organization serving Salem and Swampscott, MA since 1877. Mission-first care, donor-supported impact, and a legacy of people-first service on the North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/support' },
+  alternates: { canonical: '/support' },
 };
 
 const missionCards = [
@@ -83,7 +83,7 @@ export default function SupportPage() {
               <img
                 src="/images/swampscott/1stdining6.jpg"
                 alt="Residents sharing lunch and conversation in the dining room at John Bertram Homes"
-                style={{ height: '420px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>
@@ -214,7 +214,7 @@ export default function SupportPage() {
               <img
                 src="/images/swampscott/library1.jpg"
                 alt="Library with fireplace at John Bertram House of Swampscott"
-                style={{ height: '380px', objectFit: 'cover', width: '100%', borderRadius: '12px' }}
+                className="responsive-feature-img"
               />
             </div>
           </FadeIn>

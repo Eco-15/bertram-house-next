@@ -2,7 +2,12 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import { LightboxImage } from '@/components/Lightbox';
 
-export const metadata = { title: 'One-Bedroom Apartments' };
+export const metadata = {
+  title: 'One-Bedroom Apartments',
+  description:
+    'Spacious one-bedroom apartments at John Bertram House of Swampscott — private assisted living residences with full kitchenettes on the North Shore.',
+  alternates: { canonical: '/suite-one-bedroom' },
+};
 
 const photos = [
   { src: '/images/swampscott/room1.jpg', alt: 'One-bedroom apartment living area', caption: 'Living Area' },

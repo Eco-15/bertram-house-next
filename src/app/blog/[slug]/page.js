@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import FadeIn from '@/components/FadeIn';
+import JsonLd from '@/components/JsonLd';
 import { posts, getPost } from '@/data/blogPosts';
 
 export function generateStaticParams() {
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }) {
   return {
     title: post.title,
     description: post.desc,
+    alternates: { canonical: `/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.desc,
@@ -55,8 +57,19 @@ export default async function BlogPostPage({ params }) {
 
   const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.desc,
+    image: `https://bertramhouse.org${post.img}`,
+    datePublished: post.date,
+    publisher: { '@id': 'https://bertramhouse.org/#org' },
+  };
+
   return (
     <>
+      <JsonLd data={articleSchema} />
       <article>
         <section
           className="article-hero"

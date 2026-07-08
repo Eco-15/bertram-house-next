@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 
-export const metadata = { title: 'Directions' };
+export const metadata = {
+  title: 'Directions',
+  description:
+    'Driving directions and maps to John Bertram House of Salem (29 Washington Square) and John Bertram House of Swampscott (565 Humphrey Street) on the North Shore.',
+  alternates: { canonical: '/directions' },
+};
 
 export default function DirectionsPage() {
   return (

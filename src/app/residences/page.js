@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 
-export const metadata = { title: 'Our Residences' };
+export const metadata = {
+  title: 'Our Residences',
+  description:
+    'Explore studio, one-bedroom, and companion suite options at John Bertram House of Swampscott — comfortable assisted living residences on the North Shore.',
+  alternates: { canonical: '/residences' },
+};
 
 export default function ResidencesPage() {
   return (

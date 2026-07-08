@@ -2,7 +2,12 @@ import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import { posts } from '@/data/blogPosts';
 
-export const metadata = { title: 'Blog' };
+export const metadata = {
+  title: 'Blog',
+  description:
+    'Stories, insights, and updates from John Bertram Homes — non-profit assisted living and memory care on the North Shore of Massachusetts.',
+  alternates: { canonical: '/blog' },
+};
 
 export default function BlogPage() {
   return (

@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Our Team & Leadership | John Bertram Homes',
   description:
     'Meet the leadership, care, wellness, dining, and activities teams behind assisted living in Salem and Swampscott, MA. Hands-on leadership and coordinated care on the North Shore.',
-  alternates: { canonical: 'https://bertramhouse.org/leadership' },
+  alternates: { canonical: '/leadership' },
 };
 
 const seniorLeaders = [

@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 
-export const metadata = { title: 'Make a Donation' };
+export const metadata = {
+  title: 'Make a Donation',
+  description:
+    'Make a tax-deductible donation to John Bertram Homes, a 501(c)(3) non-profit providing assisted living and memory care in Salem and Swampscott, MA.',
+  alternates: { canonical: '/donate' },
+};
 
 export default function DonatePage() {
   return (
